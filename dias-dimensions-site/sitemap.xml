@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemapindex.org/schemas/sitemap/0.9">
+  <url><loc>https://diasdimensions.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://diasdimensions.org/book-i/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-ii/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-iii/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-iv/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-v/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-vi/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-vii/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-viii/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-ix/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/book-x/</loc><priority>0.9</priority></url>
+  <url><loc>https://diasdimensions.org/download/</loc><priority>0.5</priority></url>
+  <url><loc>https://diasdimensions.org/license/</loc><priority>0.3</priority></url>
+</urlset>
