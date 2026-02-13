@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" font-family="'EB Garamond', Garamond, Georgia, serif">
+  <defs>
+    <style>
+      .prime-node { fill: #1a1a1a; }
+      .composite-node { fill: #fff; stroke: #1a1a1a; stroke-width: 1.5; }
+      .standalone-prime { fill: #f0eeea; stroke: #1a1a1a; stroke-width: 1.5; }
+      .frame-node { fill: none; stroke: #aaa; stroke-width: 1; stroke-dasharray: 4,3; }
+      .label-prime { fill: #fff; font-size: 15px; font-weight: 500; }
+      .label-composite { fill: #1a1a1a; font-size: 15px; font-weight: 500; }
+      .label-standalone { fill: #1a1a1a; font-size: 15px; font-weight: 500; }
+      .label-frame { fill: #888; font-size: 14px; font-style: italic; }
+      .name-text { fill: #555; font-size: 12px; font-style: italic; }
+      .factor-text { fill: #888; font-size: 11px; }
+      .tree-line { stroke: #1a1a1a; stroke-width: 1.5; fill: none; }
+      .cross-line { stroke: #1a1a1a; stroke-width: 1; fill: none; stroke-dasharray: 6,4; }
+      .frame-line { stroke: #aaa; stroke-width: 1; fill: none; stroke-dasharray: 3,3; }
+      .section-label { fill: #888; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+      .title-text { fill: #1a1a1a; font-size: 20px; font-weight: 400; }
+      .subtitle-text { fill: #888; font-size: 13px; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="35" text-anchor="middle" class="title-text">The Operator Landscape</text>
+  <text x="360" y="55" text-anchor="middle" class="subtitle-text">Prime factorization architecture of organizational operations</text>
+
+  <!-- ═══ FRAME: Outside the framework ═══ -->
+  <!-- ? (Question) -->
+  <circle cx="80" cy="130" r="22" class="frame-node"/>
+  <text x="80" y="135" text-anchor="middle" class="label-frame">?</text>
+  <text x="80" y="162" text-anchor="middle" class="name-text">Question</text>
+
+  <!-- 0 (Null) -->
+  <circle cx="80" cy="230" r="22" class="frame-node"/>
+  <text x="80" y="235" text-anchor="middle" class="label-frame">0</text>
+  <text x="80" y="262" text-anchor="middle" class="name-text">Null</text>
+
+  <!-- 1 (Identity) -->
+  <circle cx="80" cy="330" r="22" class="frame-node"/>
+  <text x="80" y="335" text-anchor="middle" class="label-frame">1</text>
+  <text x="80" y="362" text-anchor="middle" class="name-text">Identity</text>
+
+  <text x="80" y="100" text-anchor="middle" class="section-label">FRAME</text>
+
+  <!-- Vertical frame connector -->
+  <line x1="80" y1="152" x2="80" y2="208" class="frame-line"/>
+  <line x1="80" y1="252" x2="80" y2="308" class="frame-line"/>
+
+  <!-- ═══ DISTINCTION'S TREE ═══ -->
+  <text x="270" y="100" text-anchor="middle" class="section-label">DISTINCTION'S TREE</text>
+
+  <!-- Operator 2: Distinction (Prime) -->
+  <circle cx="270" cy="160" r="26" class="prime-node"/>
+  <text x="270" y="166" text-anchor="middle" class="label-prime">2</text>
+  <text x="270" y="198" text-anchor="middle" class="name-text">Distinction</text>
+  <text x="270" y="213" text-anchor="middle" class="factor-text">prime — irreducible</text>
+
+  <!-- Operator 4: Foundation (Composite) -->
+  <circle cx="270" cy="300" r="26" class="composite-node"/>
+  <text x="270" y="306" text-anchor="middle" class="label-composite">4</text>
+  <text x="270" y="338" text-anchor="middle" class="name-text">Foundation</text>
+  <text x="270" y="353" text-anchor="middle" class="factor-text">2² — distinction × distinction</text>
+
+  <!-- Operator 8: Organization (Composite) -->
+  <circle cx="270" cy="440" r="26" class="composite-node"/>
+  <text x="270" y="446" text-anchor="middle" class="label-composite">8</text>
+  <text x="270" y="478" text-anchor="middle" class="name-text">Organization</text>
+  <text x="270" y="493" text-anchor="middle" class="factor-text">2³ — triple distinction</text>
+
+  <!-- Tree lines: 2 → 4 → 8 -->
+  <line x1="270" y1="186" x2="270" y2="274" class="tree-line"/>
+  <line x1="270" y1="326" x2="270" y2="414" class="tree-line"/>
+
+  <!-- Arrow heads on tree lines -->
+  <polygon points="264,274 270,284 276,274" fill="#1a1a1a"/>
+  <polygon points="264,414 270,424 276,414" fill="#1a1a1a"/>
+
+  <!-- ═══ INTER-PRIME COMPOSITE ═══ -->
+  <text x="430" y="100" text-anchor="middle" class="section-label">INTER-PRIME</text>
+
+  <!-- Operator 6: Reception (Composite = 2×3) -->
+  <circle cx="430" cy="300" r="26" class="composite-node"/>
+  <text x="430" y="306" text-anchor="middle" class="label-composite">6</text>
+  <text x="430" y="338" text-anchor="middle" class="name-text">Reception</text>
+  <text x="430" y="353" text-anchor="middle" class="factor-text">2 × 3 — distinction × relation</text>
+
+  <!-- Dashed lines from 2 and 3 to 6 -->
+  <path d="M 290 178 Q 360 240 410 280" class="cross-line"/>
+  <path d="M 570 178 Q 500 240 450 280" class="cross-line"/>
+
+  <!-- ═══ RELATION'S TREE ═══ -->
+  <text x="590" y="100" text-anchor="middle" class="section-label">RELATION'S TREE</text>
+
+  <!-- Operator 3: Relation (Prime) -->
+  <circle cx="590" cy="160" r="26" class="prime-node"/>
+  <text x="590" y="166" text-anchor="middle" class="label-prime">3</text>
+  <text x="590" y="198" text-anchor="middle" class="name-text">Relation</text>
+  <text x="590" y="213" text-anchor="middle" class="factor-text">prime — irreducible</text>
+
+  <!-- Operator 9: Resolution (Composite) -->
+  <circle cx="590" cy="300" r="26" class="composite-node"/>
+  <text x="590" y="306" text-anchor="middle" class="label-composite">9</text>
+  <text x="590" y="338" text-anchor="middle" class="name-text">Resolution</text>
+  <text x="590" y="353" text-anchor="middle" class="factor-text">3² — relation × relation</text>
+
+  <!-- Tree line: 3 → 9 -->
+  <line x1="590" y1="186" x2="590" y2="274" class="tree-line"/>
+  <polygon points="584,274 590,284 596,274" fill="#1a1a1a"/>
+
+  <!-- ═══ STANDALONE PRIMES ═══ -->
+  <text x="430" y="418" text-anchor="middle" class="section-label">STANDALONE PRIMES</text>
+
+  <!-- Operator 5: Action -->
+  <circle cx="380" cy="456" r="22" class="standalone-prime"/>
+  <text x="380" y="462" text-anchor="middle" class="label-standalone">5</text>
+  <text x="380" y="488" text-anchor="middle" class="name-text">Action</text>
+  <text x="380" y="503" text-anchor="middle" class="factor-text">prime</text>
+
+  <!-- Operator 7: Consciousness -->
+  <circle cx="482" cy="456" r="22" class="standalone-prime"/>
+  <text x="482" y="462" text-anchor="middle" class="label-standalone">7</text>
+  <text x="482" y="488" text-anchor="middle" class="name-text">Consciousness</text>
+  <text x="482" y="503" text-anchor="middle" class="factor-text">prime</text>
+
+  <!-- ═══ LEGEND ═══ -->
+  <g transform="translate(135, 460)">
+    <circle cx="0" cy="0" r="6" class="prime-node"/>
+    <text x="12" y="4" class="factor-text" font-size="11">Prime (irreducible)</text>
+    <circle cx="0" cy="20" r="6" class="composite-node"/>
+    <text x="12" y="24" class="factor-text" font-size="11">Composite (factorable)</text>
+    <circle cx="0" cy="40" r="6" class="frame-node"/>
+    <text x="12" y="44" class="factor-text" font-size="11">Outside framework</text>
+  </g>
+
+</svg>
