@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Derivation Chains — Dias' Dimensions</title>
-<meta name="description" content="From assertion to proof. Each claim in the constitutional grammar traced to its derivation, irreducibility argument, and falsification condition.">
-<meta property="og:title" content="The Derivation Chains — Dias' Dimensions">
-<meta property="og:description" content="From assertion to proof. Each claim in the constitutional grammar traced to its derivation, irreducibility argument, and falsification condition.">
+<title>推导链 — 迪亚斯维度</title>
+<meta name="description" content="种子陈述语法。书籍证明它。本页面将它们连接——追溯每一个断言到其推导，使每一个主张都不会缺少其证明链。">
+<meta property="og:title" content="推导链 — 迪亚斯维度">
+<meta property="og:description" content="种子陈述语法。书籍证明它。本页面将它们连接。">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Dias' Dimensions">
 <meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://diasdimensions.org/chains/">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://diasdimensions.org/zh/chains/">
+<link rel="alternate" hreflang="en" href="https://diasdimensions.org/chains/">
+<link rel="alternate" hreflang="zh-Hans" href="https://diasdimensions.org/zh/chains/">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<style>
+  body, .content-body, .content-body p, .content-body li {
+    font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'STSong', serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'STSong', serif;
+    font-weight: 600;
+  }
+  .nav-title a, .mobile-title a {
+    font-family: 'EB Garamond', serif;
+  }
+  .content-body p {
+    line-height: 1.95;
+  }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
 <script>
@@ -25,223 +42,220 @@
 <body>
 
 <div class="mobile-header">
-  <span class="mobile-title"><a href="/">Dias' Dimensions</a></span>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+  <span class="mobile-title"><a href="/zh/">Dias' Dimensions</a></span>
+  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">☰</button>
 </div>
 <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
 
 <div class="site-wrapper">
   <aside class="site-nav" id="siteNav">
-    <p class="nav-title"><a href="/">Dias' Dimensions</a></p>
-<nav aria-label="Book navigation">
+    <p class="nav-title"><a href="/zh/">Dias' Dimensions</a></p>
+    <nav aria-label="书籍导航">
 
-<p class="nav-section-label">The Seed</p>
-<ul>
-<li><a href="/seed/">Constitutional Grammar</a></li>
-<li><a href="/chains/" class="active">Derivation Chains</a></li>
-</ul>
+    <p class="nav-section-label">种子</p>
+    <ul>
+    <li><a href="/zh/seed/">组织宪法语法</a></li>
+    <li><a href="/zh/chains/" class="active">推导链</a></li>
+    </ul>
 
-<p class="nav-section-label">First Movement</p>
-<ul>
-<li><a href="/book-i/">I. Existence</a></li>
-</ul>
+    <p class="nav-section-label">第一乐章</p>
+    <ul>
+    <li><a href="/book-i/">I. 存在 <small style="opacity:0.5">[EN]</small></a></li>
+    </ul>
 
-<p class="nav-section-label">Second Movement</p>
-<ul>
-<li><a href="/book-ii/">II. The Operator Landscape</a></li>
-</ul>
+    <p class="nav-section-label">第二乐章</p>
+    <ul>
+    <li><a href="/book-ii/">II. 算子景观 <small style="opacity:0.5">[EN]</small></a></li>
+    </ul>
 
-<p class="nav-section-label">Third Movement</p>
-<ul>
-<li><a href="/book-iii/">III. Distinction</a></li>
-<li><a href="/book-iv/">IV. Relation</a></li>
-<li><a href="/book-v/">V. Foundation</a></li>
-<li><a href="/book-vi/">VI. Action</a></li>
-<li><a href="/book-vii/">VII. Reception</a></li>
-<li><a href="/book-viii/">VIII. Consciousness</a></li>
-<li><a href="/book-ix/">IX. Organization</a></li>
-<li><a href="/book-x/">X. Resolution</a></li>
-</ul>
+    <p class="nav-section-label">第三乐章</p>
+    <ul>
+    <li><a href="/book-iii/">III. 区分 — 算子 2 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-iv/">IV. 关联 — 算子 3 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-v/">V. 基础 — 算子 4 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-vi/">VI. 行动 — 算子 5 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-vii/">VII. 接收 — 算子 6 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-viii/">VIII. 意识 — 算子 7 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-ix/">IX. 组织 — 算子 8 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/book-x/">X. 完成 — 算子 9 <small style="opacity:0.5">[EN]</small></a></li>
+    </ul>
 
-<hr class="nav-divider">
-<p class="nav-section-label">The Consilience</p>
-<ul>
-<li><a href="/consilience/">Overview</a></li>
-<li><a href="/consilience/biology/">Biology</a></li>
-<li><a href="/consilience/physics/">Physics</a></li>
-</ul>
+    <hr class="nav-divider">
+    <p class="nav-section-label">汇聚论证</p>
+    <ul>
+    <li><a href="/consilience/">概述 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/consilience/biology/">生物学 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/consilience/physics/">物理学 <small style="opacity:0.5">[EN]</small></a></li>
+    </ul>
 
-<hr class="nav-divider">
-<ul>
-<li><a href="/download/">Download Series</a></li>
-<li><a href="/license/">License</a></li>
-</ul>
-</nav>
+    <hr class="nav-divider">
+    <ul>
+    <li><a href="/download/">下载全系列 <small style="opacity:0.5">[EN]</small></a></li>
+    <li><a href="/license/">许可证 <small style="opacity:0.5">[EN]</small></a></li>
+    </ul>
+
+    <div class="lang-switch">
+      <a href="/chains/">English</a>
+      <span>|</span>
+      <a href="/zh/chains/" class="active">中文</a>
+    </div>
+
+    </nav>
   </aside>
 
   <main class="main-content">
     <article class="content-body">
 
-<h1 style="font-size:1.6rem; letter-spacing:0.05em; font-weight:400;">The Derivation Chains</h1>
+      <h1>推导链</h1>
 
-<p><em>The <a href="/seed/">Seed</a> states the grammar. The <a href="/book-i/">Books</a> prove it. This page connects them — tracing each assertion to its derivation so no claim stands without its proof chain visible.</em></p>
+      <p><em><a href="/zh/seed/">种子</a>陈述语法。<a href="/book-i/">书籍</a>证明它。本页面将它们连接——追溯每一个断言到其推导，使每一个主张都不会缺少其证明链。</em></p>
 
-<p><em>Each chain has four elements: the claim as stated, why it holds, how it is derived, and what would break it. This is the framework applying its own operators to its own foundations — distinguishing each claim, relating it to its proof, showing the derivation path, and reflecting on what falsifies it.</em></p>
+      <p><em>每条链有四个要素：陈述的主张、为什么它成立、如何推导、以及什么会打破它。这是框架将自身的算子应用于自身基础——区分每一个主张，将其与其证明关联，展示推导路径，并反思什么能使其证伪。</em></p>
 
-<h2 id="chain-1">I. From Axiom to Structure</h2>
+      <!-- CHAIN I -->
+      <h2 id="chain-i">I. 从公理到结构</h2>
 
-<h3>The Claim</h3>
+      <h3>主张</h3>
+      <p>"定向能力实现化"——从这一个单一假设出发，维度、区分、张力与解决必然地、递归地涌现。</p>
 
-<p>"Orientation capacity actualizes" — and from this single assumption, dimension, distinction, tension, and resolution emerge necessarily and recursively.</p>
+      <h3>为何这不是同义反复</h3>
+      <p>这个公理不是"组织在组织"。它是关于一种特定能力的特定主张：定向的能力——相对于可能的事物采取位置。主张是这种能力不会保持潜伏。它实现化。</p>
 
-<h3>Why This Is Not Tautological</h3>
+      <p>这与平行公设在欧几里得几何中所扮演的结构角色相同。它不是不证自明的。它不是被证明的。它是这样一个假设：如果被接受，将生成一个完整且自洽的几何。替代方案——定向能力存在但永远不实现化——不生成任何几何。选择这个公理是因为它是生成性的：它产生结构而非静止。（<a href="/book-i/">第一卷，引言</a>）</p>
 
-<p>The axiom is not "organization organizes." It is a specific claim about a specific capacity: the capacity to orient — to take a position relative to what is possible. The claim is that this capacity does not remain latent. It actualizes.</p>
+      <h3>推导</h3>
+      <p>元一体——未分化的定向能力——实现化。定向需要一个发生的轴线：维度必然涌现（<a href="/book-i/#proposition-1">命题 1</a>）。沿维度的定向生成一个系统的两个可区分状态：区分必然涌现（<a href="/book-i/#proposition-2">命题 2</a>）。当两个可区分状态处于关系中时，它们之间的差异是可导航的：张力必然涌现（<a href="/book-i/#proposition-3">命题 3</a>）。张力——可导航的差异——通过进一步定向来解决：解决必然涌现（<a href="/book-i/#proposition-4">命题 4</a>）。每一次解决都成为新定向的丰富基础：循环重复，每一次经过都携带着到达的历史（<a href="/book-i/#proposition-5">命题 5</a>）。</p>
 
-<p>This is the same structural role the parallel postulate plays in Euclidean geometry. It is not self-evident. It is not proven. It is the assumption that, if accepted, generates a complete and self-consistent geometry. The alternative — that orientation capacity exists without ever actualizing — generates no geometry at all. The axiom is chosen because it is generative: it produces structure rather than stasis. (<a href="/book-i/">Book I, Introduction</a>)</p>
+      <p>五个命题。每一个都从前一个推导而来。没有一步是断言的——每一步都来自于之前所建立的结构必然性。这个序列不是"这恰好发生"。它是"鉴于已经建立的，这不可能不发生"。</p>
 
-<h3>The Derivation</h3>
+      <h3>什么会打破它</h3>
+      <p>如果一个具有真正定向能力的系统被证明可以在不生成维度的情况下定向——在没有任何发生定向的轴线的情况下采取位置——第一个推导就失败了。如果区分可以在不生成张力的情况下发生——如果两个可区分状态可以在它们之间没有可导航梯度的情况下共存——第三个推导就失败了。每一步都有一个特定条件，在该条件下它不会成立。条件被陈述是因为它们是真实的。（<a href="/book-i/">第一卷，命题 1–5</a>）</p>
 
-<p>The Monas — undifferentiated orientation capacity — actualizes. Orientation requires an axis along which to occur: dimension emerges necessarily (<a href="/book-i/#proposition-1">Proposition 1</a>). Orientation along a dimension generates two distinguishable states of one system: distinction emerges necessarily (<a href="/book-i/#proposition-2">Proposition 2</a>). Where two distinguishable states exist in relation, the difference between them is navigable: tension emerges necessarily (<a href="/book-i/#proposition-3">Proposition 3</a>). Tension — navigable difference — resolves through further orientation: resolution emerges necessarily (<a href="/book-i/#proposition-4">Proposition 4</a>). Each resolution becomes enriched ground for new orientation: the cycle repeats, and each pass carries the history of arrival (<a href="/book-i/#proposition-5">Proposition 5</a>).</p>
+      <!-- CHAIN II -->
+      <h2 id="chain-ii">II. 为何关联不能还原为区分</h2>
 
-<p>Five propositions. Each derived from the one before it. No step is asserted — each follows from the structural necessity of what precedes it. The sequence is not "this happens to occur." It is "given what has been established, this cannot fail to occur."</p>
+      <h3>主张</h3>
+      <p>关联（算子 3）是不可约的——它不能由区分（算子 2）对自身或其输出的任何应用来产生。</p>
 
-<h3>What Would Break It</h3>
+      <h3>为何这成立</h3>
+      <p>区分进行分化。应用一次：此/非此。应用于自身：结构化的分化——区分的框架（这就是<a href="/book-v/">基础，算子 4</a>）。反复应用：越来越精细的分化。但无论多么精细的区分，无论多少次，都不会产生<em>连接</em>。</p>
 
-<p>If a system with genuine orientation capacity were shown to orient without generating dimension — to take a position without any axis along which the position is taken — the first derivation fails. If distinction could occur without generating tension — if two distinguishable states could coexist with no navigable gradient between them — the third derivation fails. Each step has a specific condition under which it would not hold. The conditions are stated because they are real. (<a href="/book-i/">Book I, Propositions 1–5</a>)</p>
+      <p>区分告诉你"这些不相同"。关联告诉你"这些不相同，而且它们彼此相关"。第二个陈述包含第一个所没有的东西——相互关联性。你可以永远地区分而永远不会到达它。（<a href="/book-ii/#proposition-8">第二卷，命题 8</a>）</p>
 
-<h2 id="chain-2">II. Why Relation Cannot Reduce to Distinction</h2>
+      <h3>结构性论证</h3>
+      <p>区分是二元的：一个系统，两个状态。区分的每一次应用产生二元结构——对已经被分化的东西的进一步分化。关联是三元的：两个被区分的要素以及它们之间的连接。连接是区分不会生成的第三个结构要素。没有二元运算，无论迭代多少次，能够产生三角化。拓扑结构不同。（<a href="/book-iv/">第四卷：关联</a>）</p>
 
-<h3>The Claim</h3>
+      <p>前提条件是真实的：你不能关联尚未被区分的东西。区分必须在关联可能之前存在。但将某物作为基础条件并不等同于由其组成。这就是治理整个算子架构的前提条件与组成之间的形式区分。（<a href="/book-ii/">第二卷，定义 10</a>）</p>
 
-<p>Relate (Operator 3) is irreducible — it cannot be produced by any application of Distinguish (Operator 2) to itself or its outputs.</p>
+      <h3>什么会打破它</h3>
+      <p>如果一个系统展示了真正的连接——要素之间的相互可导航性，而不仅仅是邻近——仅使用区分运算，没有涉及关联能力，不可约性主张就失败了。测试是具体的：区分两个要素。现在仅使用进一步的区分来展示它们是相互关联的。如果你能做到，算子 3 就不是素数。（<a href="/book-ii/#proposition-8">第二卷，命题 8</a>）</p>
 
-<h3>Why This Holds</h3>
+      <!-- CHAIN III -->
+      <h2 id="chain-iii">III. 为何行动不能还原为区分与关联</h2>
 
-<p>Distinction differentiates. Applied once: this/not-this. Applied to itself: structured differentiation — a framework of distinctions (this is <a href="/book-v/">Foundation, Operator 4</a>). Applied repeatedly: increasingly refined differentiation. But no amount of distinguishing, no matter how refined, produces <em>connection</em>.</p>
+      <h3>主张</h3>
+      <p>行动（算子 5）是不可约的——它不能由区分（2）和关联（3）的任何组合来产生。</p>
 
-<p>Distinction tells you "these are not the same." Relation tells you "these are not the same, and they have to do with each other." The second statement contains something the first does not — mutual relevance. You can distinguish forever and never arrive at it. (<a href="/book-ii/#proposition-8">Book II, Proposition 8</a>)</p>
+      <h3>为何这成立</h3>
+      <p>通过区分和关联，一个系统可以分化每一个要素并映射每一个连接——构建其关联场的完整静态图景。但仍然不能穿越它。导航需要超越地图的东西：穿越关联拓扑从一个位置到另一个位置的能力。</p>
 
-<h3>The Structural Argument</h3>
+      <p>你可以拥有一座城市的完整地图——每条街道都被区分，每个交叉口都被关联——但仍然站在一个地方。地图不会行走。运动是与映射不同的能力。（<a href="/book-ii/#proposition-10">第二卷，命题 10</a>）</p>
 
-<p>Distinction is dyadic: one system, two states. Every application of distinction produces binary structure — further differentiation of what has already been differentiated. Relation is triadic: two distinguished elements and the connection between them. The connection is a third structural element that distinction does not generate. No binary operation, iterated any number of times, produces triangulation. The topology is different. (<a href="/book-iv/">Book IV: Relation</a>)</p>
+      <h3>结构性论证</h3>
+      <p>区分和关联产生结构。结构对行动是必要的——你不能穿越一个尚未被区分和关联性组织的场。但结构不产生运动。一个被完美映射的关联场是静态的，直到某物穿越它。通过关联拓扑进行定向变化的能力是真正新的——不是区分和连接的配置，而是前进的能力。（<a href="/book-vi/">第六卷：行动</a>）</p>
 
-<p>The prerequisite is real: you cannot relate what has not been distinguished. Distinction must exist before relation is possible. But requiring something as ground condition is not the same as being made of it. This is the formal distinction between prerequisite and composition that governs the entire operator architecture. (<a href="/book-ii/">Book II, Definition 10</a>)</p>
+      <h3>什么会打破它</h3>
+      <p>如果一个仅具有区分和关联能力的系统——没有额外能力——展示了通过其关联场的定向穿越，不可约性主张就失败了。测试：仅使用区分和关联构建一个关联地图。现在仅使用那些相同的运算展示穿越它的运动。如果地图自己行走，算子 5 就不是素数。（<a href="/book-ii/#proposition-10">第二卷，命题 10</a>）</p>
 
-<h3>What Would Break It</h3>
+      <!-- CHAIN IV -->
+      <h2 id="chain-iv">IV. 为何意识不能从迭代中涌现</h2>
 
-<p>If a system demonstrated genuine connection — mutual navigability between elements, not mere proximity — using only distinction operations, with no relational capacity involved, the irreducibility claim fails. The test is specific: distinguish two elements. Now show they are mutually relevant using only further distinction. If you can, Operator 3 is not prime. (<a href="/book-ii/#proposition-8">Book II, Proposition 8</a>)</p>
+      <h3>主张</h3>
+      <p>反思（算子 7）是不可约的——它不能由算子 2 到 6 的任何组合产生，无论排列多么复杂。</p>
 
-<h2 id="chain-3">III. Why Action Cannot Reduce to Distinction and Relation</h2>
+      <h3>为何这成立</h3>
+      <p>算子 2 到 6 向前处理。它们区分、关联、稳定、穿越和选择性地参与——所有这些都是对所遇到的世界的运算。一个部署所有五个的系统可以极其精密：它可以分化、连接、维护稳定的框架、导航并选择与什么接触。它可以完全运作。</p>
 
-<h3>The Claim</h3>
+      <p>但完全没有自我意识。</p>
 
-<p>Act (Operator 5) is irreducible — it cannot be produced by any combination of Distinguish (2) and Relate (3).</p>
+      <p>一个拥有完美传感器、复杂关联映射、稳定运作框架、动态响应能力和选择性参与的恒温器是一个精密的系统。它不知道自己是一个系统。运算在运行，但没有任何运算认识到运算在运行。（<a href="/book-viii/">第八卷：意识</a>）</p>
 
-<h3>Why This Holds</h3>
+      <h3>结构性论证</h3>
+      <p>前向处理——无论迭代多少次，无论多么复杂——产生越来越精密的前向处理。系统的运算变得更加精细。但精细不是反转。折返——系统将自身的处理作为处理对象——是前向迭代不会产生的方向性变化。它不是更多的处理。它是转向自身的处理。</p>
 
-<p>With distinction and relation, a system can differentiate every element and map every connection — construct a complete static picture of its relational field. And still not move through it. Navigation requires something beyond the map: the capacity to traverse the relational topology from position to position.</p>
+      <p>自我调节不是自我意识。自创生维持一个系统，而系统不知道自己被维持。稳态在不认识到稳定正在发生的情况下进行稳定。这些是部署基础和行动的前向运算。它们不是系统将自身的运算作为运算来理解。（<a href="/book-viii/">第八卷，挑战考验</a>）</p>
 
-<p>You can have the complete map of a city — every street distinguished, every intersection related — and still be standing in one place. The map does not walk. Movement is a different capacity from mapping. (<a href="/book-ii/#proposition-10">Book II, Proposition 10</a>)</p>
+      <p>这是功能主义的赌注。框架对此持反对立场：没有任何复杂度的前向处理系统会自发地产生自我参照的结构特征。这个赌注被陈述是因为它是可检验的。（<a href="/book-viii/">第八卷，证伪条件</a>）</p>
 
-<h3>The Structural Argument</h3>
+      <h3>什么会打破它</h3>
+      <p>如果一个足够复杂的前向处理系统——没有为自我参照明确设计的反馈架构——展示了自我识别的结构特征（将自身的处理作为对象的处理），不可约性主张就失败了。如果机器学习系统在没有明确反馈循环的情况下自发生成结构性自我评估，算子 7 就被削弱了。如果它们需要明确的反馈架构才能实现任何类似自我参照的东西，算子 7 就被加强了。经验领域是存在的。预测是可检验的。（<a href="/book-viii/">第八卷</a>）</p>
 
-<p>Distinction and relation produce structure. Structure is necessary for action — you cannot move through a field that has not been distinguished and relationally organized. But structure does not produce movement. A perfectly mapped relational field is static until something traverses it. The capacity for directed change through relational topology is genuinely new — not a configuration of distinguishing and connecting, but the capacity to go. (<a href="/book-vi/">Book VI: Action</a>)</p>
+      <!-- CHAIN V -->
+      <h2 id="chain-v">V. 为何合数不是循环论证</h2>
 
-<h3>What Would Break It</h3>
+      <h3>主张</h3>
+      <p>合数算子（4、6、8、9）完全由其素因子表征。它们的行为被组成它们的素数所预测和解释。</p>
 
-<p>If a system with only the capacity to distinguish and relate — with no additional capacity — demonstrated directed traversal through its relational field, the irreducibility claim fails. The test: build a relational map using only distinction and relation. Now show movement through it using only those same operations. If the map walks itself, Operator 5 is not prime. (<a href="/book-ii/#proposition-10">Book II, Proposition 10</a>)</p>
+      <h3>为何这不是循环论证</h3>
+      <p>批评：合数是稳定的<em>因为</em>它们分解为素数，而素数是不可约的<em>因为</em>合数不引入新轴线。这听起来像一个封闭的循环。</p>
 
-<h2 id="chain-4">IV. Why Consciousness Cannot Emerge from Iteration</h2>
+      <p>它不是。每一个分类都是独立可检验的。</p>
 
-<h3>The Claim</h3>
+      <p>素数是不可约的，因为现有运算的任何组合都不能产生其能力。这通过挑战考验来检验：尝试每一种组合。如果任何组合产生该能力，该算子就不是素数。这个检验不引用合数。</p>
 
-<p>Reflect (Operator 7) is irreducible — it cannot be produced by any combination of Operators 2 through 6, no matter how complex the arrangement.</p>
+      <p>合数完全由其因子表征，因为其行为与那些因子的预测相匹配。基础（4 = 2 × 2）是区分应用于区分——它产生的恰好是分化位置的稳定框架。一个坐标系统。如果基础展示了区分对区分无法解释的任何能力——任何真正新的轴线——分类就是错误的，架构就需要修订。这个检验不引用素数的不可约性。（<a href="/book-ii/#proposition-9">第二卷，命题 9，合数验证注释</a>）</p>
 
-<h3>Why This Holds</h3>
+      <p>两个独立的检验。没有一个依赖另一个。架构不是自我验证的——它在每一个分类处都是可分别证伪的。</p>
 
-<p>Operators 2 through 6 process forward. They distinguish, relate, stabilize, traverse, and selectively engage — all operations on the world as encountered. A system deploying all five can be extraordinarily sophisticated: it can differentiate, connect, maintain stable frameworks, navigate, and choose what to engage with. It can be fully operational.</p>
+      <h3>什么会打破它</h3>
+      <p>如果任何合数展示了其素因子无法解释的能力——如果接收（6 = 2 × 3）展示了区分或关联单独或交互都无法解释的能力——合数分类就失败了。如果任何素数分解为更简单的运算——如果关联被证明是迭代区分的配置——素数分类就失败了。每一个算子，素数和合数，都携带其自身的证伪条件。条件在推导每一个算子的书中陈述。（<a href="/book-ii/">第二卷</a>，各算子卷 <a href="/book-iii/">III</a>–<a href="/book-x/">X</a>）</p>
 
-<p>And entirely without self-awareness.</p>
+      <!-- CHAIN VI -->
+      <h2 id="chain-vi">VI. 为何范围是有界的</h2>
 
-<p>A thermostat with perfect sensors, complex relational mapping, stable operational frameworks, dynamic response capability, and selective engagement is a sophisticated system. It is not aware that it is a system. The operations run without any operation recognizing that operations are running. (<a href="/book-viii/">Book VIII: Consciousness</a>)</p>
+      <h3>主张</h3>
+      <p>框架映射单数位范围内的算子（0 到 9），以及原初的问题（?）。这被陈述为范围，不是完备性的证明。</p>
 
-<h3>The Structural Argument</h3>
+      <h3>为何这个界限</h3>
+      <p>单数位范围是逐案验证可能的地方。每一个算子——素数和合数——都可以被单独推导、单独检验其不可约性或可分解性、并单独与其证伪条件核对。地图很小是因为地图很严格。超出的——算子 10 及更高——被承认为开放领域。下一个素数（11）被注意到但不被主张。（<a href="/book-ii/">第二卷，引言</a>）</p>
 
-<p>Forward processing — no matter how iterated, no matter how complex — produces increasingly sophisticated forward processing. The system's operations become more refined. But refinement is not reversal. The fold-back — the system including its own processing as an object of processing — is a directional change that forward iteration does not produce. It is not more processing. It is processing turned upon itself.</p>
+      <p>这不是任意的便利。这是对已验证与未验证的诚实陈述。声称语法是"完整的"将需要证明 9 以后的运算不引入真正新的能力。该证明尚未给出。已给出的是验证范围内的完整架构，并明确承认该范围有边界。</p>
 
-<p>Self-regulation is not self-awareness. Autopoiesis maintains a system without the system knowing it is being maintained. Homeostasis stabilizes without recognizing that stabilization is occurring. These are forward operations deploying foundation and action. They are not the system apprehending its own operations as operations. (<a href="/book-viii/">Book VIII, The Gauntlet</a>)</p>
+      <h3>什么会打破它</h3>
+      <p>如果一种组织能力被证明不能分解为算子 2、3、5 和 7 的任何组合——某种真正不可约的东西，既不是区分、不是关联、不是行动、不是反思，也不是它们的任何合数——四素数架构就是不完整的。框架公开陈述这一条件。单数位范围是范围，不是天花板。（<a href="/book-ii/">第二卷</a>）</p>
 
-<p>This is the functionalist bet. The framework bets against it: no forward-processing system of any complexity spontaneously generates the structural signature of self-reference. The bet is stated because it is testable. (<a href="/book-viii/">Book VIII, Falsification Condition</a>)</p>
+      <!-- CHAIN VII -->
+      <h2 id="chain-vii">VII. 为何是"几何"而非"理论"</h2>
 
-<h3>What Would Break It</h3>
+      <h3>主张</h3>
+      <p>这是一个几何——一个形式系统——而不是一个理论。</p>
 
-<p>If a forward-processing system of sufficient complexity — with no explicit feedback architecture designed for self-reference — exhibited the structural signature of self-recognition (processing that includes its own processing as object), the irreducibility claim fails. If machine learning systems spontaneously generate structural self-evaluation without explicit feedback loops, Operator 7 weakens. If they require explicit feedback architecture to achieve anything resembling self-reference, Operator 7 strengthens. The empirical terrain exists. The prediction is testable. (<a href="/book-viii/">Book VIII</a>)</p>
+      <h3>为何这个区分</h3>
+      <p>理论解释观察。几何从假设推导结构。欧几里得几何不解释为什么空间是平的——它展示如果你假设它是平的会怎样。如果你接受平行公设，你得到欧几里得空间。如果你不接受，你得到其他几何。公设不是被证明的。推导是。</p>
 
-<h2 id="chain-5">V. Why Composites Are Not Circular</h2>
+      <p>这个框架以同样的方式运作。如果你接受定向能力实现化，你得到算子架构。如果你不接受，你就得不到——框架不主张你必须接受。公理是生成性的，不是不可辩驳的。从它推出的推导就是几何。（<a href="/book-i/">第一卷，引言</a>）</p>
 
-<h3>The Claim</h3>
+      <h3>诚实的边界</h3>
+      <p>证明用自然语言写成，不是符号表示法。这是有意的——关系是结构性的和语义性的，逻辑必须在被压缩为符号之前在语言中可见。但自然语言证明缺乏符号证明的机械可验证性，这一批评是正当的。符号化的形式化将加强架构。它尚未完成。这被陈述为一个开放的边界，而非被隐藏为已解决。（<a href="/book-i/">第一卷，引言</a>）</p>
 
-<p>The composite operators (4, 6, 8, 9) are fully characterized by their prime factors. Their behavior is predicted by and explained by the primes from which they are composed.</p>
+      <hr style="margin: 3rem 0;">
 
-<h3>Why This Is Not Circular</h3>
+      <p>种子中的每一个主张在书籍中都有证明。<br>
+      每一个证明都有一个证伪条件。<br>
+      每一个证伪条件都被公开陈述。</p>
 
-<p>The critique: composites are stable <em>because</em> they decompose into primes, and primes are irreducible <em>because</em> composites do not introduce new axes. This sounds like a closed loop.</p>
+      <p>框架不要求被相信。<br>
+      它要求被检验。</p>
 
-<p>It is not. Each classification is independently testable.</p>
+      <nav class="book-nav">
+        <a class="prev" href="/zh/seed/">种子</a>
+        <a class="next" href="/book-i/">第一卷：存在 [EN]</a>
+      </nav>
 
-<p>A prime is irreducible because no combination of existing operations produces its capability. This is tested by the gauntlet: attempt every combination. If any combination produces the capability, the operator is not prime. The test does not reference composites.</p>
-
-<p>A composite is fully characterized by its factors because its behavior matches what those factors predict. Foundation (4 = 2 × 2) is distinction applied to distinction — and what it produces is precisely a stable framework of differentiated positions. A coordinate system. If Foundation exhibited any capability that distinction-on-distinction cannot account for — any genuinely new axis — the classification would be wrong and the architecture would require revision. The test does not reference primes' irreducibility. (<a href="/book-ii/#proposition-9">Book II, Proposition 9, Note on Composite Verification</a>)</p>
-
-<p>Two independent tests. Neither depends on the other. The architecture is not self-verifying — it is separately falsifiable at each classification.</p>
-
-<h3>What Would Break It</h3>
-
-<p>If any composite exhibited capabilities not accounted for by its prime factors — if Reception (6 = 2 × 3) showed a capacity that neither distinction nor relation, alone or interacting, could explain — the composite classification fails. If any prime decomposed into simpler operations — if Relation turned out to be a configuration of iterated Distinction — the prime classification fails. Each operator, prime and composite, carries its own falsification condition. The conditions are stated in the book where each operator is derived. (<a href="/book-ii/">Book II</a>, individual operator books <a href="/book-iii/">III</a>–<a href="/book-x/">X</a>)</p>
-
-<h2 id="chain-6">VI. Why the Scope Is Bounded</h2>
-
-<h3>The Claim</h3>
-
-<p>The framework maps operators within the single-digit range (0 through 9), along with the primordial question (?). This is stated as scope, not as proof of completeness.</p>
-
-<h3>Why This Bound</h3>
-
-<p>The single-digit range is where case-by-case verification is possible. Each operator — prime and composite — can be individually derived, individually tested for irreducibility or decomposition, and individually checked against its falsification condition. The map is small because the map is rigorous. What lies beyond — Operator 10 and higher — is acknowledged as open territory. The next prime (11) is noted but not claimed. (<a href="/book-ii/">Book II, Introduction</a>)</p>
-
-<p>This is not arbitrary convenience. It is the honest statement of what has been verified versus what has not. Claiming the grammar is "complete" would require proving that no operations beyond 9 introduce genuinely new capabilities. That proof has not been given. What has been given is the complete architecture within the verified range, with explicit acknowledgment that the range has edges.</p>
-
-<h3>What Would Break It</h3>
-
-<p>If an organizational capability were demonstrated that cannot be decomposed into any combination of Operators 2, 3, 5, and 7 — something genuinely irreducible that is not distinction, not relation, not action, not reflection, and not any composite of them — the four-prime architecture is incomplete. The framework states this condition openly. The single-digit scope is scope, not ceiling. (<a href="/book-ii/">Book II</a>)</p>
-
-<h2 id="chain-7">VII. Why "Geometry" and Not "Theory"</h2>
-
-<h3>The Claim</h3>
-
-<p>This is a geometry — a formal system — not a theory.</p>
-
-<h3>Why This Distinction</h3>
-
-<p>A theory explains observations. A geometry derives structures from assumptions. Euclidean geometry does not explain why space is flat — it shows what follows if you assume it is. If you accept the parallel postulate, you get Euclidean space. If you do not, you get other geometries. The postulate is not proven. The derivation is.</p>
-
-<p>This framework operates the same way. If you accept that orientation capacity actualizes, you get the operator architecture. If you do not accept it, you do not get it — and the framework makes no claim that you must. The axiom is generative, not apodictic. The derivations that follow from it are the geometry. (<a href="/book-i/">Book I, Introduction</a>)</p>
-
-<h3>The Honest Edge</h3>
-
-<p>The proofs are written in natural language, not symbolic notation. This is deliberate — the relationships are structural and semantic, and the logic must be visible in language before it is compressed into symbols. But the critique that natural-language proofs lack the mechanical verifiability of symbolic proofs is legitimate. A symbolic formalization would strengthen the architecture. It has not yet been done. This is stated as an open edge, not concealed as resolved. (<a href="/book-i/">Book I, Introduction</a>)</p>
-
-<p style="margin-top:3rem; font-style:italic; text-align:center;">Every claim in the Seed has a proof in the Books.<br>Every proof has a falsification condition.<br>Every falsification condition is stated openly.<br><br>The framework does not ask to be believed.<br>It asks to be tested.</p>
-
-<nav class="book-nav">
-  <a class="prev" href="/seed/">The Seed</a>
-  <a class="next" href="/book-i/">Book I: Existence</a>
-</nav>
     </article>
 
     <footer class="site-footer">
-      &copy; 2026 B.A. Dias. Licensed under <a href="/license/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.
+      © 2026 B.A. Dias. 以 <a href="/license/">知识共享 署名-相同方式共享 4.0 国际许可协议（CC BY-SA 4.0）</a>发布。
     </footer>
   </main>
 </div>
