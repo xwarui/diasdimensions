@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>迪亚斯维度 — 组织的语法</title>
-<meta name="description" content="一个描述组织结构如何在所有尺度上自我生成的形式系统。从量子力学到意识，从细胞到文明——相同的语法，相同的四个不可约算子。">
-<meta property="og:title" content="迪亚斯维度 — 组织的语法">
+<title>迪亚斯维度 — 组织的几何</title>
+<meta name="description" content="从单一假设到完整架构。定向能力实现化——维度、区分、张力和解决必然且递归地产生。十本书，三个运动，四个不可约算子。">
+<meta property="og:title" content="迪亚斯维度 — 组织的几何">
 <meta property="og:description" content="定向能力实现化。维度、区分、张力和解决必然且递归地产生。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
@@ -19,32 +19,27 @@
   body {
     font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif;
   }
-  .content-body p {
+  .content-body p, .content-body li {
     line-height: 2;
-    text-align: justify;
+    font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif;
   }
-  .content-body h1, .content-body h2 {
+  .content-body h1, .content-body h2, .content-body h3 {
     font-family: 'Noto Serif SC', 'Songti SC', serif;
   }
-  .lang-switch {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
+  .nav-title a, .mobile-title a, .book-list a, .lang-link {
     font-family: 'EB Garamond', serif;
-    font-size: 0.9rem;
   }
-  .lang-switch a {
-    color: #555;
+  .lang-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-light);
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
     text-decoration: none;
-    border-bottom: 1px solid #ccc;
+    font-style: italic;
   }
-  .lang-switch a:hover {
-    color: #000;
-    border-bottom-color: #000;
-  }
-  .book-grid a {
-    font-family: 'Noto Serif SC', 'EB Garamond', serif;
-  }
+  .lang-link:hover { color: var(--text-primary); }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
@@ -59,7 +54,7 @@
 
 <div class="mobile-header">
   <span class="mobile-title"><a href="/zh/">迪亚斯维度</a></span>
-  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">☰</button>
+  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">&#9776;</button>
 </div>
 <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
 
@@ -69,37 +64,76 @@
 <nav aria-label="书籍导航">
 <p class="nav-section-label">种子</p>
 <ul>
-<li><a href="/zh/seed/">宪法语法</a></li>
+<li><a href="/zh/seed/">组织宪法</a></li>
 </ul>
+
+<p class="nav-section-label">全系列（英文）</p>
+<ul>
+<li><a href="/book-i/" style="font-family:'EB Garamond',serif">I–X. Complete Series →</a></li>
+</ul>
+
+<p class="nav-section-label">汇聚论证（英文）</p>
+<ul>
+<li><a href="/consilience/" style="font-family:'EB Garamond',serif">The Consilience →</a></li>
+</ul>
+
 <hr class="nav-divider">
 <ul>
-<li><a href="/" style="font-style:italic; font-family:'EB Garamond',serif; font-size:0.9rem;">English Edition →</a></li>
+<li><a href="/" class="lang-link">English Edition →</a></li>
 </ul>
 </nav>
   </aside>
 
   <main class="main-content" style="position:relative;">
-    <div class="lang-switch"><a href="/">English</a></div>
     <article class="content-body">
 
-<h1 style="text-align:center; margin-top:3rem; font-size:2rem; letter-spacing:0.2em; font-weight:400;">迪亚斯维度</h1>
-<p style="text-align:center; margin-top:0.5rem; font-size:1.1rem; color:#666; font-family:'EB Garamond',serif; font-style:italic;">Dias' Dimensions</p>
-<p style="text-align:center; margin-top:0.3rem; color:#888; letter-spacing:0.05em;">组织的语法</p>
+<div class="landing-hero">
+  <h1 style="letter-spacing:0.15em; font-weight:400;">迪亚斯维度</h1>
+  <p style="font-family:'EB Garamond',serif; font-style:italic; color:var(--text-secondary); margin-bottom:0.3rem;">Dias' Dimensions</p>
+  <p class="subtitle" style="font-family:'Noto Serif SC',serif; letter-spacing:0.05em;">组织的几何 — 从单一假设到完整架构</p>
+</div>
 
-<p style="margin-top:3rem;">定向能力实现化。从这一单一假设出发，维度、区分、张力和解决必然且递归地产生。</p>
+<div class="landing-intro">
+  <p>定向能力实现化。从这一单一假设出发，维度、区分、张力和解决必然且递归地产生。</p>
 
-<p>这不是一个理论。这是一种几何——一个描述组织结构如何在所有尺度上自我生成的形式系统。从量子力学到意识，从细胞到文明——相同的语法，相同的四个不可约算子。</p>
+  <p>这不是一个理论。这是一种几何——一个描述组织结构如何在所有尺度上自我生成的形式系统。从量子力学到意识，从细胞到文明——相同的语法，相同的四个不可约算子。</p>
 
-<p>本系列由十本书组成，跨越三个运动，每本书从前一本的结论出发进行推导。每一步都赢得其位置。没有什么是假定的。</p>
+  <p>本系列由十本书组成，跨越三个运动，每本书从前一本的结论出发进行推导。每一步都赢得其位置。没有什么是假定的。</p>
+</div>
 
-<h2 style="margin-top:3rem; font-size:1.1rem; letter-spacing:0.1em;">种子</h2>
-<ul class="book-grid">
-  <li><a href="/zh/seed/"><span class="book-num">◉</span> 宪法语法 — 完整的组织语法</a></li>
-</ul>
+<div class="book-grid">
+  <div class="movement-section">
+    <p class="movement-label">种子</p>
+    <ul class="book-list">
+      <li><a href="/zh/seed/"><span class="book-num">◊</span> 组织宪法 — 辨·通·发·返</a></li>
+    </ul>
+  </div>
 
-<p style="margin-top:3rem; font-size:0.95rem; color:#888;">更多章节正在翻译中。完整英文版可在 <a href="/" style="color:#555;">英文站点</a> 阅读。</p>
+  <div class="movement-section">
+    <p class="movement-label">完整系列（英文）</p>
+    <ul class="book-list">
+      <li><a href="/seed/" style="font-family:'EB Garamond',serif"><span class="book-num">◊</span> The Constitutional Grammar</a></li>
+      <li><a href="/chains/" style="font-family:'EB Garamond',serif"><span class="book-num">◊</span> The Derivation Chains</a></li>
+      <li><a href="/book-i/" style="font-family:'EB Garamond',serif"><span class="book-num">I.</span> Existence</a></li>
+      <li><a href="/book-ii/" style="font-family:'EB Garamond',serif"><span class="book-num">II.</span> The Operator Landscape</a></li>
+      <li><a href="/book-iii/" style="font-family:'EB Garamond',serif"><span class="book-num">III–X.</span> Distinction through Resolution</a></li>
+    </ul>
+  </div>
 
-<p style="margin-top:2rem; font-size:0.95rem; color:#888; font-style:italic;">B.A. Dias · 2026</p>
+  <div class="movement-section">
+    <p class="movement-label">汇聚论证（英文）</p>
+    <ul class="book-list">
+      <li><a href="/consilience/" style="font-family:'EB Garamond',serif"><span class="book-num">≡</span> Biology &amp; Physics</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="landing-frame">
+  <p style="margin-bottom:0.5rem;">十本书。三个运动。一个假设。</p>
+  <p style="margin-bottom:0;">同一个过程在每个尺度上对自身输出进行运算。</p>
+</div>
+
+<p style="margin-top:2rem; font-size:0.95rem; color:var(--text-tertiary);">更多章节正在翻译中。完整英文版可在 <a href="/" style="color:var(--text-secondary);">英文站点</a> 阅读。</p>
 
     </article>
 
