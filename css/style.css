@@ -489,3 +489,67 @@ li {
     background: #fff;
   }
 }
+/* ============================================
+   NAV SCROLL FIX — February 2026
+   Add these rules to the END of style.css
+   Fixes: sidebar nav content exceeding viewport height
+   ============================================ */
+
+/* Make sidebar independently scrollable */
+.site-nav {
+  overflow-y: auto;
+  max-height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.15) transparent;
+}
+
+.site-nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.site-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.site-nav::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.15);
+  border-radius: 2px;
+}
+
+.site-nav::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.25);
+}
+
+/* Ensure nav padding doesn't clip at bottom */
+.site-nav nav {
+  padding-bottom: 2rem;
+}
+
+/* ============================================
+   CHINESE LANGUAGE SUPPORT
+   ============================================ */
+
+/* Language switcher in nav */
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  font-size: 0.85rem;
+}
+
+.lang-switch a {
+  color: var(--text-tertiary, #999);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.lang-switch a:hover,
+.lang-switch a.active {
+  color: var(--text-primary, #2c2c2c);
+}
+
+.lang-switch span {
+  color: rgba(0,0,0,0.2);
+}
