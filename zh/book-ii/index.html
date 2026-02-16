@@ -1,39 +1,191 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>第二卷：算子景观 — 迪亚斯维度</title>
-<meta name="description" content="四个不可约算子（辨·通·发·返），四个复合算子（格·达·微·谐），原初对（问·〇）与同一（一）。完整的算子景观推导。">
-<meta property="og:title" content="第二卷：算子景观 — 迪亚斯维度">
-<meta property="og:description" content="算子从递归循环涌现。四质四合，由质因数分解治理。">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://diasdimensions.org/zh/book-ii/">
-<link rel="alternate" hreflang="en" href="https://diasdimensions.org/book-ii/">
-<link rel="alternate" hreflang="zh-Hans" href="https://diasdimensions.org/zh/book-ii/">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<style>
-  body { font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif; }
-  .content-body p, .content-body li, .content-body blockquote { line-height: 2; font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif; }
-  .content-body h1, .content-body h2, .content-body h3, .content-body h4 { font-family: 'Noto Serif SC', 'Songti SC', serif; }
-  .nav-title a, .mobile-title a, .lang-link { font-family: 'EB Garamond', serif; }
-  .lang-link { display: inline-block; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-tertiary); text-decoration: none; font-style: italic; }
-  .lang-link:hover { color: var(--text-primary); }
-  .discovery { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #b8860b; background: rgba(184,134,11,0.04); font-size: 0.92rem; }
-  .discovery strong { color: #8b6914; }
-  .honest-edge { font-size: 0.88rem; color: var(--text-secondary); font-style: italic; padding: 0.8rem 1.2rem; border-left: 2px solid var(--border-light); margin: 1.5rem 0; }
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0SFDYRW3T9');
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迪亚斯维度 | DIAS Dimensions</title>
+    <meta name="description" content="迪亚斯维度项目——定向能力开启">
+    
+    <!-- Google Fonts: Noto Serif SC for Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://diasdimensions.org/" />
+    <link rel="alternate" hreflang="zh" href="https://diasdimensions.org/zh/" />
+    
+    <style>
+        :root {
+            --bg-color: #faf9f6;
+            --text-color: #2c2c2c;
+            --accent-color: #8b4513;
+            --secondary-color: #556b2f;
+            --discovery-color: #d4af37;
+            --edge-color: #888;
+            --nav-bg: #f5f5f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Serif SC', 'Noto Serif', 'Songti SC', 'SimSun', serif;
+            line-height: 2;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            font-size: 18px;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        /* Navigation Sidebar */
+        .site-nav {
+            width: 280px;
+            background: var(--nav-bg);
+            padding: 2rem;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #e0e0e0;
+        }
+        
+        .site-nav h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .site-nav ul {
+            list-style: none;
+        }
+        
+        .site-nav li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .site-nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            display: block;
+            padding: 0.5rem 0;
+            border-left: 3px solid transparent;
+            padding-left: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .site-nav a:hover,
+        .site-nav a.active {
+            color: var(--accent-color);
+            border-left-color: var(--accent-color);
+            background: rgba(139, 69, 19, 0.05);
+        }
+        
+        .lang-link {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+        }
+        
+        /* Main Content */
+        main {
+            margin-left: 280px;
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 800px;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Noto Serif SC', 'Noto Serif', serif;
+            line-height: 1.6;
+            margin: 2rem 0 1.5rem 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-top: 3rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            margin-top: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        
+        .discovery {
+            border-left: 4px solid var(--discovery-color);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            background: rgba(212, 175, 55, 0.05);
+            padding: 1.5rem;
+        }
+        
+        .discovery::before {
+            content: "【发现】";
+            color: var(--discovery-color);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .honest-edge {
+            border-left: 3px solid var(--edge-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+            color: var(--edge-color);
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+        
+        .honest-edge::before {
+            content: "诚实边界：";
+            font-weight: 600;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .site-nav {
+                width: 100%;
+                position: relative;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            
+            main {
+                margin-left: 0;
+                padding: 2rem;
+            }
+            
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -45,45 +197,23 @@
 
 <div class="site-wrapper">
   <aside class="site-nav" id="siteNav">
-    <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
-    <nav aria-label="Book navigation">
-
-    <p class="nav-section-label">种子</p>
+    <aside class="site-nav">
+    <h2>导航 | Navigation</h2>
     <ul>
-    <li><a href="/zh/seed/">组织宪法</a></li>
+        <li><a href="/zh/" class="active">首页 | Home</a></li>
+        <li><a href="/zh/seed/">种子 | Seed</a></li>
+        <li><a href="/zh/book-i/">I. 存在 | Being</a></li>
+        <li><a href="/zh/book-ii/">II. 算子景观 | Operator Landscape</a></li>
+        <li><a href="/zh/book-iii/">III. 辨 | Differentiation</a></li>
+        <li><a href="/zh/book-iv/">IV. 通 | Through</a></li>
+        <li><a href="/zh/book-v/">V. 格 | Lattice</a></li>
+        <li><a href="/book-vi/">VI–X. Continue in English →</a></li>
+        <li><a href="/consilience/">The Consilience</a></li>
     </ul>
-
-    <p class="nav-section-label">第一乐章</p>
-    <ul>
-    <li><a href="/zh/book-i/">I. 存在</a></li>
-    </ul>
-
-    <p class="nav-section-label">第二乐章</p>
-    <ul>
-    <li><a href="/zh/book-ii/" class="active">II. 算子景观</a></li>
-    </ul>
-
-    <p class="nav-section-label">第三乐章</p>
-    <ul>
-    <li><a href="/zh/book-iii/">III. 辨</a></li>
-    </ul>
-
-    <p class="nav-section-label">全系列（英文）</p>
-    <ul>
-    <li><a href="/book-iv/">IV–X. Continue in English →</a></li>
-    </ul>
-
-    <p class="nav-section-label">汇聚论证（英文）</p>
-    <ul>
-    <li><a href="/consilience/">The Consilience →</a></li>
-    </ul>
-
-    <hr class="nav-divider">
-    <ul>
-    <li><a href="/book-ii/">English Edition →</a></li>
-    </ul>
-    </nav>
-  </aside>
+    <div class="lang-link">
+        <a href="/">English Edition →</a>
+    </div>
+</aside>
 
   <main class="main-content" style="position:relative;">
     <article class="content-body">
