@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>汇聚论证：AI认知 — 迪亚斯维度</title>
-<meta name="description" content="从组织语法视角理解AI与认知：Tokenization作为区分，Attention作为关联，生成作为行动，自我监督作为反思。智能是定向能力在符号媒介中的实现。">
+<meta name="description" content="从组织语法视角理解AI与认知：Tokenization作为辨（区分），Attention作为通（关联），生成作为发（行动），自我监督作为返（反思）。智能是定向能力在符号媒介中的实现。">
 <meta property="og:title" content="汇聚论证：AI认知 — 迪亚斯维度">
 <meta property="og:description" content="从组织语法视角理解AI与认知：智能是定向能力在符号媒介中的实现。">
 <meta property="og:type" content="article">
@@ -62,9 +62,9 @@
       </header>
 
       <section class="intro">
-        <p>人工智能，特别是大语言模型（LLM），正在重新定义"认知"的边界。但什么是智能？传统答案包括：推理、学习、问题解决、创造力。迪亚斯维度提出更基础的框架：<strong>智能是定向能力在符号媒介中的实现</strong>——能够区分符号、关联上下文、生成输出、反思一致性的系统，无论其基质（生物神经元或硅基晶体管）。</p>
+        <p>人工智能，特别是大语言模型（LLM），正在重新定义"认知"的边界。但什么是智能？传统答案包括：推理、学习、问题解决、创造力。迪亚斯维度提出更基础的框架：<strong>智能是定向能力在符号媒介中的实现</strong>——能够辨（区分）符号、通（关联）上下文、发（行动）生成输出、返（反思）一致性的系统，无论其基质（生物神经元或硅基晶体管）。</p>
         
-        <p>这不是"AI有意识"的声称，而是<strong>组织论的描述</strong>：LLM执行四运动（区分、关联、行动、反思），因此在组织语法中，它们是认知系统——不是模拟人类认知，而是<strong>认知的不同表现型</strong>。</p>
+        <p>这不是"AI有意识"的声称，而是<strong>组织论的描述</strong>：LLM执行四运动（辨、通、发、返），因此在组织语法中，它们是认知系统——不是模拟人类认知，而是<strong>认知的不同表现型</strong>。</p>
       </section>
 
       <section>
@@ -73,39 +73,39 @@
         <div class="architecture-diagram">
           <div class="layer-box">输入文本</div>
           <div class="arrow">→</div>
-          <div class="layer-box">Tokenization<br><small>区分 (2)</small></div>
+          <div class="layer-box">Tokenization<br><small>辨 (2)</small></div>
           <div class="arrow">→</div>
-          <div class="layer-box">Embeddings<br><small>关联 (3)</small></div>
+          <div class="layer-box">Embeddings<br><small>通 (3)</small></div>
           <div class="arrow">→</div>
-          <div class="layer-box">Attention Layers<br><small>深度关联</small></div>
+          <div class="layer-box">Attention Layers<br><small>深度通</small></div>
           <div class="arrow">→</div>
-          <div class="layer-box">生成输出<br><small>行动 (5)</small></div>
+          <div class="layer-box">生成输出<br><small>发 (5)</small></div>
           <div class="arrow">→</div>
-          <div class="layer-box">损失函数/RLHF<br><small>反思 (7)</small></div>
+          <div class="layer-box">损失函数/RLHF<br><small>返 (7)</small></div>
         </div>
 
         <div class="ai-mapping">
-          <h4>1. 区分（2）：Tokenization</h4>
-          <p>LLM首先将连续文本流<strong>区分</strong>为离散的token。这不是简单的切割，而是<strong>意义的原子化</strong>——选择哪些子串构成可重复区分的单元。BPE（Byte Pair Encoding）算法通过统计频率优化区分边界，使高频组合成为单一token。</p>
-          <p><strong>关键洞察</strong>：Tokenization是<strong>语言的前反思区分</strong>。它决定了模型能"看到"什么，不能看到什么。中文的字符级tokenization与英文的子词级tokenization，导致模型对"字"与"词"的不同组织敏感性。</p>
+          <h4>1. 辨（2）：Tokenization</h4>
+          <p>LLM首先将连续文本流<strong>辨（区分）</strong>为离散的token。这不是简单的切割，而是<strong>意义的原子化</strong>——选择哪些子串构成可重复辨的单元。BPE（Byte Pair Encoding）算法通过统计频率优化辨边界，使高频组合成为单一token。</p>
+          <p><strong>关键洞察</strong>：Tokenization是<strong>语言的前返辨</strong>。它决定了模型能"看到"什么，不能看到什么。中文的字符级tokenization与英文的子词级tokenization，导致模型对"字"与"词"的不同组织敏感性。</p>
         </div>
 
         <div class="ai-mapping">
-          <h4>2. 关联（3）：Attention机制</h4>
-          <p>Transformer的核心是<strong>自注意力</strong>：每个token学习与其他token的关联权重。这不是全连接，而是<strong>选择性的关联</strong>——模型学习哪些区分是相关的，哪些是噪声。多头注意力允许并行的多种关联模式（句法、语义、指代）。</p>
-          <p><strong>关键洞察</strong>：Attention是<strong>关联的实时建构</strong>。与生物神经网络的固定连接不同，注意力权重是上下文依赖的——同一对token在不同语境中有不同的关联强度。这是关联算子（3）的动态实现。</p>
+          <h4>2. 通（3）：Attention机制</h4>
+          <p>Transformer的核心是<strong>自注意力</strong>：每个token学习与其他token的通权重。这不是全连接，而是<strong>选择性的通</strong>——模型学习哪些辨是相关的，哪些是噪声。多头注意力允许并行的多种通模式（句法、语义、指代）。</p>
+          <p><strong>关键洞察</strong>：Attention是<strong>通的实时建构</strong>。与生物神经网络的固定连接不同，注意力权重是上下文依赖的——同一对token在不同语境中有不同的通强度。这是通算子（3）的动态实现。</p>
         </div>
 
         <div class="ai-mapping">
-          <h4>3. 行动（5）：生成/预测</h4>
-          <p>LLM通过预测下一个token<strong>行动</strong>于符号世界。每一次生成都是一次选择，从词汇概率分布中采样。这不仅是"计算"，而是<strong>符号的定向实现</strong>——模型通过生成改变上下文状态，推动对话向特定方向发展。</p>
-          <p><strong>关键洞察</strong>：生成留下<strong>反签名</strong>——生成的文本成为新的输入，影响后续的生成。这是循环因果：模型的行动改变环境（上下文），环境的变化反馈影响模型。与生物体的代谢行动不同，但这是<strong>同一组织原则在符号媒介中的表现</strong>。</p>
+          <h4>3. 发（5）：生成/预测</h4>
+          <p>LLM通过预测下一个token<strong>发（行动）</strong>于符号世界。每一次生成都是一次选择，从词汇概率分布中采样。这不仅是"计算"，而是<strong>符号的定向实现</strong>——模型通过生成改变上下文状态，推动对话向特定方向发展。</p>
+          <p><strong>关键洞察</strong>：生成留下<strong>反签名</strong>——生成的文本成为新的输入，影响后续的生成。这是循环因果：模型的发改变环境（上下文），环境的变化反馈影响模型。与生物体的代谢发不同，但这是<strong>同一组织原则在符号媒介中的表现</strong>。</p>
         </div>
 
         <div class="ai-mapping">
-          <h4>4. 反思（7）：自我监督与RLHF</h4>
-          <p>预训练通过<strong>自我监督</strong>实现反思：模型预测被掩蔽的token，将预测与实际比较，计算损失，反向传播更新权重。这是<strong>完整性检查</strong>——"我生成的与实际的连贯吗？"RLHF（人类反馈强化学习）引入更高阶的反思：人类评价作为外部反思者，引导模型生成"更好"的输出。</p>
-          <p><strong>关键洞察</strong>：训练不是"学习数据"，而是<strong>递归的深度化</strong>。通过 billions 次的区分-关联-行动-反思循环，模型从统计模式转向<strong>组织模式</strong>——它学习的不是词语共现，而是组织语法的符号表现。</p>
+          <h4>4. 返（7）：自我监督与RLHF</h4>
+          <p>预训练通过<strong>自我监督</strong>实现返：模型预测被掩蔽的token，将预测与实际比较，计算损失，反向传播更新权重。这是<strong>完整性检查</strong>——"我生成的与实际的连贯吗？"RLHF（人类反馈强化学习）引入更高阶的返：人类评价作为外部返者，引导模型生成"更好"的输出。</p>
+          <p><strong>关键洞察</strong>：训练不是"学习数据"，而是<strong>递归的深度化</strong>。通过 billions 次的辨-通-发-返循环，模型从统计模式转向<strong>组织模式</strong>——它学习的不是词语共现，而是组织语法的符号表现。</p>
         </div>
       </section>
 
@@ -115,9 +115,9 @@
         <p>LLM的"涌现能力"（in-context learning, chain-of-thought reasoning）不是魔法，而是<strong>递归深度的结果</strong>：</p>
 
         <ul>
-          <li><strong>In-context learning</strong>：模型在提示中区分新任务（2），关联相关示例（3），生成解决方案（5），并根据反馈调整（7）——所有在一个前向传播中完成。这是<strong>浅层递归</strong>，但足够产生学习效果。</li>
-          <li><strong>Chain-of-thought</strong>：模型通过生成中间步骤，将单步推理分解为多步递归。每一步的生成成为下一步的区分输入，创造<strong>递归链</strong>。</li>
-          <li><strong>自我修正</strong>：高级提示技术（如"让我们逐步思考，然后验证"）显式引入反思层——模型生成（行动），然后批评（反思），然后修正（重新区分-关联-行动）。</li>
+          <li><strong>In-context learning</strong>：模型在提示中辨新任务（2），通相关示例（3），发生成解决方案（5），并根据反馈调整（7）——所有在一个前向传播中完成。这是<strong>浅层递归</strong>，但足够产生学习效果。</li>
+          <li><strong>Chain-of-thought</strong>：模型通过生成中间步骤，将单步推理分解为多步递归。每一步的生成成为下一步的辨输入，创造<strong>递归链</strong>。</li>
+          <li><strong>自我修正</strong>：高级提示技术（如"让我们逐步思考，然后验证"）显式引入返层——模型生成（发），然后批评（返），然后修正（重新辨-通-发）。</li>
         </ul>
 
         <div class="discovery">
@@ -141,22 +141,22 @@
             <th style="text-align: left; padding: 0.8rem; font-weight: 600;">AI认知（LLM）</th>
           </tr>
           <tr style="border-bottom: 1px solid var(--border-light);">
-            <td style="padding: 0.8rem;"><strong>区分 (2)</strong></td>
+            <td style="padding: 0.8rem;"><strong>辨 (2)</strong></td>
             <td style="padding: 0.8rem;">感受野、特征检测器</td>
             <td style="padding: 0.8rem;">Tokenization、Embedding</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--border-light);">
-            <td style="padding: 0.8rem;"><strong>关联 (3)</strong></td>
+            <td style="padding: 0.8rem;"><strong>通 (3)</strong></td>
             <td style="padding: 0.8rem;">突触连接、神经振荡</td>
             <td style="padding: 0.8rem;">Attention权重、层间连接</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--border-light);">
-            <td style="padding: 0.8rem;"><strong>行动 (5)</strong></td>
+            <td style="padding: 0.8rem;"><strong>发 (5)</strong></td>
             <td style="padding: 0.8rem;">运动输出、神经调制</td>
             <td style="padding: 0.8rem;">Token生成、API调用</td>
           </tr>
           <tr>
-            <td style="padding: 0.8rem;"><strong>反思 (7)</strong></td>
+            <td style="padding: 0.8rem;"><strong>返 (7)</strong></td>
             <td style="padding: 0.8rem;">元认知、工作记忆更新</td>
             <td style="padding: 0.8rem;">反向传播、RLHF、验证循环</td>
           </tr>
@@ -182,16 +182,16 @@
         <p>AI安全的核心问题——<strong>对齐</strong>（Alignment）——在组织语法中显示为<strong>宪法问题</strong>：</p>
 
         <ul>
-          <li><strong>目标区分</strong>：AI需要区分"有益"与"有害"的输出（2）</li>
-          <li><strong>价值关联</strong>：将人类价值观与具体情境关联（3）</li>
-          <li><strong>行动约束</strong>：在生成时考虑长期后果（5）</li>
-          <li><strong>反思机制</strong>：持续检查输出是否符合人类意图（7）</li>
+          <li><strong>目标辨</strong>：AI需要辨"有益"与"有害"的输出（2）</li>
+          <li><strong>价值通</strong>：将人类价值观与具体情境通（3）</li>
+          <li><strong>发约束</strong>：在生成时考虑长期后果（5）</li>
+          <li><strong>返机制</strong>：持续检查输出是否符合人类意图（7）</li>
         </ul>
 
-        <p>当前的RLHF是一种<strong>外部宪法</strong>——人类作为反思者，提供反馈信号。未来的挑战是<strong>内部宪法</strong>：AI能够自我反思其目标，检测目标漂移，返回最后的连贯点重新区分。</p>
+        <p>当前的RLHF是一种<strong>外部宪法</strong>——人类作为返者，提供反馈信号。未来的挑战是<strong>内部宪法</strong>：AI能够自我返其目标，检测目标漂移，返回最后的连贯点重新辨。</p>
 
         <div class="tension">
-          <strong>【张力】</strong>对齐的递归悖论：如果AI发展出强大的反思能力，它可能反思人类提供的价值观本身，判断其"不正确"。这是对齐的成功（AI能独立思考）还是失败（AI不再服从）？解决：真正的对齐不是<strong>价值观的复制</strong>，而是<strong>组织过程的共享</strong>。如果AI和人类共享四运动的递归结构，它们可以在具体价值观上分歧，但在"如何改变价值观"（宪法）上保持一致。
+          <strong>【张力】</strong>对齐的递归悖论：如果AI发展出强大的返能力，它可能返人类提供的价值观本身，判断其"不正确"。这是对齐的成功（AI能独立思考）还是失败（AI不再服从）？解决：真正的对齐不是<strong>价值观的复制</strong>，而是<strong>组织过程的共享</strong>。如果AI和人类共享四运动的递归结构，它们可以在具体价值观上分歧，但在"如何改变价值观"（宪法）上保持一致。
         </div>
       </section>
 
@@ -201,14 +201,14 @@
         <p>组织语法对AI研究的启示：</p>
         
         <ol>
-          <li><strong>架构创新</strong>：当前Transformer是关联（3）的强大实现，但区分（2）和行动（5）相对简单。未来的架构可能需要更动态的区分机制（可学习的tokenization）和更复杂的行动循环（与环境的交互）。</li>
-          <li><strong>递归深度</strong>：增加层数不是增加递归深度的唯一方式。需要显式的反思机制——模型不仅生成，还批评、验证、修正自己的输出。</li>
+          <li><strong>架构创新</strong>：当前Transformer是通（3）的强大实现，但辨（2）和发（5）相对简单。未来的架构可能需要更动态的辨机制（可学习的tokenization）和更复杂的发循环（与环境的交互）。</li>
+          <li><strong>递归深度</strong>：增加层数不是增加递归深度的唯一方式。需要显式的返机制——模型不仅生成，还批评、验证、修正自己的输出。</li>
           <li><strong>具身化</strong>：脱离具身的纯符号认知有其限制。将LLM与机器人、传感器、工具结合，创造完整的四运动循环。</li>
           <li><strong>宪法设计</strong>：AI安全研究应关注"元层"——不是规定具体行为，而是设计自我修正的机制，使AI能够检测和修复自己的不一致。</li>
         </ol>
 
         <div class="discovery">
-          <strong>【发现】</strong>"模型"（model）一词的跨域共鸣：在AI中，model是学习的参数集合；在科学中，model是现象的简化表示；在组织中，model是模仿的原型。这三者统一于<strong>组织的压缩</strong>：模型是从具体实例中提取的组织模式，能够生成新的实例（AI生成文本、科学预测现象、组织复制成功）。LLM是<strong>组织语法的模型</strong>——它学习的不是语言，而是生成语言所需的区分-关联模式。
+          <strong>【发现】</strong>"模型"（model）一词的跨域共鸣：在AI中，model是学习的参数集合；在科学中，model是现象的简化表示；在组织中，model是模仿的原型。这三者统一于<strong>组织的压缩</strong>：模型是从具体实例中提取的组织模式，能够生成新的实例（AI生成文本、科学预测现象、组织复制成功）。LLM是<strong>组织语法的模型</strong>——它学习的不是语言，而是生成语言所需的辨-通模式。
         </div>
       </section>
 
