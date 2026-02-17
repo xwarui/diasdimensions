@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>组织宪法 — 迪亚斯维度</title>
-<meta name="description" content="辨·通·发·返——连贯组织的四运动。完整的组织语法：四个素数算子，四个复合算子，以及在每个尺度上生成结构的递归循环。">
+<meta name="description" content="辨·通·发·返——连贯组织的四运动。完整组织语法。">
 <meta property="og:title" content="组织宪法 — 迪亚斯维度">
-<meta property="og:description" content="辨·通·发·返——连贯组织的四运动。完整的组织语法。">
+<meta property="og:description" content="辨·通·发·返——连贯组织的四运动。">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
 <meta name="twitter:card" content="summary">
@@ -16,63 +15,18 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 <style>
-  body {
-    font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif;
-  }
-  .content-body p, .content-body li {
-    line-height: 2;
-    font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif;
-  }
-  .content-body h1, .content-body h2, .content-body h3 {
-    font-family: 'Noto Serif SC', 'Songti SC', serif;
-  }
-  .nav-title a, .mobile-title a, .lang-link {
-    font-family: 'EB Garamond', serif;
-  }
-  .lang-link {
-    display: inline-block;
-    margin-top: 1rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border-light);
-    font-size: 0.85rem;
-    color: var(--text-tertiary);
-    text-decoration: none;
-    font-style: italic;
-  }
+  body { font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif; }
+  .content-body p, .content-body li, .content-body blockquote { line-height: 2; font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif; }
+  .content-body h1, .content-body h2, .content-body h3, .content-body h4 { font-family: 'Noto Serif SC', 'Songti SC', serif; }
+  .nav-title a, .mobile-title a, .lang-link { font-family: 'EB Garamond', serif; }
+  .lang-link { display: inline-block; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-tertiary); text-decoration: none; font-style: italic; }
   .lang-link:hover { color: var(--text-primary); }
-
-  /* Glyph decomposition styling */
-  .glyph-map {
-    margin: 1.5rem 0;
-    padding: 1.2rem 1.5rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-light);
-    font-size: 0.9rem;
-    line-height: 1.8;
-  }
-  .glyph-map .glyph-char {
-    font-size: 2rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 0.3rem;
-    letter-spacing: 0.1em;
-  }
-  .glyph-map .glyph-num {
-    font-family: 'EB Garamond', serif;
-    font-size: 0.8rem;
-    color: var(--text-tertiary);
-  }
-  .glyph-map .glyph-parts {
-    color: var(--text-secondary);
-    margin-top: 0.3rem;
-  }
-  .glyph-map .glyph-meaning {
-    font-style: italic;
-    color: var(--text-secondary);
-    margin-top: 0.2rem;
-  }
+  .discovery { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #b8860b; background: rgba(184,134,11,0.04); font-size: 0.92rem; }
+  .discovery strong { color: #8b6914; }
+  .tension { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #8b0000; background: rgba(139,0,0,0.04); font-size: 0.92rem; }
+  .tension strong { color: #8b0000; }
+  .honest-edge { font-size: 0.88rem; color: var(--text-secondary); font-style: italic; padding: 0.8rem 1.2rem; border-left: 2px solid var(--border-light); margin: 1.5rem 0; }
 </style>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -81,6 +35,7 @@
   gtag('config', 'G-0SFDYRW3T9');
 </script>
 </head>
+
 <body>
 
 <div class="mobile-header">
@@ -92,44 +47,50 @@
 <div class="site-wrapper">
  <aside class="site-nav" id="siteNav">
     <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
-    <nav aria-label="Book navigation">
-
-    <p class="nav-section-label">种子</p>
-    <ul>
-    <li><a href="/zh/seed/" class="active">组织宪法</a></li>
-    </ul>
-
-    <p class="nav-section-label">第一乐章</p>
-    <ul>
-    <li><a href="/zh/book-i/">I. 存在</a></li>
-    </ul>
-
-    <p class="nav-section-label">第二乐章</p>
-    <ul>
-    <li><a href="/zh/book-ii/">II. 算子景观</a></li>
-    </ul>
-
-    <p class="nav-section-label">第三乐章</p>
-    <ul>
-    <li><a href="/zh/book-iii/">III. 辨</a></li>
-    </ul>
-
-    <p class="nav-section-label">全系列（英文）</p>
-    <ul>
-    <li><a href="/book-iv/">IV–X. Continue in English →</a></li>
-    </ul>
-
-    <p class="nav-section-label">汇聚论证（英文）</p>
-    <ul>
-    <li><a href="/consilience/">The Consilience →</a></li>
-    </ul>
-
-    <hr class="nav-divider">
-    <ul>
-    <li><a href="/seed/">English Edition →</a></li>
-    </ul>
-    </nav>
+<nav aria-label="书籍导航">
+<p class="nav-section-label">种子</p>
+<ul>
+<li><a href="/zh/seed/" class="active">组织宪法</a></li>
+<li><a href="/zh/chains/">推导链</a></li>
+</ul>
+<p class="nav-section-label">第一乐章</p>
+<ul>
+<li><a href="/zh/book-i/">I. 存在</a></li>
+</ul>
+<p class="nav-section-label">第二乐章</p>
+<ul>
+<li><a href="/zh/book-ii/">II. 算子景观</a></li>
+</ul>
+<p class="nav-section-label">第三乐章</p>
+<ul>
+<li><a href="/zh/book-iii/">III. 辨</a></li>
+<li><a href="/zh/book-iv/">IV. 通</a></li>
+<li><a href="/zh/book-v/">V. 格</a></li>
+<li><a href="/zh/book-vi/">VI. 发</a></li>
+<li><a href="/zh/book-vii/">VII. 达</a></li>
+<li><a href="/zh/book-viii/">VIII. 返</a></li>
+<li><a href="/zh/book-ix/">IX. 微</a></li>
+<li><a href="/zh/book-x/">X. 谐</a></li>
+</ul>
+<hr class="nav-divider">
+<p class="nav-section-label">汇聚论证</p>
+<ul>
+<li><a href="/zh/consilience/">概览</a></li>
+<li><a href="/zh/consilience/biology/">生物学</a></li>
+<li><a href="/zh/consilience/physics/">物理学</a></li>
+<li><a href="/zh/consilience/ai-cognition/">AI认知</a></li>
+</ul>
+<hr class="nav-divider">
+<ul>
+<li><a href="/zh/about/">关于</a></li>
+</ul>
+<hr class="nav-divider">
+<ul>
+<li><a href="/seed/" class="lang-link">English Edition →</a></li>
+</ul>
+</nav>
   </aside>
+
 
   <main class="main-content" style="position:relative;">
     <article class="content-body">
