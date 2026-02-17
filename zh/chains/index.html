@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>推导链 — 迪亚斯维度</title>
-<meta name="description" content="连接十卷的逻辑推导结构图：从存在到谐的完整推导链条，展示四质四合如何必然地从定向能力实现化中涌现。">
+<meta name="description" content="连接十卷的逻辑推导结构图：从存在到谐的完整推导链条。">
 <meta property="og:title" content="推导链 — 迪亚斯维度">
-<meta property="og:description" content="连接十卷的逻辑推导结构图：从存在到谐的完整推导链条。">
+<meta property="og:description" content="连接十卷的逻辑推导结构图。">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
 <meta name="twitter:card" content="summary">
@@ -27,20 +27,6 @@
   .tension { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #8b0000; background: rgba(139,0,0,0.04); font-size: 0.92rem; }
   .tension strong { color: #8b0000; }
   .honest-edge { font-size: 0.88rem; color: var(--text-secondary); font-style: italic; padding: 0.8rem 1.2rem; border-left: 2px solid var(--border-light); margin: 1.5rem 0; }
-  .chain-visual { margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border: 1px solid var(--border-light); }
-  .chain-node { display: flex; align-items: flex-start; margin: 1rem 0; padding: 1rem; background: white; border-left: 4px solid #b8860b; }
-  .chain-number { font-family: 'EB Garamond', serif; font-size: 1.5rem; color: #b8860b; margin-right: 1rem; min-width: 3rem; }
-  .chain-content h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
-  .chain-content p { margin: 0; font-size: 0.95rem; color: var(--text-secondary); }
-  .connector { text-align: center; color: var(--text-tertiary); font-size: 1.5rem; margin: 0.5rem 0; }
-  .operator-tag { display: inline-block; padding: 0.2rem 0.6rem; background: rgba(184,134,11,0.1); border-radius: 3px; font-size: 0.8rem; color: #8b6914; margin-right: 0.5rem; font-family: 'EB Garamond', serif; }
-  .seed-node { border-left-color: #2e8b57; background: rgba(46,139,87,0.05); }
-  .seed-node .chain-number { color: #2e8b57; }
-  .prime-node { border-left-color: #4682b4; }
-  .prime-node .chain-number { color: #4682b4; }
-  .composite-node { border-left-color: #cd853f; }
-  .composite-node .chain-number { color: #cd853f; }
-  .dependency-note { font-size: 0.85rem; color: var(--text-tertiary); font-style: italic; margin-top: 0.5rem; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
 <script>
@@ -50,25 +36,54 @@
   gtag('config', 'G-0SFDYRW3T9');
 </script>
 </head>
-<body>
-<div class="site-container">
-  <nav class="main-nav">
-    <div class="nav-content">
-      <div class="nav-title"><a href="/zh/">迪亚斯维度</a></div>
-      <div class="nav-links">
-        <a href="/zh/volumes/">十卷</a>
-        <a href="/zh/chains/">推导链</a>
-        <a href="/zh/consilience/">汇聚论证</a>
-      </div>
-    </div>
-  </nav>
 
-  <main class="content-area">
-    <article class="content-body">
-      <header class="page-header">
-        <h1>推导链</h1>
-        <p class="subtitle">连接十卷的逻辑推导结构图</p>
-      </header>
+   <aside class="site-nav" id="siteNav">
+    <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
+<nav aria-label="书籍导航">
+<p class="nav-section-label">种子</p>
+<ul>
+<li><a href="/zh/seed/">组织宪法</a></li>
+<li><a href="/zh/chains/" class="active">推导链</a></li>
+</ul>
+<p class="nav-section-label">第一乐章</p>
+<ul>
+<li><a href="/zh/book-i/">I. 存在</a></li>
+</ul>
+<p class="nav-section-label">第二乐章</p>
+<ul>
+<li><a href="/zh/book-ii/">II. 算子景观</a></li>
+</ul>
+<p class="nav-section-label">第三乐章</p>
+<ul>
+<li><a href="/zh/book-iii/">III. 辨</a></li>
+<li><a href="/zh/book-iv/">IV. 通</a></li>
+<li><a href="/zh/book-v/">V. 格</a></li>
+<li><a href="/zh/book-vi/">VI. 发</a></li>
+<li><a href="/zh/book-vii/">VII. 达</a></li>
+<li><a href="/zh/book-viii/">VIII. 返</a></li>
+<li><a href="/zh/book-ix/">IX. 微</a></li>
+<li><a href="/zh/book-x/">X. 谐</a></li>
+</ul>
+<hr class="nav-divider">
+<p class="nav-section-label">汇聚论证</p>
+<ul>
+<li><a href="/zh/consilience/">概览</a></li>
+<li><a href="/zh/consilience/biology/">生物学</a></li>
+<li><a href="/zh/consilience/physics/">物理学</a></li>
+<li><a href="/zh/consilience/ai-cognition/">AI认知</a></li>
+</ul>
+<hr class="nav-divider">
+<ul>
+<li><a href="/zh/about/">关于</a></li>
+</ul>
+<hr class="nav-divider">
+<ul>
+<li><a href="/chains/" class="lang-link">English Edition →</a></li>
+</ul>
+</nav>
+  </aside>
+
+
 
       <section class="intro">
         <p>十卷并非按时间顺序排列的文集。它们是一条<strong>推导链</strong>——每一卷从前一卷的结论中必然涌现，每一卷为下一卷建立必要的操作基础。这不是叙事弧线，而是<strong>逻辑连续性</strong>的展开：从单一假设（定向能力实现化）到完整组织语法（四质四合）的必然推导。</p>
