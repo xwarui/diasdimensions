@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="zh-Hans">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,20 +36,13 @@
   gtag('config', 'G-0SFDYRW3T9');
 </script>
 </head>
-
 <body>
-<div class="site-container">
-  <nav class="main-nav">
-    <div class="nav-content">
-      <div class="nav-title"><a href="/zh/">迪亚斯维度</a></div>
-      <div class="nav-links">
-        <a href="/zh/volumes/">十卷</a>
-        <a href="/zh/chains/">推导链</a>
-        <a href="/zh/consilience/">汇聚论证</a>
-        <a href="/zh/about/">关于</a>
-      </div>
-    </div>
-  </nav>
+<div class="mobile-header">
+  <span class="mobile-title"><a href="/zh/">迪亚斯维度</a></span>
+  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">&#9776;</button>
+</div>
+<div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+<div class="site-wrapper">
   <aside class="site-nav" id="siteNav">
     <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
 <nav aria-label="书籍导航">
@@ -94,10 +88,7 @@
 </ul>
 </nav>
   </aside>
-
-
-
-  <main class="content-area">
+  <main class="main-content">
     <article class="content-body">
       <header class="page-header">
         <h1>关于</h1>
