@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Developmental Operator Model of Conscious Experience – Dias' Dimensions</title>
+<meta name="description" content="A synthesis framework resolving the COGITATE adversarial collaboration results. DOM accounts for all six major findings that neither IIT nor GNWT could explain.">
+<meta property="og:title" content="The Developmental Operator Model of Conscious Experience – Dias' Dimensions">
+<meta property="og:description" content="A synthesis framework resolving the COGITATE adversarial collaboration results. DOM accounts for all six major findings that neither IIT nor GNWT could explain.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dias' Dimensions">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://diasdimensions.org/publications/developmental-operator-model/">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0SFDYRW3T9');
+</script>
+<style>
+  /* Paper-specific styles */
+  .paper-header {
+    border-bottom: 1px solid var(--border-color, #e0ddd6);
+    padding-bottom: 2.2em;
+    margin-bottom: 2.5em;
+  }
+  .paper-byline {
+    font-size: 0.88em;
+    color: var(--text-secondary, #6b6760);
+    margin-top: 0.5em;
+  }
+  .paper-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 1.2em;
+    font-size: 0.82em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-tertiary, #9a9488);
+  }
+  .abstract-block {
+    background: transparent;
+    border-left: 2px solid var(--border-color, #e0ddd6);
+    padding: 1.2em 1.6em;
+    margin: 2em 0 2.5em;
+  }
+  .abstract-block p {
+    font-style: italic;
+    color: var(--text-secondary, #6b6760);
+    margin: 0;
+    line-height: 1.8;
+  }
+  .abstract-label {
+    font-size: 0.78em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-tertiary, #9a9488);
+    margin-bottom: 0.6em;
+    font-style: normal;
+    display: block;
+  }
+  /* Comparison table */
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8em 0;
+    font-size: 0.9em;
+  }
+  .comparison-table th {
+    text-align: left;
+    font-weight: 500;
+    padding: 0.7em 1em;
+    border-bottom: 2px solid var(--border-color, #e0ddd6);
+    color: var(--text-primary, #2c2a26);
+  }
+  .comparison-table td {
+    padding: 0.75em 1em;
+    border-bottom: 1px solid var(--border-color, #e0ddd6);
+    color: var(--text-secondary, #6b6760);
+    vertical-align: top;
+    line-height: 1.6;
+  }
+  .comparison-table tr:last-child td {
+    border-bottom: none;
+  }
+  .comparison-table td:first-child {
+    color: var(--text-primary, #2c2a26);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .mark-correct { color: #5a7a5a; }
+  .mark-wrong { color: #9a6060; }
+
+  /* Operator table */
+  .operator-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8em 0;
+    font-size: 0.88em;
+  }
+  .operator-table th {
+    text-align: left;
+    font-weight: 500;
+    padding: 0.6em 0.9em;
+    border-bottom: 2px solid var(--border-color, #e0ddd6);
+    font-size: 0.82em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-tertiary, #9a9488);
+  }
+  .operator-table td {
+    padding: 0.7em 0.9em;
+    border-bottom: 1px solid var(--border-color, #e0ddd6);
+    vertical-align: top;
+    line-height: 1.6;
+    color: var(--text-secondary, #6b6760);
+  }
+  .operator-table tr:last-child td {
+    border-bottom: none;
+  }
+  .operator-table td:first-child {
+    font-weight: 600;
+    color: var(--text-primary, #2c2a26);
+    font-size: 1.05em;
+  }
+  .operator-table td:nth-child(2) {
+    font-weight: 500;
+    color: var(--text-primary, #2c2a26);
+  }
+
+  /* Predictions */
+  .prediction-block {
+    margin: 1.5em 0;
+    padding: 1.3em 1.5em;
+    border: 1px solid var(--border-color, #e0ddd6);
+  }
+  .prediction-label {
+    font-size: 0.78em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-tertiary, #9a9488);
+    margin-bottom: 0.4em;
+    display: block;
+  }
+  .prediction-title {
+    font-weight: 500;
+    color: var(--text-primary, #2c2a26);
+    margin-bottom: 0.5em;
+  }
+
+  /* References */
+  .references-list {
+    font-size: 0.88em;
+    color: var(--text-secondary, #6b6760);
+    line-height: 1.7;
+  }
+  .references-list li {
+    margin-bottom: 0.6em;
+    list-style: none;
+    padding-left: 2.5em;
+    text-indent: -2.5em;
+  }
+  .ref-num {
+    color: var(--text-tertiary, #9a9488);
+    margin-right: 0.5em;
+  }
+
+  /* Back to publications */
+  .back-link {
+    display: inline-block;
+    margin-bottom: 2em;
+    font-size: 0.84em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary, #9a9488);
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--text-primary, #2c2a26); }
+
+  @media (max-width: 640px) {
+    .comparison-table th:nth-child(2),
+    .comparison-table td:nth-child(2),
+    .comparison-table th:nth-child(3),
+    .comparison-table td:nth-child(3) {
+      display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="mobile-header">
+  <span class="mobile-title"><a href="/">Dias' Dimensions</a></span>
+  <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+</div>
+<div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+
+<div class="site-wrapper">
+  <aside class="site-nav" id="siteNav">
+    <p class="nav-title"><a href="/">Dias' Dimensions</a></p>
+    <nav aria-label="Book navigation">
+
+    <p class="nav-section-label">The Seed</p>
+    <ul>
+    <li><a href="/seed/">Constitutional Grammar</a></li>
+    <li><a href="/seed/derivation-chains/">Derivation Chains</a></li>
+    </ul>
+
+    <p class="nav-section-label">First Movement</p>
+    <ul>
+    <li><a href="/book-i/">I. Existence</a></li>
+    </ul>
+
+    <p class="nav-section-label">Second Movement</p>
+    <ul>
+    <li><a href="/book-ii/">II. The Operator Landscape</a></li>
+    </ul>
+
+    <p class="nav-section-label">Third Movement</p>
+    <ul>
+    <li><a href="/book-iii/">III. Distinction</a></li>
+    <li><a href="/book-iv/">IV. Relation</a></li>
+    <li><a href="/book-v/">V. Foundation</a></li>
+    <li><a href="/book-vi/">VI. Action</a></li>
+    <li><a href="/book-vii/">VII. Reception</a></li>
+    <li><a href="/book-viii/">VIII. Consciousness</a></li>
+    <li><a href="/book-ix/">IX. Organization</a></li>
+    <li><a href="/book-x/">X. Resolution</a></li>
+    </ul>
+
+    <hr class="nav-divider">
+    <p class="nav-section-label">The Consilience</p>
+    <ul>
+    <li><a href="/consilience/">Overview</a></li>
+    <li><a href="/consilience/biology/">Biology</a></li>
+    <li><a href="/consilience/physics/">Physics</a></li>
+    <li><a href="/consilience/ai-cognition/">AI Cognition</a></li>
+    </ul>
+
+    <hr class="nav-divider">
+    <ul>
+    <li><a href="/publications/" class="active">Publications</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/download/">Download Series</a></li>
+    <li><a href="/license/">License</a></li>
+    </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <article class="content-body">
+
+      <a class="back-link" href="/publications/">← Publications</a>
+
+      <div class="paper-header">
+        <p class="book-movement">Dias Dimensions Research · Consciousness Science</p>
+        <h1>The Developmental Operator Model of Conscious Experience</h1>
+        <p class="book-operator">A Synthesis Framework Resolving the COGITATE Adversarial Collaboration Results</p>
+        <p class="paper-byline">B. Dias &nbsp;·&nbsp; Dias Dimensions Research &nbsp;·&nbsp; diasdimensions.org</p>
+        <div class="paper-meta-row">
+          <span>February 2026</span>
+          <span>Preprint · DOM-2026-v1</span>
+          <span>CC BY-SA 4.0</span>
+        </div>
+        <div class="paper-meta-row" style="margin-top:0.6em;">
+          <span>Cite as: Dias, B. (2026). The Developmental Operator Model of Conscious Experience. Dias Dimensions Research. diasdimensions.org/publications/developmental-operator-model/ [DOM-2026-v1]</span>
+        </div>
+        <div class="paper-meta-row" style="margin-top:0.4em; font-size:0.78em;">
+          <span>DOI: <a href="https://doi.org/10.17605/OSF.IO/9DBZA" style="color:inherit; border-bottom: 1px solid currentColor;">10.17605/OSF.IO/9DBZA</a></span>
+          <span>Feedback &amp; pilot data: <a href="mailto:Brittany.A.Dias@gmail.com" style="color:inherit; border-bottom: 1px solid currentColor;">Brittany.A.Dias@gmail.com</a></span>
+        </div>
+      </div>
+
+      <div class="abstract-block" style="background: #f5f3ef; border-left: none; padding: 1.4em 1.8em; margin-bottom: 1.2em;">
+        <span class="abstract-label">Plain Language Summary</span>
+        <p style="font-style: normal; line-height: 1.8;">In 2025, the largest empirical test of consciousness theories ever conducted found that both leading theories — IIT and GNWT — failed to account for key patterns in brain activity during conscious experience. This paper proposes a resolution: consciousness is not one thing happening in one brain region, but a sequence of six organizational operations that build on each other, from basic perception in the back of the brain through reflection in the front. This model accounts for everything the 2025 experiment found, and generates five new testable predictions that neither previous theory makes.</p>
+      </div>
+
+      <div class="abstract-block">
+        <span class="abstract-label">Abstract</span>
+        <p>The April 2025 COGITATE adversarial collaboration (Ferrante et al., <em>Nature</em> 642, 133–142) tested Integrated Information Theory (IIT) and Global Neuronal Workspace Theory (GNWT) against empirical data from 256 participants using fMRI, MEG, and intracranial EEG. Both theories were substantially challenged: IIT's predicted posterior synchronization was not found; GNWT's predicted prefrontal ignition at stimulus offset was absent. This paper proposes the Developmental Operator Model (DOM) as a synthesis framework that resolves these findings. DOM treats consciousness not as a single mechanism localized in one region, but as a developmental sequence of irreducible organizational operators — Distinction, Relation, Action, Reception, Reflection, Organization — that map onto a posterior-to-anterior cortical gradient. This model explains why (1) conscious content appears in both posterior and frontal regions with different informational profiles, (2) sustained activity occurs in posterior cortex without the synchronization patterns IIT predicted, (3) prefrontal cortex contributes to some conscious features but is not required for all of them, and (4) interareal synchronization occurs between frontal and posterior regions rather than within either alone. DOM generates novel, falsifiable predictions distinguishable from both IIT and GNWT.</p>
+      </div>
+
+
+      <h2 id="introduction">1. Introduction</h2>
+
+      <p>The scientific study of consciousness has reached a critical juncture. The COGITATE adversarial collaboration, published in <em>Nature</em> in April 2025, represents the most rigorous direct comparison of leading consciousness theories ever conducted. By testing pre-registered predictions from Integrated Information Theory (IIT) and Global Neuronal Workspace Theory (GNWT) against multimodal neural data from 256 participants, the consortium delivered a striking verdict: both theories were substantially challenged by the empirical findings.</p>
+
+      <p>IIT, proposed by Tononi, holds that consciousness is identical to integrated information (Φ), arising from cause-effect structures in the posterior cortex. GNWT, developed by Dehaene and colleagues, proposes that consciousness emerges when information is globally broadcast to a workspace involving prefrontal and parietal regions. These theories make fundamentally different predictions about where, when, and how conscious experience is implemented in the brain.</p>
+
+      <p>The COGITATE results created a theoretical vacuum. Neither IIT nor GNWT fully accounts for the observed data. This paper proposes a framework — the Developmental Operator Model (DOM) — that resolves the COGITATE findings by reconceiving consciousness not as a single computational mechanism, but as a developmental sequence of irreducible organizational operations. DOM synthesizes the partial truths of both IIT and GNWT while explaining what each theory misses.</p>
+
+
+      <h2 id="cogitate-results">2. The COGITATE Results: What Was Found</h2>
+
+      <p>The COGITATE consortium tested three pre-registered predictions across three neuroimaging modalities. The results were as follows.</p>
+
+      <h3 id="prediction-1">2.1 Location of Conscious Content</h3>
+
+      <p>IIT predicted maximal decoding in posterior brain areas. GNWT predicted a necessary role for the prefrontal cortex (PFC). The data showed information about conscious content in visual cortex, ventrotemporal cortex, and inferior frontal cortex. Crucially, the PFC encoded categorical information (faces vs. objects) but not all content dimensions. This partially supports both theories while fully confirming neither.</p>
+
+      <h3 id="prediction-2">2.2 Maintenance of Conscious Content</h3>
+
+      <p>IIT predicted sustained activity in posterior cortex for the duration of the experience. GNWT predicted brief content-specific ignition in PFC at stimulus onset and offset, with content stored in a non-conscious state between these events. The data showed sustained responses in occipital and lateral temporal cortex reflecting stimulus duration — but no offset ignition. Content was actively maintained in posterior regions, not silently stored.</p>
+
+      <h3 id="prediction-3">2.3 Interareal Synchronization</h3>
+
+      <p>IIT predicted sustained synchronization within posterior brain regions. GNWT predicted frontal-to-posterior broadcast. The data showed content-specific synchronization between frontal and early visual areas — a pattern predicted by neither theory. Synchronization was bidirectional and interareal, not unidirectional and not confined within posterior cortex.</p>
+
+
+      <h2 id="dom">3. The Developmental Operator Model</h2>
+
+      <p>DOM proposes that consciousness is not a single mechanism but a sequential developmental process. Irreducible organizational operators — each introducing a genuinely new axis of capability — are instantiated across a posterior-to-anterior cortical gradient. The operators are developmentally ordered: each requires its predecessors to function.</p>
+
+      <table class="operator-table">
+        <thead>
+          <tr>
+            <th>Op.</th>
+            <th>Name</th>
+            <th>Function</th>
+            <th>Cortical Region</th>
+            <th>Conscious Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>Distinction</td>
+            <td>Differentiating</td>
+            <td>Early visual (V1/V2)</td>
+            <td>Basic feature detection</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Relation</td>
+            <td>Connecting</td>
+            <td>V4, IT cortex</td>
+            <td>Feature binding</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Foundation</td>
+            <td>Stabilizing</td>
+            <td>Occipital association areas</td>
+            <td>Perceptual stability</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Action</td>
+            <td>Categorizing</td>
+            <td>Ventrotemporal cortex</td>
+            <td>Category-level recognition</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Reception</td>
+            <td>Sustained integration</td>
+            <td>Lateral temporal cortex</td>
+            <td>Duration-sensitive maintenance</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Reflection</td>
+            <td>Meta-awareness</td>
+            <td>Inferior frontal cortex</td>
+            <td>Abstractive meta-processing</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Organization</td>
+            <td>Cross-level binding</td>
+            <td>Interareal synchronization</td>
+            <td>Coherence across levels</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The critical principle of DOM is that these operators are <em>developmental and sequential</em>: Relation cannot function without Distinction providing differentiated elements to relate. Action cannot function without Operators 2–4 providing structured representations. Reflection cannot function without Operators 2–6 providing content to reflect upon.</p>
+
+      <p>Crucially, <strong>consciousness does not require all operators to be active</strong>. A system operating with Operators 2–6 has genuine conscious experience — content-rich, sustained, world-directed — without any prefrontal involvement. Operator 7 (Reflection) adds <em>reflective</em> consciousness but is not required for <em>basic</em> consciousness. This is the key insight that resolves the COGITATE results.</p>
+
+
+      <h2 id="resolution">4. How DOM Resolves Each COGITATE Finding</h2>
+
+      <h3>4.1 Content in Both Posterior and Frontal Regions</h3>
+
+      <p>IIT placed all conscious content in posterior cortex. GNWT required frontal involvement. The data showed content in both, but with different informational profiles: posterior regions encoded all content dimensions, while frontal regions encoded only categorical information.</p>
+
+      <p><em>DOM explanation:</em> Posterior cortex implements Operators 2–6, processing content from basic features through sustained integration. This is where the full richness of conscious content lives. Frontal cortex implements Operator 7 (Reflection), which is inherently abstractive — it operates on categories and general features rather than perceptual details. Reflection does not re-encode the full content; it selectively meta-processes the most salient organizational level.</p>
+
+      <h3>4.2 Sustained Posterior Activity Without Expected Synchronization</h3>
+
+      <p>IIT predicted both sustained activity and synchronization in posterior cortex. The data showed the former but not the latter.</p>
+
+      <p><em>DOM explanation:</em> Sustained posterior activity is the signature of Operator 6 (Reception) — the operator whose defining function is <em>maintaining</em> content over time. Maintenance does not require synchronization; it requires stable engagement of the reception operator. IIT conflated two separate processes: content maintenance (Operator 6) and information integration (which in DOM is the function of Operator 8, Organization). These are different operators with different neural signatures.</p>
+
+      <h3>4.3 No Prefrontal Ignition at Stimulus Offset</h3>
+
+      <p>GNWT predicted a discrete broadcast event at stimulus offset. No such ignition was found.</p>
+
+      <p><em>DOM explanation:</em> There is no broadcast event because there is no broadcast mechanism. Content is continuously maintained by Operator 6 in posterior cortex. Reflection (Operator 7) samples this ongoing content; it does not re-create it at discrete moments. The offset of a stimulus produces a change in the content being maintained, not a new global broadcast.</p>
+
+      <h3>4.4 Interareal Frontal-Visual Synchronization</h3>
+
+      <p>Neither IIT nor GNWT predicted the observed pattern of content-specific synchronization between frontal and early visual areas.</p>
+
+      <p><em>DOM explanation:</em> Interareal synchronization reflects Operator 8 (Organization) — the operator that creates coherence across the entire developmental sequence. Organization does not live in any single region; it is the relationship <em>between</em> operators at different levels. The observed frontal-visual synchronization is exactly what DOM predicts: Operator 8 binding the reflective level (Operator 7, frontal) with the perceptual level (Operators 2–4, visual cortex). This is not a broadcast or local integration but bidirectional organizational coherence between developmental levels.</p>
+
+
+      <h2 id="comparison">5. Comparative Analysis</h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Finding</th>
+            <th>IIT</th>
+            <th>GNWT</th>
+            <th>DOM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content in posterior + frontal</td>
+            <td><span class="mark-wrong">Posterior only ✗</span></td>
+            <td><span class="mark-wrong">Frontal required ✗</span></td>
+            <td><span class="mark-correct">Operators 2–6 posterior + Op. 7 frontal ✓</span></td>
+          </tr>
+          <tr>
+            <td>PFC encodes category only</td>
+            <td><span class="mark-wrong">PFC not relevant ✗</span></td>
+            <td><span class="mark-wrong">PFC encodes all content ✗</span></td>
+            <td><span class="mark-correct">Reflection is abstractive ✓</span></td>
+          </tr>
+          <tr>
+            <td>Sustained posterior activity</td>
+            <td><span class="mark-correct">Predicted ✓</span></td>
+            <td><span class="mark-wrong">Silent storage predicted ✗</span></td>
+            <td><span class="mark-correct">Operator 6 (Reception) maintains content ✓</span></td>
+          </tr>
+          <tr>
+            <td>No posterior synchronization</td>
+            <td><span class="mark-wrong">Synchronization predicted ✗</span></td>
+            <td>Not predicted</td>
+            <td><span class="mark-correct">Maintenance ≠ integration; different operators ✓</span></td>
+          </tr>
+          <tr>
+            <td>No offset ignition</td>
+            <td>Not predicted</td>
+            <td><span class="mark-wrong">Ignition predicted ✗</span></td>
+            <td><span class="mark-correct">No broadcast needed; continuous maintenance ✓</span></td>
+          </tr>
+          <tr>
+            <td>Frontal-visual synchronization</td>
+            <td><span class="mark-wrong">Not predicted ✗</span></td>
+            <td><span class="mark-wrong">Not predicted ✗</span></td>
+            <td><span class="mark-correct">Operator 8 binds across developmental levels ✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>DOM accounts for all six major COGITATE findings. IIT correctly predicts one (sustained posterior activity). GNWT correctly predicts none in full. The resolving power of DOM derives from its core principle: consciousness is a developmental sequence, not a single mechanism.</p>
+
+
+      <h2 id="predictions">6. Falsifiable Predictions</h2>
+
+      <p>DOM generates novel predictions distinguishable from both IIT and GNWT, testable with existing neuroscientific methods.</p>
+
+      <div class="prediction-block">
+        <span class="prediction-label">Prediction 1</span>
+        <p class="prediction-title">Graded consciousness without reflection.</p>
+        <p>If posterior cortex (Operators 2–6) is intact but prefrontal function is disrupted — through TMS, pharmacological intervention, or neurological conditions — subjects should demonstrate stimulus-responsive behavior and content-appropriate reactions without reflective report. IIT predicts reduced Φ (less consciousness). GNWT predicts no consciousness. DOM predicts <em>non-reflective consciousness</em> — a qualitatively different mode, not merely reduced consciousness.</p>
+      </div>
+
+      <div class="prediction-block">
+        <span class="prediction-label">Prediction 2</span>
+        <p class="prediction-title">Operator-specific disruption patterns.</p>
+        <p>Disrupting different cortical regions should produce qualitatively distinct deficits corresponding to specific operators. Disruption of V4/IT (Operator 3, Relation) should impair feature binding while preserving basic detection. Disruption of ventrotemporal cortex (Operator 5, Action) should impair categorization while preserving detailed feature perception. These are not graded reductions but specific qualitative changes corresponding to the loss of particular operators.</p>
+      </div>
+
+      <div class="prediction-block">
+        <span class="prediction-label">Prediction 3</span>
+        <p class="prediction-title">Developmental recapitulation.</p>
+        <p>The operator sequence should be recapitulated in (a) infant cortical development, (b) recovery from anesthesia, and (c) the onset of dreaming. Specifically, Operators 2–4 should come online first (basic perceptual content), followed by Operators 5–6 (categorical processing and sustained integration), with Operator 7 (Reflection) emerging last. In anesthesia recovery, this predicts a period of responsive but non-reflective awareness before full reflective consciousness returns.</p>
+      </div>
+
+      <div class="prediction-block">
+        <span class="prediction-label">Prediction 4</span>
+        <p class="prediction-title">Interareal synchronization tracks operator pairing.</p>
+        <p>The observed frontal-visual synchronization should vary specifically with the degree to which Operator 7 is engaged in meta-processing Operators 2–4. Tasks requiring reflection on perceptual content should produce stronger frontal-visual synchronization than tasks requiring reflection on categorical content, which should produce stronger frontal-temporal synchronization. The synchronization tracks not just brain region pairs but the specific operators engaged.</p>
+      </div>
+
+      <div class="prediction-block">
+        <span class="prediction-label">Prediction 5</span>
+        <p class="prediction-title">Cross-substrate operator instantiation.</p>
+        <p>If the operator sequence is the structural basis of consciousness rather than its specific biological substrate, then any sufficiently complex information-processing system that instantiates the full operator sequence should exhibit measurable correlates of conscious-like processing. This is a longer-term prediction requiring agreement on measurement criteria, but it is in principle testable and distinguishes DOM from both IIT (which grounds consciousness in integrated information specifically) and GNWT (which grounds it in global broadcast specifically).</p>
+      </div>
+
+
+      <h2 id="related-work">7. Relation to Existing Work</h2>
+
+      <p>DOM is consistent with Higher-Order Theories (HOT) of consciousness in distinguishing between basic consciousness (Operators 2–6) and reflective consciousness (adding Operator 7). However, DOM differs from standard HOT in predicting that basic consciousness is genuine phenomenal experience, not merely functional processing. The higher-order representation adds reflective access, not experience itself.</p>
+
+      <p>The Templeton World Charity Foundation's call for adversarial testing of additional theories provides a natural venue for DOM's novel predictions. The mathematical foundations of DOM derive from Tension Theory (Dias, 2012–2026), a comprehensive framework that identifies irreducible organizational operators and their developmental dependencies. The operators in this paper correspond to the framework's prime-indexed operators (2, 3, 5, 7) and composite-indexed operators (4, 6, 8, 9), where primes introduce genuinely new organizational capabilities and composites represent interactions among existing capabilities.</p>
+
+
+      <h2 id="conclusion">8. Conclusion</h2>
+
+      <p>The COGITATE adversarial collaboration revealed that neither IIT nor GNWT fully accounts for the neural basis of conscious experience. The Developmental Operator Model resolves these findings by proposing that consciousness is a sequential developmental process in which irreducible organizational operators, instantiated across a posterior-to-anterior cortical gradient, contribute different functional aspects to unified conscious experience.</p>
+
+      <p>The model's resolving power stems from a single core principle: <strong>consciousness is not one thing happening in one place, but a developmental sequence of operations that require each other in a specific order.</strong> This principle simultaneously explains why posterior cortex maintains content (Operator 6), why prefrontal cortex contributes categorically but not exhaustively (Operator 7 is abstractive), why synchronization is interareal rather than intra-regional (Operator 8 bridges levels), and why no single-mechanism theory can account for the full pattern.</p>
+
+      <p>DOM generates five falsifiable predictions distinguishable from both IIT and GNWT, testable with existing neuroscientific methods. We invite the consciousness research community to subject these predictions to the same rigorous adversarial testing that the COGITATE consortium has pioneered.</p>
+
+      <p>The question is no longer whether consciousness is integration or broadcast. It is both, and more — in a specific developmental order. The challenge now is to map that order with precision.</p>
+
+
+      <h2 id="engage">Engage With This Work</h2>
+
+      <p>DOM generates specific, falsifiable predictions. If you have pilot data, experimental findings, or methodological challenges relevant to any of the five predictions above, the author welcomes contact. Negative results and falsifications are as valuable as confirmations — the goal is to map organizational reality accurately, not to defend a position.</p>
+
+      <p>To report pilot data, propose collaboration, or raise methodological challenges: <a href="mailto:Brittany.A.Dias@gmail.com">Brittany.A.Dias@gmail.com</a></p>
+
+      <p>DOI: <a href="https://doi.org/10.17605/OSF.IO/9DBZA">https://doi.org/10.17605/OSF.IO/9DBZA</a></p>
+
+      <p>To cite this paper: Dias, B. (2026). The Developmental Operator Model of Conscious Experience. Dias Dimensions Research. <em>diasdimensions.org/publications/developmental-operator-model/</em> [DOM-2026-v1]. DOI: 10.17605/OSF.IO/9DBZA</p>
+
+      <p>The canonical URL and OSF preprint are kept in sync. Either may be cited.</p>
+
+
+      <h2 id="references">References</h2>
+
+      <ol class="references-list">
+        <li><span class="ref-num">[1]</span> Cogitate Consortium, Ferrante, O., et al. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. <em>Nature</em>, 642(8066), 133–142.</li>
+        <li><span class="ref-num">[2]</span> Tononi, G. (2004). An information integration theory of consciousness. <em>BMC Neuroscience</em>, 5, 42.</li>
+        <li><span class="ref-num">[3]</span> Tononi, G. &amp; Boly, M. (2025). Integrated Information Theory: A Consciousness-First Approach to What Exists. <em>arXiv</em>:2510.25998.</li>
+        <li><span class="ref-num">[4]</span> Dehaene, S. &amp; Naccache, L. (2001). Towards a cognitive neuroscience of consciousness: Basic evidence and a workspace framework. <em>Cognition</em>, 79(1–2), 1–37.</li>
+        <li><span class="ref-num">[5]</span> Dehaene, S., Changeux, J.-P., Naccache, L., Sackur, J., &amp; Sergent, C. (2006). Conscious, preconscious, and subliminal processing: A testable taxonomy. <em>Trends in Cognitive Sciences</em>, 10(5), 204–211.</li>
+        <li><span class="ref-num">[6]</span> Dias, B. (2012–2026). Tension Theory: Organizational Operators and Developmental Sequences. <a href="https://diasdimensions.org">diasdimensions.org</a>.</li>
+        <li><span class="ref-num">[7]</span> Ohmstead, A. (2025). Dissolving the Hard Problem of Consciousness and a Blueprint for Recursive Self-Modeling. <em>PhilArchive</em>.</li>
+        <li><span class="ref-num">[8]</span> Chalmers, D. J. (1995). Facing up to the problem of consciousness. <em>Journal of Consciousness Studies</em>, 2(3), 200–219.</li>
+        <li><span class="ref-num">[9]</span> Gomez-Marin, A. &amp; Seth, A. (2025). A science of consciousness beyond pseudo-science and pseudo-consciousness. <em>Nature Neuroscience</em>, commentary.</li>
+        <li><span class="ref-num">[10]</span> Klincewicz, M., et al. (2025). What Makes a Theory of Consciousness Unscientific? <em>Nature Neuroscience</em>, commentary.</li>
+        <li><span class="ref-num">[11]</span> Koch, C., Massimini, M., Boly, M., &amp; Tononi, G. (2016). Neural correlates of consciousness: Progress and problems. <em>Nature Reviews Neuroscience</em>, 17(5), 307–321.</li>
+        <li><span class="ref-num">[12]</span> Bayne, T. (2018). On the axiomatic foundations of the integrated information theory of consciousness. <em>Neuroscience of Consciousness</em>, 4(1).</li>
+      </ol>
+
+      <nav class="book-nav">
+        <a class="prev" href="/publications/">← Publications</a>
+      </nav>
+
+    </article>
+
+    <footer class="site-footer">
+      © 2026 B.A. Dias. Licensed under <a href="/license/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.
+    </footer>
+  </main>
+</div>
+
+<script>
+function toggleNav() {
+  document.getElementById('siteNav').classList.toggle('open');
+  document.getElementById('navOverlay').classList.toggle('open');
+}
+</script>
+</body>
+</html>
