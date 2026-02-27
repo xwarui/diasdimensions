@@ -1,17 +1,19 @@
-<!-- ============================================================
-     DIAS' DIMENSIONS — CENTRALIZED NAV COMPONENT
-     nav.html · Include on every page via nav-loader.js
-     ============================================================ -->
 <nav class="whispers" id="site-nav">
 
   <a href="/start-here/" class="whisper">Start</a>
 
-  <a href="/seed/" class="whisper">Seed</a>
-
-  <!-- Books with dropdown -->
   <div class="whisper-group">
-    <a href="/book-i/" class="whisper whisper-parent" id="books-trigger">Books</a>
-    <div class="whisper-dropdown" id="books-dropdown">
+    <span class="whisper whisper-parent">Seed</span>
+    <div class="whisper-dropdown">
+      <a href="/seed/">The Seed</a>
+      <a href="/chains/">Derivation Chains</a>
+      <a href="/foundations/">Foundations</a>
+    </div>
+  </div>
+
+  <div class="whisper-group">
+    <span class="whisper whisper-parent">Books</span>
+    <div class="whisper-dropdown">
       <a href="/book-i/">I · Existence</a>
       <a href="/book-ii/">II · Operator Landscape</a>
       <a href="/book-iii/">III · Distinction</a>
@@ -25,9 +27,23 @@
     </div>
   </div>
 
-  <a href="/consilience/" class="whisper">Consilience</a>
+  <div class="whisper-group">
+    <span class="whisper whisper-parent">Consilience</span>
+    <div class="whisper-dropdown">
+      <a href="/consilience/">Overview</a>
+      <a href="/consilience/biology/">Biology</a>
+      <a href="/consilience/physics/">Physics</a>
+      <a href="/consilience/ai-cognition/">AI Cognition</a>
+    </div>
+  </div>
 
-  <a href="/publications/" class="whisper">Publications</a>
+  <div class="whisper-group">
+    <span class="whisper whisper-parent">Publications</span>
+    <div class="whisper-dropdown">
+      <a href="/publications/developmental-operator-model/">Developmental Operator Model</a>
+      <a href="/publications/structural-ethical-orientation/">Structural Ethical Orientation</a>
+    </div>
+  </div>
 
   <a href="/about/" class="whisper">About</a>
 
