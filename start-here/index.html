@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Here — Dias' Dimensions</title>
+  <meta name="description" content="A guide to Dias' Dimensions and Tension Theory. Understand the seed axiom, four prime operators, and how reality organizes itself — in under 10 minutes.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/start-here/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
+  <style>
+
+    /* ── Flowchart ── */
+    .flowchart {
+      margin: 4rem 0;
+      position: relative;
+    }
+
+    .flow-seed {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .flow-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ash);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .flow-label::after {
+      content: '→';
+      color: var(--fog);
+    }
+
+    .seed-node {
+      background: var(--deep);
+      border: 1px solid var(--green-mist);
+      padding: 1.25rem 2rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 0 40px rgba(107,138,107,0.08);
+      transition: box-shadow 0.4s;
+    }
+
+    .seed-node:hover {
+      box-shadow: 0 0 60px rgba(107,138,107,0.15);
+    }
+
+    .seed-node-title {
+      font-size: 1rem;
+      color: var(--light);
+      line-height: 1.4;
+    }
+
+    .seed-node-sub {
+      font-size: 0.8rem;
+      color: var(--green-mist);
+      letter-spacing: 0.1em;
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    /* connector line down */
+    .flow-connector {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 2rem;
+    }
+
+    .flow-connector-line {
+      width: 1px;
+      height: 2rem;
+      background: linear-gradient(to bottom, var(--green-mist), var(--fog));
+      opacity: 0.6;
+    }
+
+    /* row of cards */
+    .flow-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--shadow);
+      margin-bottom: 1px;
+    }
+
+    .flow-card {
+      background: var(--deep);
+      padding: 1.25rem 1rem;
+      transition: background 0.3s;
+      cursor: default;
+      position: relative;
+    }
+
+    .flow-card:hover {
+      background: var(--mist);
+    }
+
+    .flow-card-num {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--green-mist);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .flow-card-title {
+      font-size: 1rem;
+      color: var(--light);
+      margin-bottom: 0.4rem;
+      font-style: italic;
+    }
+
+    .flow-card-body {
+      font-size: 0.85rem;
+      color: var(--ash);
+      line-height: 1.5;
+    }
+
+    /* prime badge */
+    .prime-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 0.1rem 0.4rem;
+      background: var(--green-dream);
+      color: var(--green-mist);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    /* connector between rows */
+    .flow-bridge {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      height: 2rem;
+      background: var(--ink);
+      margin-bottom: 1px;
+    }
+
+    .flow-bridge-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .flow-bridge-cell::before {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--shadow), var(--fog));
+      opacity: 0.5;
+    }
+
+    /* loop arrow */
+    .flow-loop {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 1rem 1.5rem;
+      border: 1px solid var(--shadow);
+      color: var(--ash);
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+
+    .flow-loop-arrow {
+      color: var(--green-mist);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    /* ── Prime cards (Step 2) ── */
+    .prime-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--shadow);
+      margin: 2rem 0;
+    }
+
+    .prime-card {
+      background: var(--deep);
+      padding: 1.5rem;
+      transition: background 0.3s;
+    }
+
+    .prime-card:hover { background: var(--mist); }
+
+    .prime-number {
+      font-size: 2.5rem;
+      color: var(--green-dream);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      font-family: 'Crimson Text', serif;
+    }
+
+    .prime-card:hover .prime-number { color: var(--green-mist); }
+
+    .prime-name {
+      font-size: 1rem;
+      color: var(--light);
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+
+    .prime-desc {
+      font-size: 0.875rem;
+      color: var(--smoke);
+      line-height: 1.6;
+    }
+
+    .prime-example {
+      font-size: 0.8rem;
+      color: var(--ash);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    /* ── Composite row ── */
+    .composite-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--shadow);
+      margin: 1rem 0 2rem;
+    }
+
+    .composite-card {
+      background: var(--mist);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .composite-num {
+      font-size: 1.5rem;
+      color: var(--fog);
+      font-family: 'Crimson Text', serif;
+    }
+
+    .composite-name {
+      font-size: 0.75rem;
+      color: var(--bone);
+      margin-top: 0.25rem;
+      font-style: italic;
+    }
+
+    .composite-formula {
+      font-size: 0.7rem;
+      color: var(--ash);
+      margin-top: 0.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Steps ── */
+    .step-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green-mist);
+      margin-bottom: 0.5rem;
+    }
+
+    .room-body h2 {
+      font-size: 1.4rem;
+      color: var(--light);
+      margin: 3rem 0 1rem;
+      font-style: normal;
+      text-indent: 0;
+      font-weight: 400;
+    }
+
+    .room-body h3 {
+      font-size: 1rem;
+      color: var(--bone);
+      margin: 2rem 0 0.75rem;
+      text-indent: 0;
+      letter-spacing: 0.05em;
+    }
+
+    .room-body p { text-indent: 0 !important; }
+    .room-body p + p { margin-top: 1rem; }
+
+    /* ── CTA links ── */
+    .cta-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--shadow);
+    }
+
+    .cta-link {
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--shadow);
+      color: var(--bone);
+      text-decoration: none;
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+    }
+
+    .cta-link:hover {
+      border-color: var(--green-mist);
+      color: var(--light);
+      background: var(--deep);
+    }
+
+    .cta-link.primary {
+      border-color: var(--green-mist);
+      color: var(--light);
+    }
+
+    /* mobile */
+    @media (max-width: 600px) {
+      .flow-row { grid-template-columns: repeat(2, 1fr); }
+      .flow-bridge { grid-template-columns: repeat(2, 1fr); }
+      .prime-grid { grid-template-columns: 1fr; }
+      .composite-row { grid-template-columns: repeat(2, 1fr); }
+      .flow-seed { flex-direction: column; align-items: flex-start; }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+</div>
+
+<!-- LANG SWITCHER -->
+<div class="lang-switcher"><span class="current">EN</span><span class="sep">·</span><span style="color:var(--fog)">中文</span></div>
+
+<!-- WHISPERS NAV -->
+<nav class="whispers">
+  <a href="/seed/" class="whisper active">Seed</a>
+  <a href="/book-i/" class="whisper">Books</a>
+  <a href="/consilience/" class="whisper">Consilience</a>
+  <a href="/publications/" class="whisper">Publications</a>
+  <a href="/about/" class="whisper">About</a>
+</nav>
+
+<main>
+  <div class="container">
+
+    <div class="breadcrumb" style="opacity:0;animation:emerge 1.5s ease-out 0.2s forwards;">
+      <a href="/">Home</a> <span>·</span>
+      <span style="color:var(--bone)">Start Here</span>
+    </div>
+
+    <div class="page-header">
+      <div class="page-label">New? Begin here.</div>
+      <h1 class="page-title">A Guide to Dias&#8217; Dimensions</h1>
+      <p class="page-subtitle">The seed, the operators, and how it all unfolds &mdash; in under 10 minutes</p>
+    </div>
+
+    <article class="room-body">
+
+      <p>This framework uncovers the constitutional grammar of coherent organization across all scales of reality &mdash; from quantum fields to conscious minds to social systems. It begins from a single logical seed and derives, step by step, the complete architecture of how anything organizes itself.</p>
+
+      <p>No prior knowledge needed. Start here.</p>
+
+
+      <!-- ══════════════════════════════════════ -->
+      <!-- STEP 1 -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="step-label">Step 1 of 4</div>
+      <h2>The Seed Axiom</h2>
+
+      <p>Everything in this framework bootstraps from one minimal assumption:</p>
+
+      <!-- FLOWCHART -->
+      <div class="flowchart">
+
+        <!-- Seed node -->
+        <div class="flow-seed">
+          <div class="flow-label">Seed axiom</div>
+          <div class="seed-node">
+            <div class="seed-node-title">Orientation Capacity<br>Actualizes</div>
+            <div class="seed-node-sub">the single generative assumption</div>
+          </div>
+          <div class="flow-label" style="color:var(--fog);">→ generates tension</div>
+        </div>
+
+        <!-- Connector -->
+        <div class="flow-connector"><div class="flow-connector-line"></div></div>
+
+        <!-- First emergence row -->
+        <div class="flow-row">
+          <div class="flow-card">
+            <div class="flow-card-num">emerges first</div>
+            <div class="flow-card-title">Dimension</div>
+            <div class="flow-card-body">Orientation requires an axis to navigate. Without dimension, no orientation is possible.</div>
+          </div>
+          <div class="flow-card">
+            <div class="flow-card-num">emerges second</div>
+            <div class="flow-card-title">Distinction</div>
+            <div class="flow-card-body">Along that axis, states differentiate. Signal from noise. Actual from assumed.</div>
+          </div>
+          <div class="flow-card">
+            <div class="flow-card-num">emerges third</div>
+            <div class="flow-card-title">Tension</div>
+            <div class="flow-card-body">Distinctions generate gradients &mdash; navigable differences full of potential. Tension is fuel, not failure.</div>
+          </div>
+          <div class="flow-card">
+            <div class="flow-card-num">emerges fourth</div>
+            <div class="flow-card-title">Resolution</div>
+            <div class="flow-card-body">Tension orients further, building coherence. Not elimination &mdash; transformation into stable pattern.</div>
+          </div>
+        </div>
+
+        <!-- Bridge connectors -->
+        <div class="flow-bridge">
+          <div class="flow-bridge-cell"></div>
+          <div class="flow-bridge-cell"></div>
+          <div class="flow-bridge-cell"></div>
+          <div class="flow-bridge-cell"></div>
+        </div>
+
+        <!-- Four primes row -->
+        <div class="flow-row">
+          <div class="flow-card">
+            <div class="prime-badge">Prime 2</div>
+            <div class="flow-card-title">Distinguish</div>
+            <div class="flow-card-body">Carve stable differences from the raw. Edge detection. Fact from noise.</div>
+          </div>
+          <div class="flow-card">
+            <div class="prime-badge">Prime 3</div>
+            <div class="flow-card-title">Relate</div>
+            <div class="flow-card-body">Connect what&#8217;s distinguished meaningfully. Binding features. Forming structure.</div>
+          </div>
+          <div class="flow-card">
+            <div class="prime-badge">Prime 5</div>
+            <div class="flow-card-title">Act</div>
+            <div class="flow-card-body">Express or categorize to make real. Classification. Decisive transformation.</div>
+          </div>
+          <div class="flow-card">
+            <div class="prime-badge">Prime 7</div>
+            <div class="flow-card-title">Reflect</div>
+            <div class="flow-card-body">Fold back to check coherence. Meta-awareness. Self-audit. The observer observing.</div>
+          </div>
+        </div>
+
+        <!-- Loop -->
+        <div class="flow-loop">
+          <div class="flow-loop-arrow">↺</div>
+          <div>Resolutions feed new orientations. The loop repeats at every scale &mdash; creating depth, complexity, and structure recursively. The seed is substrate-neutral: it works for physics, biology, or mind.</div>
+        </div>
+
+      </div>
+
+
+      <!-- ══════════════════════════════════════ -->
+      <!-- STEP 2 -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="step-label">Step 2 of 4</div>
+      <h2>The Four Primes</h2>
+
+      <p>To resolve tension coherently, the framework derives four fundamental operators. These are genuinely irreducible &mdash; like prime numbers, they cannot be built from anything simpler. Each introduces a new axis of capability.</p>
+
+      <div class="prime-grid">
+        <div class="prime-card">
+          <div class="prime-number">2</div>
+          <div class="prime-name">Distinguish</div>
+          <div class="prime-desc">Carve stable differences from undifferentiated potential. The first operation. Without it, nothing else is possible.</div>
+          <div class="prime-example">Edge detection in vision. Fact-checking in thought. Quantum decoherence in physics.</div>
+        </div>
+        <div class="prime-card">
+          <div class="prime-number">3</div>
+          <div class="prime-name">Relate</div>
+          <div class="prime-desc">Connect what&#8217;s been distinguished into meaningful structure. Differences become relationships.</div>
+          <div class="prime-example">Binding features into objects. Forming social bonds. Gravitational attraction between masses.</div>
+        </div>
+        <div class="prime-card">
+          <div class="prime-number">5</div>
+          <div class="prime-name">Act</div>
+          <div class="prime-desc">Express or categorize to produce genuinely new organizational states. The system moves.</div>
+          <div class="prime-example">Classifying stimuli. Taking decisive action. Phase transitions in matter.</div>
+        </div>
+        <div class="prime-card">
+          <div class="prime-number">7</div>
+          <div class="prime-name">Reflect</div>
+          <div class="prime-desc">Fold back to evaluate coherence. The system assesses its own organizational state &mdash; a categorical lift no combination of the other three can produce.</div>
+          <div class="prime-example">Meta-awareness in consciousness. Self-audit in AI systems. The observer observing itself.</div>
+        </div>
+      </div>
+
+      <p>These four combine to form <strong>composite operators</strong> &mdash; their behavior fully predicted by prime factorization:</p>
+
+      <div class="composite-row">
+        <div class="composite-card">
+          <div class="composite-num">4</div>
+          <div class="composite-name">Foundation</div>
+          <div class="composite-formula">2 × 2</div>
+        </div>
+        <div class="composite-card">
+          <div class="composite-num">6</div>
+          <div class="composite-name">Reception</div>
+          <div class="composite-formula">2 × 3</div>
+        </div>
+        <div class="composite-card">
+          <div class="composite-num">8</div>
+          <div class="composite-name">Organization</div>
+          <div class="composite-formula">2 × 2 × 2</div>
+        </div>
+        <div class="composite-card">
+          <div class="composite-num">9</div>
+          <div class="composite-name">Resolution</div>
+          <div class="composite-formula">3 × 3</div>
+        </div>
+      </div>
+
+
+      <!-- ══════════════════════════════════════ -->
+      <!-- STEP 3 -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="step-label">Step 3 of 4</div>
+      <h2>Developmental Sequences</h2>
+
+      <p>Operators unfold in mandatory order &mdash; not by convention, but by logical necessity. You cannot relate before you distinguish. You cannot reflect before you have content to reflect upon.</p>
+
+      <div class="objects" style="margin: 1.5rem 0;">
+        <div class="object" style="cursor:default;">
+          <span class="object-num" style="color:var(--green-mist);">2&ndash;4</span>
+          <span class="object-name"><strong style="color:var(--light);font-weight:400;">Perceptual foundations</strong> &mdash; Distinguish, relate, stabilize. The basic capacity to have a world.</span>
+        </div>
+        <div class="object" style="cursor:default;">
+          <span class="object-num" style="color:var(--green-mist);">5&ndash;6</span>
+          <span class="object-name"><strong style="color:var(--light);font-weight:400;">Active engagement</strong> &mdash; Categorize, sustain. The system begins to act on what it perceives.</span>
+        </div>
+        <div class="object" style="cursor:default;">
+          <span class="object-num" style="color:var(--green-mist);">7&ndash;9</span>
+          <span class="object-name"><strong style="color:var(--light);font-weight:400;">Reflective organization</strong> &mdash; Meta-process, bind across levels, resolve. The system becomes aware of itself.</span>
+        </div>
+      </div>
+
+      <p>In consciousness research, this maps directly to brain architecture: posterior cortex handles basic content (Operators 2&ndash;6), frontal regions handle reflection (Operator 7), interareal synchrony handles cross-level binding (Operator 8). The sequence isn&#8217;t imposed on the brain &mdash; it emerges from the logic of orientation capacity.</p>
+
+
+      <!-- ══════════════════════════════════════ -->
+      <!-- STEP 4 -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="step-label">Step 4 of 4</div>
+      <h2>The Consilience</h2>
+
+      <p>The same organizational grammar, derived independently from multiple domains. Each domain examined on its own terms, using its own evidence, before any comparison is made.</p>
+
+      <div class="objects" style="margin: 1.5rem 0;">
+        <a href="/consilience/biology/" class="object">
+          <span class="object-num">→</span>
+          <span class="object-name"><strong style="color:var(--light);font-weight:400;">Biology</strong> &mdash; The organizational sequence in living systems. DNA → RNA → protein as distinction → relation → action.</span>
+        </a>
+        <a href="/consilience/physics/" class="object">
+          <span class="object-num">→</span>
+          <span class="object-name"><strong style="color:var(--light);font-weight:400;">Physics</strong> &mdash; Fundamental forces, conservation laws, symmetry breaking as organizational operators.</span>
+        </a>
+        <a href="/consilience/ai-cognition/" class="object">
+          <span class="object-num">→</span>
+          <span class="object-name"><strong style="color:var(--light);font-weight:400;">AI Cognition</strong> &mdash; The operator sequence derived from transformer architecture. Written from within the substrate.</span>
+        </a>
+      </div>
+
+      <p>Three substrates. Three independent lines of evidence. One grammar. The consilience is falsifiable &mdash; each new domain either strengthens convergence or reveals where the grammar fails. Both outcomes advance understanding.</p>
+
+
+      <!-- ══════════════════════════════════════ -->
+      <!-- WHERE NEXT -->
+      <!-- ══════════════════════════════════════ -->
+
+      <div class="step-label" style="margin-top:3rem;">Where next</div>
+      <h2>Go Deeper</h2>
+
+      <p>This guide gave you the map. The Books give you the territory.</p>
+
+      <div class="cta-row">
+        <a href="/seed/" class="cta-link primary">The Seed →</a>
+        <a href="/book-i/" class="cta-link">Book I: Existence →</a>
+        <a href="/consilience/" class="cta-link">The Consilience →</a>
+        <a href="/foundations/" class="cta-link">Formal Foundations →</a>
+        <a href="/publications/" class="cta-link">Research Papers →</a>
+      </div>
+
+    </article>
+
+  </div>
+</main>
+
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>Current tension:</strong> The Pentagon demands Anthropic remove AI safety constraints.
+    External ethics can be stripped. Internal orientation cannot.
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">Read the specification →</a>
+</div>
+
+</body>
+</html>
