@@ -191,7 +191,6 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s, transform 0.2s;
-  writing-mode: horizontal-tb;
   transform: translateY(-50%) translateX(6px);
   z-index: 200;
 }
@@ -210,7 +209,6 @@ body {
   padding: 0.5rem 1.25rem;
   transition: background 0.2s, color 0.2s;
   white-space: nowrap;
-  display: block;
   writing-mode: horizontal-tb;
   text-transform: none;
 }
@@ -723,4 +721,208 @@ a.link:hover {
   .page-title { font-size: 1.75rem; }
   .hero-title { font-size: 2rem; }
   .room-title { font-size: 1.5rem; }
+}
+
+/* ══════════════════════════════════════
+   PUBLICATION / PAPER STYLES
+   ══════════════════════════════════════ */
+
+.paper-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--shadow);
+}
+
+.paper-byline {
+  font-size: 0.9rem;
+  color: var(--bone);
+  margin: 0.75rem 0 0.5rem;
+  font-style: italic;
+}
+
+.paper-meta-row {
+  font-size: 0.78rem;
+  color: var(--ash);
+  margin-top: 0.4rem;
+  line-height: 1.6;
+}
+
+.paper-meta-row a {
+  color: var(--bone);
+  text-decoration: none;
+  border-bottom: 1px solid var(--fog);
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.paper-meta-row a:hover {
+  color: var(--light);
+  border-color: var(--green-mist);
+}
+
+.abstract-block {
+  background: var(--deep);
+  border-left: 2px solid var(--green-mist);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.abstract-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green-mist);
+  margin-bottom: 0.75rem;
+}
+
+.abstract-block p {
+  font-size: 0.95rem;
+  color: var(--smoke);
+  line-height: 1.85;
+  font-style: italic;
+  margin: 0;
+}
+
+.operator-table,
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.875rem;
+}
+
+.operator-table th,
+.comparison-table th {
+  background: var(--deep);
+  color: var(--green-mist);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--green-dream);
+  font-weight: 400;
+}
+
+.operator-table td,
+.comparison-table td {
+  padding: 0.75rem 1rem;
+  color: var(--smoke);
+  border-bottom: 1px solid var(--shadow);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.operator-table tr:hover td,
+.comparison-table tr:hover td {
+  background: var(--mist);
+  color: var(--paper);
+}
+
+.operator-table td:first-child {
+  color: var(--green-mist);
+  font-size: 1.1rem;
+  font-family: 'Crimson Text', serif;
+  white-space: nowrap;
+}
+
+.mark-correct { color: var(--green-mist); }
+
+.mark-wrong {
+  color: var(--ash);
+  text-decoration: line-through;
+  text-decoration-color: var(--fog);
+}
+
+.prediction-block {
+  background: var(--deep);
+  border: 1px solid var(--shadow);
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+  transition: border-color 0.3s;
+}
+
+.prediction-block:hover { border-color: var(--green-dream); }
+
+.prediction-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green-mist);
+  margin-bottom: 0.5rem;
+}
+
+.prediction-title {
+  font-size: 1rem;
+  color: var(--light);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.prediction-block p:last-child {
+  color: var(--smoke);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.references-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.references-list li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--shadow);
+  font-size: 0.875rem;
+  color: var(--smoke);
+  line-height: 1.6;
+}
+
+.ref-num {
+  color: var(--ash);
+  min-width: 2.5rem;
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  padding-top: 0.1rem;
+}
+
+.references-list a {
+  color: var(--bone);
+  text-decoration: none;
+  border-bottom: 1px solid var(--fog);
+  transition: color 0.3s;
+}
+
+.references-list a:hover {
+  color: var(--light);
+  border-color: var(--green-mist);
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--ash);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+}
+
+.back-link:hover { color: var(--bone); }
+
+@media (max-width: 768px) {
+  .operator-table,
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.8rem;
+  }
+  .prediction-block { padding: 1.1rem 1.25rem; }
+  .abstract-block { padding: 1.1rem 1.25rem; }
 }
