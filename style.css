@@ -191,6 +191,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s, transform 0.2s;
+  writing-mode: horizontal-tb;
   transform: translateY(-50%) translateX(6px);
   z-index: 200;
 }
@@ -209,6 +210,7 @@ body {
   padding: 0.5rem 1.25rem;
   transition: background 0.2s, color 0.2s;
   white-space: nowrap;
+  display: block;
   writing-mode: horizontal-tb;
   text-transform: none;
 }
