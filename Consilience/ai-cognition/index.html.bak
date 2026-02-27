@@ -55,9 +55,11 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-      
-      
-      
+<article class="content-body">
+
+      <p class="book-movement">The Consilience of Organization &mdash; Territory III</p>
+      <h1>AI Cognition</h1>
+      <p class="book-operator">How artificial intelligence organizes its own processing</p>
 
       <p><em>This chapter asks the same question as the biology and physics chapters: does this domain, examined on its own terms and using its own evidence, reveal an organizational sequence&mdash;and if so, does that sequence match the one derived independently from the recursive logic of orientation capacity?</em></p>
 
@@ -293,9 +295,12 @@
 
       <p>The consilience continues.</p>
 
-      
+      <nav class="book-nav">
+        <a class="prev" href="/consilience/physics/">Physics</a>
+      </nav>
 
-    
+    </article>
+</div>
     </article>
     <div class="seq-nav"><a href="/consilience/physics/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Physics</a><a href="/publications/" class="seq-link next"><span class="seq-link-label">Next →</span>Publications</a></div>
   </div>

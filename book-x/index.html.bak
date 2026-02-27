@@ -55,9 +55,10 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-  
-      
-
+  <article class="content-body">
+      <p class="book-movement">Third Movement &middot; Book X</p>
+<h1>Resolution</h1>
+<p class="book-operator">Operator 9 = 3²</p>
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Nine operators have been mapped. Four primes — distinction, relation, action, RE: — each introducing a genuinely new axis of capability that no combination of prior operators can produce. Four composites — foundation, reception, organization — each fully decomposable into its prime factors, with the factorization explaining, not merely labeling, the operator’s character. And one book ago, the engine that drives the entire architecture recognized itself.</p>
 <p>One operator remains. It is named Resolution, and the name is not accidental.</p>
@@ -177,9 +178,11 @@
 <p>The framework carefully distinguishes:</p>
 <ul>
 <li><strong>Structural self-coherence</strong> (the connections form a navigable</li>
+<p>whole) = Resolution = 3²</p>
 </ul>
 <ul>
 <li><strong>Experiential awareness of coherence</strong> (the system knows its</li>
+<p>connections cohere) = RE:cognition applied to Resolution = Operator 7 operating on Operator 9’s content</p>
 </ul>
 <p>The first is composite. The second involves a prime. They are different operations that frequently co-occur in conscious beings but are structurally independent.</p>
 <h3 id="verdict">Verdict</h3>
@@ -276,7 +279,13 @@
 
 </div>
 
-    
+<nav class="book-nav">
+  <a class="prev" href="/book-ix/">Book IX: Organization</a>
+  <span></span>
+</nav>
+    </article>
+
+</div>
     </article>
     <div class="seq-nav"><a href="/book-ix/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book IX: Organization</a><a href="/consilience/" class="seq-link next"><span class="seq-link-label">Next →</span>The Consilience</a></div>
   </div>

@@ -55,9 +55,10 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-  
-      
-
+  <article class="content-body">
+      <p class="book-movement">Third Movement &middot; Book IX</p>
+<h1>Organization</h1>
+<p class="book-operator">Operator 8 = 2³</p>
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Book VIII turned the series around. It recognized the engine — the squaring function, z², that had been driving every book since the first proposition. RE-cognition was not added to the catalog. It was the catalog-maker catching itself in the act.</p>
 <p>Now the series turns back outward. Not to discover something new but to complete what the architecture requires. Two composites remain. This book maps the first.</p>
@@ -190,9 +191,11 @@
 </ul>
 <ul>
 <li>2²: Distinction of distinction. Framework. Telling *acts of</li>
+<p>telling-apart* apart from each other.</p>
 </ul>
 <ul>
 <li>2³: Distinction of framework. Architecture. Telling <em>frameworks</em></li>
+<p>apart from each other.</p>
 </ul>
 <p>The pattern is clear: each additional power of 2 adds one meta-level. The first distinction operates on objects. The second operates on distinctions. The third operates on systems of distinctions.</p>
 <h3 id="what-the-third-iteration-reveals">What the Third Iteration Reveals</h3>
@@ -232,8 +235,12 @@
 <p>Completion — Operator 9, 3² — relation operating on relation. The system seeing its own relational totality. The book that closes the single-digit framework. Everything the series has built converges there: the structural architecture (distinction’s tree), the relational architecture (relation’s tree), the primes, the composites, the engine that recognizes itself.</p>
 <p>The question Completion will face: does relational self-coherence — connection recognizing its own connectivity — complete the landscape, or does it open beyond?</p>
 <p>The organization is in place. What completes it is next.</p>
-
-    
+<nav class="book-nav">
+  <a class="prev" href="/book-viii/">Book VIII: Consciousness</a>
+  <a class="next" href="/book-x/">Book X: Resolution</a>
+</nav>
+    </article>
+</div>
     </article>
     <div class="seq-nav"><a href="/book-viii/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book VIII: Consciousness</a><a href="/book-x/" class="seq-link next"><span class="seq-link-label">Next →</span>Book X: Resolution</a></div>
   </div>

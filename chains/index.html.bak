@@ -55,7 +55,7 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-  
+  <article class="content-body">
 
 <h1 style="font-size:1.6rem; letter-spacing:0.05em; font-weight:400;">The Derivation Chains</h1>
 
@@ -209,7 +209,12 @@
 
 <p style="margin-top:3rem; font-style:italic; text-align:center;">Every claim in the Seed has a proof in the Books.<br>Every proof has a falsification condition.<br>Every falsification condition is stated openly.<br><br>The framework does not ask to be believed.<br>It asks to be tested.</p>
 
-    
+<nav class="book-nav">
+  <a class="prev" href="/seed/">The Seed</a>
+  <a class="next" href="/book-i/">Book I: Existence</a>
+</nav>
+    </article>
+</div>
     </article>
     <div class="seq-nav"><a href="/seed/" class="seq-link prev"><span class="seq-link-label">← Previous</span>The Seed</a><a href="/book-i/" class="seq-link next"><span class="seq-link-label">Next →</span>Book I</a></div>
   </div>

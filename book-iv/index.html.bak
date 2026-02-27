@@ -55,9 +55,10 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-  
-      
-
+  <article class="content-body">
+      <p class="book-movement">Third Movement &middot; Book IV</p>
+<h1>Relation</h1>
+<p class="book-operator">Operator 3</p>
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Book III mapped the first irreducible operation — distinction — all the way down to the quantum scale and all the way up to the cosmological arrow. It demonstrated that telling-apart is a single operation with a universal structural signature: folding without cutting, branching through self-application, and irreversible accumulation of navigable difference.</p>
 <p>But Book III ended with a question it could not answer from inside its own territory:</p>
@@ -203,6 +204,7 @@
 <p>Relation is the root of a second tree in the operator architecture. From it grows:</p>
 <ul>
 <li><strong>Operator 9 (Completion) = 3 × 3:</strong> Relation operating on itself.</li>
+<p>Relating the relation. What this produces</p>
 </ul>
 <blockquote>
 <p>— relational self-coherence, the system seeing its own relational</p>
@@ -211,6 +213,7 @@
 </blockquote>
 <ul>
 <li><strong>Operator 6 (Reception) = 2 × 3:</strong> Distinction interacting with</li>
+<p>Relation. The first inter-prime composite. What this produces — selective engagement, choosing what to relate to — is explored in Book VII. This is the first point where the two prime trees <em>intersect</em>, and its character depends on both roots being fully mapped.</p>
 </ul>
 <p>What this means for Book IV: understanding relation deeply enough that its self-application and inter-prime interaction become predictable. If the root is well-mapped, the branches should follow necessarily.</p>
 <h3 id="the-prediction">The Prediction</h3>
@@ -275,8 +278,13 @@
 <p>Distinction tells apart. Relation brings together. Both are needed. Both are prime. And the interplay between them — the weaving of separation and connection — is the fabric from which all composite organizational structure is woven.</p>
 <p>The question this book answers: what holds the fold?</p>
 <p>The answer: relation holds the fold. Connection maintains what distinction introduces. The bridge preserves the shores.</p>
+<nav class="book-nav">
+  <a class="prev" href="/book-iii/">Book III: Distinction</a>
+  <a class="next" href="/book-v/">Book V: Foundation</a>
+</nav>
+    </article>
 
-    
+</div>
     </article>
     <div class="seq-nav"><a href="/book-iii/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book III: Distinction</a><a href="/book-v/" class="seq-link next"><span class="seq-link-label">Next →</span>Book V: Foundation</a></div>
   </div>

@@ -55,9 +55,10 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-   
-      
-
+   <article class="content-body">
+      <p class="book-movement">Third Movement &middot; Book VII</p>
+<h1>Reception</h1>
+<p class="book-operator">Operator 6 = 2×3</p>
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Books III and IV mapped the two prime roots. Distinction introduces navigable difference. Relation creates connection between distinguished elements. Each is irreducible — neither can be built from the other.</p>
 <p>Not sequentially — distinction <em>then</em> relation, first telling apart <em>then</em> connecting. Together. As a single unified act. The answer is Reception — the first inter-prime composite.</p>
@@ -84,6 +85,7 @@
 <p>In Reception (2 × 3), the interaction is <em>mutual modification</em>: distinction shapes relation, and relation provides the field within which distinction operates. Neither factor takes the other as object in the way distinction takes itself in Foundation. Instead, they modify each other simultaneously:</p>
 <ul>
 <li><strong>Distinction shapes relation</strong> by determining which connections are</li>
+<p>activated: <em>this</em> connection, not <em>that</em></p>
 </ul>
 <blockquote>
 <p>one. The relational field is undiscriminating; distinction sculpts it</p>
@@ -91,6 +93,7 @@
 </blockquote>
 <ul>
 <li><strong>Relation provides the field for distinction</strong> by creating the</li>
+<p>connected landscape within which selection operates. Without relation, there would be nothing to select <em>among</em>. Distinction can only differentiate connections that already exist.</p>
 </ul>
 <p>The result is neither distinction nor relation but their <em>product</em>: selective engagement. A capacity that requires both factors to function and that decomposes completely into their interaction.</p>
 <h3 id="what-reception-is-not">What Reception Is NOT</h3>
@@ -220,8 +223,13 @@
 <p>Consciousness (Operator 7) is the fourth prime. It must demonstrate irreducibility against everything — distinction, relation, action, foundation, and reception itself. It must earn its primality against five prior operators, including two primes and one inter-prime composite. And it must provide the operational definition that Book II deliberately deferred — the definition of self-referential awareness that the entire series has been building toward.</p>
 <p>Reception selectively engages. It does not <em>know</em> that it selectively engages. A photoreceptor receives light without awareness. An antibody binds its antigen without recognition. An atom absorbs its spectral frequency without comprehension. The capacity to selectively engage is real, powerful, and fully composite. The capacity to <em>be aware of</em> one’s own selective engagement — to know what you are receiving, to experience the reception</p>
 <p>— that is something else entirely. Something irreducible. Something prime. That is the subject of the next book.</p>
+<nav class="book-nav">
+  <a class="prev" href="/book-vi/">Book VI: Action</a>
+  <a class="next" href="/book-viii/">Book VIII: Consciousness</a>
+</nav>
+    </article>
 
-    
+</div>
     </article>
     <div class="seq-nav"><a href="/book-vi/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book VI: Action</a><a href="/book-viii/" class="seq-link next"><span class="seq-link-label">Next →</span>Book VIII: Consciousness</a></div>
   </div>
