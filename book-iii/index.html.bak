@@ -55,10 +55,9 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-  <article class="content-body">
-      <p class="book-movement">Third Movement &middot; Book III</p>
-<h1>Distinction</h1>
-<p class="book-operator">Operator 2</p>
+  
+      
+
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Books I and II built the engine and the map. Book I proved that orientation capacity, actualizing, necessarily produces recursive enrichment — the same process operating on its own output at every scale. Book II proved that this process produces stable operations, classified them as prime or composite, and established the architecture that governs their structure.</p>
 <p>The answer is distinction — the capacity to tell apart. Book II proved that distinction is irreducible: the first operation to stabilize from the recursive cycle, and one that cannot be decomposed into simpler operations. That proof is structural. It shows <em>that</em> distinction is prime. This book shows <em>why</em>.</p>
@@ -188,18 +187,15 @@
 <p>Distinction is the root of a tree in the operator architecture. From it grow:</p>
 <ul>
 <li><strong>Operator 4 (Foundation) = 2 × 2:</strong> Distinction operating on</li>
-<p>itself. Distinguishing the distinction. What this produces — stable frameworks, coordinate systems, axiomatic ground — is explored in Book V. But the root must be understood before the first branch can be.</p>
 </ul>
 <ul>
 <li><strong>Operator 8 (Organization) = 2³:</strong> Triple distinction. Distinction</li>
-<p>operating on its own self-application. Meta-structural differentiation. What this produces — systems, hierarchies, frameworks of frameworks</p>
 </ul>
 <blockquote>
 <p>— is explored in Book IX. But again, the root comes first.</p>
 </blockquote>
 <ul>
 <li><strong>Operator 6 (Reception) = 2 × 3:</strong> Distinction interacting with</li>
-<p>Relation. The first inter-prime composite. What this produces — selective engagement, choosing what to relate to — is explored in Book VII. It requires both its prime roots to be explored first.</p>
 </ul>
 <p>What this means for Book III: understanding distinction deeply enough that its self-applications and inter-prime interactions become predictable. If the root is well-mapped, the branches should follow necessarily.</p>
 <h3 id="the-prediction">The Prediction</h3>
@@ -244,13 +240,8 @@
 <p>It is the root of a tree whose branches are Foundation (2²), Organization (2³), and (in combination with Relation) Reception (2 × 3). The root is now mapped. The branches await.</p>
 <p>What distinction does not do — what it specifically lacks — is connect. You can distinguish forever and never produce relation. You can differentiate an entire universe into separate categories and never create a bond between them. The capacity to connect is genuinely new — irreducible — and it is the subject of the next book.</p>
 <p>Distinction tells apart. It does not bring together. Both are needed. Both are prime.</p>
-<nav class="book-nav">
-  <a class="prev" href="/book-ii/">Book II: The Operator Landscape</a>
-  <a class="next" href="/book-iv/">Book IV: Relation</a>
-</nav>
-    </article>
 
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/book-ii/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book II: The Operator Landscape</a><a href="/book-iv/" class="seq-link next"><span class="seq-link-label">Next →</span>Book IV: Relation</a></div>
   </div>

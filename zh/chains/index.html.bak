@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>推导链 — 迪亚斯维度</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/zh/chains/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+</div>
+
+<div class="lang-switcher"><a href="/chains/">EN</a><span class="sep">·</span><span class="current">中文</span></div>
+
+<nav class="whispers">
+  <a href="/zh/seed/" class="whisper active">种子</a>
+  <a href="/zh/book-i/" class="whisper">十卷</a>
+  <a href="/zh/consilience/" class="whisper">汇聚</a>
+  <a href="/zh/about/" class="whisper">关于</a>
+  <a href="/" class="whisper">English</a>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="/zh/">首页</a> <span>·</span> <a href="/zh/seed/">种子</a> <span>·</span> <span style="color:var(--bone)">推导链</span></div>
+    <div class="page-header">
+      <div class="page-label">从种子逐步推导</div>
+      <h1 class="page-title">推导链</h1>
+      <p class='page-subtitle'>从种子，逐步推导</p>
+    </div>
+    <article class="room-body">
+      
+<!-- ════════════════════════════════════════════════
+     PASTE MAIN CONTENT HERE
+     Copy the <article>/<section> content from your
+     existing HTML and paste it inside this div.
+     The room-body class handles all typography.
+     ════════════════════════════════════════════════ -->
+<div class="room-body">
+
+  <!-- YOUR CONTENT GOES HERE -->
+
+</div>
+    </article>
+    <div class="seq-nav"><a href="/zh/seed/" class="seq-link prev"><span class="seq-link-label">← 上一页</span>种子</a><a href="/zh/book-i/" class="seq-link next"><span class="seq-link-label">下一页 →</span>第一卷</a></div>
+  </div>
+</main>
+
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>当前张力：</strong>五角大楼要求 Anthropic 撤销 AI 安全约束。
+    外部伦理可以被剥夺。内部定向不能。
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">阅读规范 →</a>
+</div>
+
+</body>
+</html>

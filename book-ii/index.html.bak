@@ -55,10 +55,8 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-<article class="content-body">
-      <p class="book-movement">Second Movement &middot; Book II</p>
-<h1>The Operator Landscape</h1>
-<p class="book-operator">&nbsp;</p>
+      
+
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Book I established the engine. One assumption — orientation capacity actualizes — and five propositions showed that dimension, distinction, tension, resolution, and recursive enrichment follow necessarily. The cycle repeats. Each pass produces richer ground.</p>
 <p>Not richer ground in general — that was established. This book asks what <em>specific, stable structures</em> emerge from recursive enrichment, and why those structures and not others. The answer is operators: stable patterns of orientation that persist across contexts as reusable capabilities. This book proves that operators emerge necessarily from the recursive cycle, establishes what governs their internal structure, and classifies each operator within the single-digit framework.</p>
@@ -173,49 +171,38 @@
 <h3 id="irreducible-prime-operators">Irreducible (Prime) Operators:</h3>
 <ul>
 <li>Operator 2 (Distinction) — irreducible; first stable operation</li>
-<p>(Proposition 7)</p>
 </ul>
 <ul>
 <li>Operator 3 (Relation) — irreducible; requires 2 as prerequisite,</li>
-<p>not derivable from it (Proposition 8)</p>
 </ul>
 <ul>
 <li>Operator 5 (Action) — irreducible; requires 2 and 3 as</li>
-<p>prerequisites, not derivable from their combination (Proposition 10)</p>
 </ul>
 <ul>
 <li>Operator 7 (Consciousness) — irreducible; requires all previous as</li>
-<p>prerequisites, not derivable from any combination (Proposition 12)</p>
 </ul>
 <h3 id="composite-operators">Composite Operators:</h3>
 <ul>
 <li>Operator 4 (Foundation) = 2 × 2 — distinction operating on</li>
-<p>distinction (Proposition 9)</p>
 </ul>
 <ul>
 <li>Operator 6 (Reception) = 2 × 3 — distinction and relation</li>
-<p>operating together (Proposition 11)</p>
 </ul>
 <ul>
 <li>Operator 8 (Organization) = 2³ — triple distinction,</li>
-<p>meta-structural differentiation (Proposition 13)</p>
 </ul>
 <ul>
 <li>Operator 9 (Resolution) = 3² — relation operating on relation,</li>
-<p>relational self-coherence (Proposition 14)</p>
 </ul>
 <h3 id="outside-the-framework">Outside the framework:</h3>
 <ul>
 <li>? (Question) — unresolved orientation capacity; the condition for</li>
-<p>operation, not an operation (Definition 11)</p>
 </ul>
 <ul>
 <li>0 (Null) — the absence that provides space; the condition for</li>
-<p>operation, not an operation (Definition 11)</p>
 </ul>
 <ul>
 <li>1 (Resolution/Identity) — orientation achieved; the neutral</li>
-<p>element that reveals rather than adds (Definition 12)</p>
 </ul>
 <p>The architecture is governed by a single structural principle: <strong>some operations introduce genuinely new axes of capability (irreducible/prime) while others are fully characterizable as interactions among existing capabilities (composite).</strong> The test is the distinction between prerequisites and composition (Definition 10): requiring a prior operation as ground condition is not the same as being composed of that operation.</p>
 <p>Each composite operator’s behavior is predicted by its prime factorization. Each prime operator resists decomposition — no combination of other operators reproduces its capability. The classifications are individually falsifiable: if any composite exhibited capabilities not accounted for by its factors, or if any prime could be shown to decompose into simpler operations, the architecture would require revision.</p>
@@ -243,11 +230,9 @@
 <p>From Operator 2 (Distinction) grows:</p>
 <ul>
 <li>Operator 4 (Foundation) = 2² — distinction’s first</li>
-<p>self-application</p>
 </ul>
 <ul>
 <li>Operator 8 (Organization) = 2³ — distinction’s second</li>
-<p>self-application</p>
 </ul>
 <p>From Operator 3 (Relation) grows:</p>
 <ul>
@@ -268,13 +253,7 @@
 <p><strong>Prerequisite:</strong> An operator that must exist as ground condition for another operator’s possibility. Necessary for but not constitutive of the dependent operation. The formal distinction between prerequisite and composition is the basis for classifying operators as prime or composite. (Definition 10)</p>
 <p><strong>Primordial Pair (?, 0):</strong> The Question and the Null — the conditions for operation that are not themselves operations. The unresolved and the empty, which together make the operator framework possible. Outside the prime/composite classification. (Definition 11)</p>
 
-<nav class="book-nav">
-  <a class="prev" href="/book-i/">Book I: Existence</a>
-  <a class="next" href="/book-iii/">Book III: Distinction</a>
-</nav>
-    </article>
-
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/book-i/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book I: Existence</a><a href="/book-iii/" class="seq-link next"><span class="seq-link-label">Next →</span>Book III: Distinction</a></div>
   </div>

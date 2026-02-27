@@ -55,10 +55,9 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-    <article class="content-body">
-      <p class="book-movement">Third Movement &middot; Book V</p>
-<h1>Foundation</h1>
-<p class="book-operator">Operator 4 = 2²</p>
+    
+      
+
 <h2 id="introduction">INTRODUCTION</h2>
 <p>Books III and IV mapped the two prime roots of the operator architecture. Distinction (Operator 2) introduces navigable difference. Relation (Operator 3) creates connection between distinguished elements. Together, they provide the generative basis from which all composite operations in the single-digit framework are built.</p>
 <p>The answer is Foundation — the first composite operation. Book II proved that Foundation is fully characterizable as 2 × 2: distinction applied to distinction. This book tests that proof through depth. Not by re-deriving the formal classification, but by exploring Foundation’s cross-scale signature across every scale and checking, at each scale, whether what Foundation does is accountable as doubled distinction. If it is, the composite architecture is validated. If it isn’t — if Foundation exhibits capabilities that cannot be traced to distinction × distinction — the architecture requires revision.</p>
@@ -213,13 +212,8 @@
 <p>This is the first validation of the composite architecture. If Foundation decomposes cleanly, the architectural principle — that composites are fully characterizable as interactions of their prime factors — has its first case study. The principle is now testable rather than theoretical.</p>
 <p>The next book is Action (Operator 5) — the third prime. The first operator that introduces genuine dynamism. Distinction differentiates. Relation connects. Foundation stabilizes. But none of them <em>move</em>. Action is the capacity for directed traversal through the relational topology — and it must earn its irreducibility against all three prior operators. It is the hardest prime argument yet.</p>
 <p>The foundation is laid. What moves across it comes next.</p>
-<nav class="book-nav">
-  <a class="prev" href="/book-iv/">Book IV: Relation</a>
-  <a class="next" href="/book-vi/">Book VI: Action</a>
-</nav>
-    </article>
 
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/book-iv/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Book IV: Relation</a><a href="/book-vi/" class="seq-link next"><span class="seq-link-label">Next →</span>Book VI: Action</a></div>
   </div>

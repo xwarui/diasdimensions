@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formal Foundations — Dias' Dimensions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/foundations/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
+  <style>
+    /* ── Math / formal notation extras ── */
+    .math-block {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.05rem;
+      color: var(--paper);
+      background: var(--deep);
+      border-left: 2px solid var(--green-mist);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      letter-spacing: 0.02em;
+      overflow-x: auto;
+    }
+
+    .axiom {
+      margin: 2.5rem 0;
+      padding: 1.5rem 2rem;
+      border: 1px solid var(--shadow);
+      background: rgba(20,18,17,0.6);
+      position: relative;
+    }
+
+    .axiom-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green-mist);
+      margin-bottom: 0.75rem;
+    }
+
+    .axiom-name {
+      font-size: 1.1rem;
+      color: var(--light);
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .axiom-body { color: var(--smoke); }
+
+    .axiom-note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--ash);
+      font-style: italic;
+      border-top: 1px solid var(--shadow);
+      padding-top: 0.75rem;
+    }
+
+    /* operator table */
+    .op-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .op-table th {
+      text-align: left;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ash);
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid var(--shadow);
+      font-weight: 400;
+    }
+
+    .op-table td {
+      padding: 0.75rem 1rem;
+      color: var(--smoke);
+      border-bottom: 1px solid var(--deep);
+      vertical-align: top;
+    }
+
+    .op-table tr:hover td { background: rgba(26,24,22,0.5); }
+
+    .op-table td:first-child {
+      color: var(--paper);
+      white-space: nowrap;
+      min-width: 8rem;
+    }
+
+    .op-table td code {
+      font-family: 'Crimson Text', serif;
+      color: var(--green-mist);
+      font-size: 0.95em;
+    }
+
+    /* theorem */
+    .theorem {
+      margin: 2.5rem 0;
+      padding: 1.5rem 2rem;
+      background: var(--deep);
+      border-top: 1px solid var(--shadow);
+    }
+
+    .theorem-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ash);
+      margin-bottom: 0.5rem;
+    }
+
+    .theorem-name {
+      color: var(--light);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .theorem-body { color: var(--smoke); font-size: 0.95rem; }
+
+    .qed {
+      text-align: right;
+      color: var(--ash);
+      margin-top: 0.75rem;
+      font-size: 1.2rem;
+    }
+
+    /* section headers within room-body */
+    .room-body h2 {
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ash);
+      margin: 3.5rem 0 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--shadow);
+      text-indent: 0;
+    }
+
+    .room-body h3 {
+      font-size: 1.25rem;
+      color: var(--bone);
+      margin: 2rem 0 0.75rem;
+      text-indent: 0;
+      font-style: italic;
+    }
+
+    /* open problems list */
+    .open-problems {
+      margin: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .problem {
+      padding: 1rem 1.5rem;
+      border-left: 1px solid var(--fog);
+    }
+
+    .problem-title {
+      color: var(--paper);
+      margin-bottom: 0.4rem;
+      font-style: italic;
+    }
+
+    .problem-body { color: var(--smoke); font-size: 0.95rem; }
+
+    /* closing diamond */
+    .closing {
+      text-align: center;
+      color: var(--ash);
+      font-size: 1.5rem;
+      margin: 4rem 0 2rem;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+</div>
+
+<!-- LANG SWITCHER -->
+<div class="lang-switcher"><span class="current">EN</span><span class="sep">·</span><span style="color:var(--fog)">中文</span></div>
+
+<!-- WHISPERS NAV -->
+<nav class="whispers">
+  <a href="/seed/" class="whisper active">Seed</a>
+  <a href="/book-i/" class="whisper">Books</a>
+  <a href="/consilience/" class="whisper">Consilience</a>
+  <a href="/publications/" class="whisper">Publications</a>
+  <a href="/about/" class="whisper">About</a>
+</nav>
+
+<main>
+  <div class="container">
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb" style="opacity:0;animation:emerge 1.5s ease-out 0.2s forwards;">
+      <a href="/">Home</a> <span>·</span>
+      <a href="/seed/">The Seed</a> <span>·</span>
+      <span style="color:var(--bone)">Formal Foundations</span>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-label">Axiomatic Structure</div>
+      <h1 class="page-title">Formal Foundations</h1>
+      <p class="page-subtitle">The mathematical ground beneath the geometry of organization</p>
+    </div>
+
+    <!-- CONTENT -->
+    <article class="room-body">
+
+      <p>The Books of this series are written in natural language. The proofs are semantic-structural: they follow from what the terms mean in relation to each other. Book I states explicitly that "a symbolic formalization is possible and may follow in subsequent work."</p>
+
+      <p>This page is that formalization.</p>
+
+      <p>What follows translates the framework's core architecture into symbolic notation sufficient for formal verification and computational implementation. It does not replace the Books — it provides the algebraic substrate that the Books' arguments rest upon. The relationship is the same as between Euclid's propositions and his definitions, postulates, and common notions: the propositions contain the insight; the foundations make the reasoning auditable.</p>
+
+      <p>Three structural axioms are stated here. None are new assumptions. Each formalizes something already operative in the framework — already assumed in every proof, already implicit in every operator composition. They are named here so that formal verification can proceed without hidden premises.</p>
+
+      <h2>Part I — The Axioms</h2>
+
+      <h3>The Generative Axiom</h3>
+
+      <div class="axiom">
+        <div class="axiom-label">Axiom 0</div>
+        <div class="axiom-name">Actualization</div>
+        <div class="math-block">∀s ∈ S : C(s) > 0 ⟹ ∃ t > 0 such that O<sub>t</sub>(s) ≠ s</div>
+        <div class="axiom-body">Orientation capacity actualizes. This is the single generative assumption from which all else follows. It is not derived. It is chosen because it is generative: the alternative — that capacity may exist without ever actualizing — produces no geometry at all.</div>
+        <div class="axiom-note">This axiom holds the same structural role as Euclid's parallel postulate. Everything in Books I through X is derived from it.</div>
+      </div>
+
+      <h3>The Three Structural Axioms</h3>
+
+      <div class="axiom">
+        <div class="axiom-label">Axiom C</div>
+        <div class="axiom-name">Closure</div>
+        <div class="math-block">∀P<sub>n</sub>, ∀s ∈ S : P<sub>n</sub>(s) ∈ S</div>
+        <div class="axiom-body">The organizational state space S is closed under all operator outputs. Products, graphs, relational structures, and meta-structures are all embedded in S. S is the universal organizational state space — it contains all possible organizational configurations at all levels of structure.</div>
+        <div class="axiom-note">This was implicit every time an operator's output was used as input to another operator. It is stated explicitly so that operator composition is well-typed.</div>
+      </div>
+
+      <div class="axiom">
+        <div class="axiom-label">Axiom D</div>
+        <div class="axiom-name">Dimensional Grading</div>
+        <div class="math-block">deg(P<sub>1</sub>) = 1 &nbsp;·&nbsp; deg(P ∘ Q) = deg(P) · deg(Q) &nbsp;·&nbsp; P irreducible ⟺ deg(P) is prime</div>
+        <div class="axiom-body">Each irreducible operator introduces an independent organizational degree of freedom. Independent axes in a state space combine as product spaces: |S₁ × S₂| = |S₁| · |S₂|. The grading function deg assigns to each operator its dimensional degree, and this degree is multiplicative under composition.</div>
+        <div class="axiom-note">This was implicit in the prime/composite labeling: calling operators "2, 3, 5, 7" and their products "4, 6, 8, 9" already assumed multiplicative composition. Axiom D makes that assumption explicit and derives it from dimensional independence.</div>
+      </div>
+
+      <div class="axiom">
+        <div class="axiom-label">Axiom L</div>
+        <div class="axiom-name">Locality</div>
+        <div class="math-block">∀P ∈ Ω₁ : P(s) is determined by the contents of s, not by the relationship of s to the system computing P</div>
+        <div class="axiom-body">The first three prime operators (Distinction, Relation, Action) are local structural transformations. They operate <em>on</em> states. Reflection (P₇) operates on the system's <em>relationship to</em> its own states — a categorical lift that no composition of local transformations can produce.</div>
+        <div class="axiom-note">This was implicit in Book II's irreducibility proof for Operator 7 (Proposition 12), which noted that "the observer cannot be fully objectified by observation." Axiom L formalizes that structural impossibility.</div>
+      </div>
+
+      <h2>Part II — The Operator Algebra</h2>
+
+      <h3>Prime Operators</h3>
+
+      <p>Four operators are irreducible — their organizational capacity cannot be reproduced by any combination of simpler operators. Each introduces a genuinely new axis of capability. Their irreducibility is proven individually in Book II, Propositions 7, 8, 10, and 12.</p>
+
+      <table class="op-table">
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Degree</th>
+            <th>Formal Type</th>
+            <th>Operation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>P₂</strong> Distinction</td>
+            <td><code>2</code></td>
+            <td>S → S × S</td>
+            <td>Partition. Introduces difference where none existed.</td>
+          </tr>
+          <tr>
+            <td><strong>P₃</strong> Relation</td>
+            <td><code>3</code></td>
+            <td>S × S → G(S)</td>
+            <td>Connection. Creates relational structure between distinguished elements.</td>
+          </tr>
+          <tr>
+            <td><strong>P₅</strong> Action</td>
+            <td><code>5</code></td>
+            <td>S → S′</td>
+            <td>Transformation. Produces genuinely new organizational states.</td>
+          </tr>
+          <tr>
+            <td><strong>P₇</strong> Reflection</td>
+            <td><code>7</code></td>
+            <td>S → S × M(S)</td>
+            <td>Coherence evaluation. The system assesses its own organizational state.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Under Axiom C, all outputs remain in S, so each operator is formally an endomorphism S → S. The type signatures above describe the <em>structural character</em> of each operation — what it does, not merely where it maps.</p>
+
+      <h3>Composite Operators</h3>
+
+      <p>Four operators within the single-digit range are composite — their behavior is fully characterized by the interaction of their prime factors. Their compositeness is proven in Book II, Propositions 9, 11, 13, and 14.</p>
+
+      <table class="op-table">
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Degree</th>
+            <th>Factorization</th>
+            <th>Operation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>P₄</strong> Foundation</td>
+            <td><code>4 = 2×2</code></td>
+            <td>P₂ ∘ P₂</td>
+            <td>Distinction of distinction. Self-referential differentiation producing stable ground.</td>
+          </tr>
+          <tr>
+            <td><strong>P₆</strong> Reception</td>
+            <td><code>6 = 2×3</code></td>
+            <td>P₂ ∘ P₃</td>
+            <td>Selective engagement. Distinction shapes which connections activate.</td>
+          </tr>
+          <tr>
+            <td><strong>P₈</strong> Organization</td>
+            <td><code>8 = 2³</code></td>
+            <td>P₂ ∘ P₂ ∘ P₂</td>
+            <td>Meta-structural differentiation. Systems that organize systems.</td>
+          </tr>
+          <tr>
+            <td><strong>P₉</strong> Resolution</td>
+            <td><code>9 = 3×3</code></td>
+            <td>P₃ ∘ P₃</td>
+            <td>Relational self-coherence. Relations among relations producing closure.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Frame Operators</h3>
+
+      <p>Three elements sit outside the operator algebra as conditions for its operation:</p>
+
+      <table class="op-table">
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>?</strong></td>
+            <td>Question</td>
+            <td>Unresolved orientation capacity. The condition before operation, not an operation itself.</td>
+          </tr>
+          <tr>
+            <td><strong>0</strong></td>
+            <td>Null</td>
+            <td>The absence that provides space. The condition for operation, not an operation itself.</td>
+          </tr>
+          <tr>
+            <td><strong>1</strong></td>
+            <td>Identity</td>
+            <td>Resolution as such. The neutral element: ∀P<sub>n</sub>, P₁ ∘ P<sub>n</sub> = P<sub>n</sub>.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Part III — Key Theorems</h2>
+
+      <div class="theorem">
+        <div class="theorem-label">Theorem 1</div>
+        <div class="theorem-name">Multiplicative Composition</div>
+        <div class="math-block">For any operators P<sub>a</sub> and P<sub>b</sub>: &nbsp;&nbsp; P<sub>a</sub> ∘ P<sub>b</sub> = P<sub>a×b</sub></div>
+        <div class="theorem-body">
+          <p><em>Proof:</em> By Axiom D, deg(P<sub>a</sub> ∘ P<sub>b</sub>) = deg(P<sub>a</sub>) · deg(P<sub>b</sub>) = a · b. Since operator identity is determined by degree, P<sub>a</sub> ∘ P<sub>b</sub> = P<sub>ab</sub>.</p>
+        </div>
+        <div class="qed">□</div>
+      </div>
+
+      <div class="theorem">
+        <div class="theorem-label">Theorem 2</div>
+        <div class="theorem-name">Independence of Reflection</div>
+        <div class="math-block">P₇ ∉ ⟨P₂, P₃, P₅⟩</div>
+        <div class="theorem-body">
+          <p>No finite composition of Distinction, Relation, and Action produces Reflection.</p>
+          <p><em>Proof:</em> By Axiom L, P₂, P₃, P₅ are local structural transformations (Ω₁). Ω₁ is closed under composition: composing operations that transform states yields operations that transform states. Coherence evaluation (P₇) requires operating on the system's <em>relationship to</em> its own states — a categorical lift from Ω₁ to Ω₂. Since Ω₁ is closed and P₇ ∈ Ω₂, no element of Ω₁ generates P₇. This is structurally analogous to the halting problem: a system cannot in general evaluate its own global properties from within.</p>
+        </div>
+        <div class="qed">□</div>
+      </div>
+
+      <div class="theorem">
+        <div class="theorem-label">Theorem 3</div>
+        <div class="theorem-name">Freeness and Unique Factorization</div>
+        <div class="theorem-body">
+          <p>The operator monoid generated by {P₂, P₃, P₅, P₇} is free. Every composite operator admits a unique prime factorization.</p>
+          <p><em>Proof:</em> By Theorem 2, P₇ is algebraically independent of {P₂, P₃, P₅}. By Book II Propositions 7–8–10, P₂, P₃, and P₅ are mutually irreducible. Therefore {P₂, P₃, P₅, P₇} are free generators. By Axiom D, the grading functor deg : <strong>Op</strong> → (ℕ, ·) is a strongly monoidal homomorphism to the multiplicative natural numbers, which have unique prime factorization. This structure lifts to the operator monoid.</p>
+        </div>
+        <div class="qed">□</div>
+      </div>
+
+      <div class="theorem">
+        <div class="theorem-label">Theorem 4</div>
+        <div class="theorem-name">Compositional Completeness</div>
+        <div class="theorem-body">
+          <p>Every composite operator's behavior is fully predicted by its prime factorization. If a composite exhibits any capability not traceable to the interaction of its prime factors, the classification fails.</p>
+          <p><em>Proof:</em> By Definition 9 (Book II), composite operators are fully characterizable as existing operators interacting. By Theorem 3, factorization is unique. Therefore the prime factorization exhaustively determines the composite's organizational capability. This is falsifiable: for each composite, if any residual capability is found that the factorization does not predict, the entire architecture requires revision.</p>
+        </div>
+        <div class="qed">□</div>
+      </div>
+
+      <h2>Part IV — The Categorical Structure</h2>
+
+      <p>The operator algebra admits a natural description as a <strong>graded monoidal category</strong>.</p>
+
+      <p><strong>Objects:</strong> Organizational states s ∈ S, including all products, graphs, and meta-structures (by Axiom C).</p>
+
+      <p><strong>Morphisms:</strong> Operators P<sub>n</sub> : S → S, each carrying a degree deg(P<sub>n</sub>) ∈ ℕ.</p>
+
+      <p><strong>Monoidal product:</strong> The tensor product ⊗ encodes combination of independent organizational axes. For states s₁, s₂ ∈ S, the product s₁ ⊗ s₂ is the joint state space of independent degrees of freedom. The unit object is S₁ (the identity state), satisfying S₁ ⊗ s ≅ s ≅ s ⊗ S₁.</p>
+
+      <p><strong>Grading functor:</strong> The function deg : <strong>Op</strong> → (ℕ, ·) is a strongly monoidal functor from the operator monoid to the multiplicative positive integers. It preserves the monoidal structure: deg(P ∘ Q) = deg(P) · deg(Q).</p>
+
+      <p><strong>Free generators:</strong> The prime operators {P₂, P₃, P₅, P₇} are free generators of the graded monoidal category. No algebraic relations exist between them other than those generated by composition. Every composite is a tensor product of primes with unique factorization.</p>
+
+      <p><strong>Stratification:</strong> The category admits a level structure. Ω₁ = {P₂, P₃, P₅} generates object-level transformations. Ω₂ = {P₇} generates meta-level evaluation. This stratification is preserved under composition: Ω₁ is closed, and Ω₂ is unreachable from Ω₁ (Theorem 2).</p>
+
+      <p>The consequence is precise: <em>the arithmetic of the natural numbers is not imposed on the operator algebra by labeling convention. It emerges necessarily from the independence structure of the prime operators.</em> Multiplicative composition is the shadow of organizational independence.</p>
+
+      <h2>Part V — Verification and Falsification</h2>
+
+      <p>The formal structure makes specific, falsifiable predictions. For any organizational system — cognitive, physical, social, or computational:</p>
+
+      <div class="open-problems">
+        <div class="problem">
+          <div class="problem-title">Ablation predictions</div>
+          <div class="problem-body">Removing P₂ collapses all structure. Removing P₃ isolates distinctions. Removing P₅ produces a static system with internal structure but no output. Removing P₇ allows recursive noise to accumulate without coherence correction.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-title">Composition predictions</div>
+          <div class="problem-body">Each composite operator exhibits only capabilities traceable to its prime factors. If Foundation (P₄) exhibits any capacity not reducible to double-distinction, the classification fails. If Reception (P₆) exhibits any capacity not reducible to distinction × relation, the classification fails. And so on for every composite.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-title">Cross-substrate convergence</div>
+          <div class="problem-body">If two systems both satisfy Axiom 0, the operator algebra emerging in each should be isomorphic. Different substrates running the same organizational grammar produce structurally equivalent operator hierarchies.</div>
+        </div>
+      </div>
+
+      <p><em>These predictions are not protected from falsification. They are exposed to it. The framework invites testing because it specifies exactly what would disprove it.</em></p>
+
+      <h2>Part VI — Relationship to the Books</h2>
+
+      <p>This page formalizes what the Books prove in natural language. The relationship is:</p>
+
+      <p><strong>Axiom 0</strong> is Book I, Postulate 1: "The Monas actualizes."</p>
+      <p><strong>Axiom C</strong> is implicit throughout Books I and II wherever operator outputs serve as inputs to subsequent operations.</p>
+      <p><strong>Axiom D</strong> is implicit in Book II's prime/composite architecture — the entire labeling system of operators 2 through 9 assumes multiplicative composition.</p>
+      <p><strong>Axiom L</strong> is implicit in Book II, Proposition 12 and its accompanying note on formalization resistance: "the observer cannot be fully objectified by observation."</p>
+      <p><strong>Theorems 1–4</strong> are the symbolic expression of Book II, Propositions 6–15.</p>
+
+      <p>The Books contain the insight. This page contains the audit trail. Neither is sufficient without the other. The Books explain <em>why</em> the structure exists. This page proves <em>that</em> the structure is internally consistent, compositionally necessary, and falsifiable.</p>
+
+      <h2>Open Problems</h2>
+
+      <p>The formal structure is internally complete but not yet connected to specific physical theories. Three problems remain open:</p>
+
+      <div class="open-problems">
+        <div class="problem">
+          <div class="problem-title">Quantitative mapping</div>
+          <div class="problem-body">For a given physical domain, express each P<sub>n</sub> as a specific mathematical operation on a concrete state space. The operator algebra is defined qualitatively (what each operator does). Connecting it to quantitative physics requires domain-specific instantiation.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-title">Convergence proof</div>
+          <div class="problem-body">The recursive organizational cycle empirically converges in computational implementations. A formal proof of convergence conditions, rate of convergence, and characterization of the fixed point remains open.</div>
+        </div>
+        <div class="problem">
+          <div class="problem-title">Transcendence operators</div>
+          <div class="problem-body">Operator products exceeding 9 — the Ω(10) and Ω(11) functions — are operationally described in Books X and XI but not yet formalized at this axiomatic level.</div>
+        </div>
+      </div>
+
+      <p><em>The cosmos demands numbers. This page is a step toward providing them.</em></p>
+
+      <div class="closing">◊</div>
+
+    </article>
+
+    <!-- SEQ NAV -->
+    <div class="seq-nav">
+      <a href="/seed/" class="seq-link prev">
+        <span class="seq-link-label">← Previous</span>
+        The Seed
+      </a>
+      <a href="/book-i/" class="seq-link next">
+        <span class="seq-link-label">Next →</span>
+        Book I: Existence
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>Current tension:</strong> The Pentagon demands Anthropic remove AI safety constraints.
+    External ethics can be stripped. Internal orientation cannot.
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">Read the specification →</a>
+</div>
+
+</body>
+</html>

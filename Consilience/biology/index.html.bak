@@ -55,11 +55,8 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-   <article class="content-body">
+   
       
-<p class="book-movement">The Consilience of Organization — Territory I</p>
-<h1>Biology</h1>
-<p class="book-operator">Organization of living systems</p>
 
 <p>Starting from biology’s own evidence—no framework imported, no operator names, no theoretical vocabulary—does an organizational sequence emerge that matches the operator architecture?</p>
 
@@ -163,14 +160,7 @@
 
 <p>That is consilience. Two independent evidence bases. Each contributing what the other cannot. Together producing an explanation neither generates alone.</p>
 
-<nav class="book-nav">
-  <a class="prev" href="/consilience/">Consilience Overview</a>
-  <a class="next" href="/consilience/physics/">Physics</a>
-</nav>
-
-    </article>
-
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/consilience/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Consilience Overview</a><a href="/consilience/physics/" class="seq-link next"><span class="seq-link-label">Next →</span>Physics</a></div>
   </div>

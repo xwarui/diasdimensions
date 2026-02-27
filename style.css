@@ -169,6 +169,60 @@ body {
 .whisper:hover::before,
 .whisper.active::before { height: 8px; }
 
+/* ── Whisper dropdown (Books menu) ── */
+.whisper-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.whisper-dropdown {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(20, 18, 17, 0.97);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--shadow);
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: translateY(-50%) translateX(6px);
+  z-index: 200;
+}
+
+.whisper-group:hover .whisper-dropdown {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(-50%) translateX(0);
+}
+
+.whisper-dropdown a {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--ash);
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  writing-mode: horizontal-tb;
+  text-transform: none;
+}
+
+.whisper-dropdown a:hover,
+.whisper-dropdown a.active {
+  color: var(--light);
+  background: var(--mist);
+}
+
+.whisper-dropdown a.active {
+  color: var(--green-mist);
+}
+
 /* ── Page Header ── */
 .page-header {
   min-height: 40vh;

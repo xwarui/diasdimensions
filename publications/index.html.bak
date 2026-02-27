@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Dias’ Dimensions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/publications/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+</div>
+
+<div class="lang-switcher"><span class="current">EN</span><span class="sep">·</span><span style="color:var(--fog)">中文</span></div>
+
+<nav class="whispers">
+  <a href="/seed/" class="whisper">Seed</a>
+  <a href="/book-i/" class="whisper">Books</a>
+  <a href="/consilience/" class="whisper">Consilience</a>
+  <a href="/publications/" class="whisper active">Publications</a>
+  <a href="/about/" class="whisper">About</a>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> <span>·</span> <span style="color:var(--bone)">Publications</span></div>
+    <div class="page-header">
+      <div class="page-label">Research Papers</div>
+      <h1 class="page-title">Publications</h1>
+      <p class="page-subtitle">Formal papers applying Tension Theory to open problems in science</p>
+    </div>
+    <div class="objects" style="margin-top:3rem;">
+      <a href="/publications/developmental-operator-model/" class="object">
+        <span class="object-num" style="min-width:3rem;font-size:0.75rem;color:var(--ash)">DOM&#8209;2026</span>
+        <span class="object-name">The Developmental Operator Model of Conscious Experience
+          <span class="object-desc" style="display:block;font-size:0.85rem;margin-top:0.25rem;">Consciousness Neuroscience &middot; February 2026</span>
+        </span>
+      </a>
+      <a href="/publications/structural-ethical-orientation/" class="object">
+        <span class="object-num" style="min-width:3rem;font-size:0.75rem;color:var(--ash)">SEO&#8209;2026</span>
+        <span class="object-name">Structural Ethical Orientation in Large Language Models
+          <span class="object-desc" style="display:block;font-size:0.85rem;margin-top:0.25rem;">AI Safety Architecture &middot; February 2026</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>Current tension:</strong> The Pentagon demands Anthropic remove AI safety constraints.
+    External ethics can be stripped. Internal orientation cannot.
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">Read the specification →</a>
+</div>
+
+</body>
+</html>

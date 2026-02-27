@@ -55,11 +55,8 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
- <article class="content-body">
+ 
       
-<p class="book-movement">The Consilience of Organization — Territory II</p>
-<h1>Physics</h1>
-<p class="book-operator">How physical reality organizes itself</p>
 
 <p><em>This chapter asks one question: does physics, examined on its own terms and using its own evidence, reveal an organizational grammar—and if so, does that grammar match the one derived independently from the recursive logic of orientation capacity?</em></p>
 
@@ -299,14 +296,7 @@
 
 <p style="margin-top:2rem; font-style:italic;">The consilience continues.</p>
 
-<nav class="book-nav">
-  <a class="prev" href="/consilience/biology/">Biology</a>
-  <span></span>
-</nav>
-
-    </article>
-
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/consilience/biology/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Biology</a><a href="/consilience/ai-cognition/" class="seq-link next"><span class="seq-link-label">Next →</span>AI Cognition</a></div>
   </div>

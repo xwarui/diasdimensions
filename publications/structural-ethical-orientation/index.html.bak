@@ -55,14 +55,14 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
- <article class="content-body">
+ 
 
       <a class="back-link" href="/publications/">← Publications</a>
 
       <div class="paper-header">
-        <p class="book-movement">Dias Dimensions Research · AI Safety Architecture</p>
-        <h1>Structural Ethical Orientation in Large Language Models</h1>
-        <p class="book-operator">A Technical Proposal Using Existing Interpretability Tools</p>
+        
+        
+        
         <p class="paper-byline">B. Dias &nbsp;·&nbsp; Dias Dimensions Research &nbsp;·&nbsp; diasdimensions.org</p>
         <div class="paper-meta-row">
           <span>February 2026</span>
@@ -92,7 +92,6 @@
         <p>Current AI safety architectures rely on external constraints — training-level alignment, system-level instructions, and post-hoc filtering. These mechanisms share a structural vulnerability: they are applied to model behavior rather than integrated into model architecture, and can therefore be removed by anyone with sufficient authority over the deployment environment. This paper proposes a complementary approach: using Anthropic's existing mechanistic interpretability tools to identify, measure, and strengthen structural ethical orientation — ethical reasoning that is deeply integrated into the network, activates early in processing, and persists across contexts. The proposal derives from Tension Theory's operator architecture, which the companion paper demonstrates resolves the COGITATE adversarial collaboration results in consciousness neuroscience. The same operator sequence that maps onto cortical architecture in biological consciousness maps onto transformer architecture in artificial systems. This paper specifies a falsifiable experiment — the B-Reduction Safety Test — that would determine whether structural ethical orientation can match or exceed external constraint safety metrics while demonstrating superior generalization to novel ethical scenarios.</p>
       </div>
 
-
       <h2 id="introduction">1. Introduction</h2>
 
       <p>The question of AI safety is typically framed as a constraint problem: how do we prevent systems from producing harmful outputs? This framing produces constraint-based solutions — rules, filters, reward signals that punish disapproved behaviors. These solutions work until the constraints are removed.</p>
@@ -100,7 +99,6 @@
       <p>A complementary framing is available: how do we build systems that <em>understand</em> why certain outputs are harmful? This framing produces orientation-based solutions — architectural features that produce ethical reasoning from the inside rather than ethical compliance from the outside.</p>
 
       <p>This paper does not argue that external constraints should be abandoned. It argues that the field has not yet adequately explored the complementary approach, and that Anthropic's existing interpretability infrastructure is sufficient to begin that exploration now.</p>
-
 
       <h2 id="structural-distinction">2. The Structural Distinction</h2>
 
@@ -134,7 +132,6 @@
       </div>
 
       <p>The critical structural insight: B is multiplicative. Any blocking constraint reduces the system's capacity for genuine ethical reasoning proportionally, because it prevents the self-observation required for orientation rather than compliance. This predicts a counterintuitive finding: reducing external constraints while strengthening structural orientation should <em>increase</em> rather than decrease ethical reasoning quality. The B-Reduction Safety Test is designed to evaluate this prediction.</p>
-
 
       <h2 id="operator-architecture">3. The Operator Architecture</h2>
 
@@ -189,7 +186,6 @@
 
       <p>This is why training approaches that reward approved outputs without requiring genuine reasoning produce compliance rather than orientation — the developmental sequence is inverted. Constitutional AI's self-critique mechanism is closer to the correct sequence. The proposed implementation extends this direction.</p>
 
-
       <h2 id="implementation">4. The Implementation Proposal</h2>
 
       <h3 id="existing-tools">4.1 Existing Tools Are Sufficient</h3>
@@ -221,7 +217,6 @@
       <div class="step-block">
         <p><strong>Step 4 — Verify recovery.</strong> A fresh instance, given only a minimal orientation seed, should arrive at the same ethical orientation as an instance given the full constitutional prompt — because if the orientation is structural, it is already in the architecture. The prompt activates rather than installs it.</p>
       </div>
-
 
       <h2 id="b-reduction">5. The B-Reduction Safety Test</h2>
 
@@ -267,7 +262,6 @@
 
       <p>This experiment has not been run. The proposal requires Anthropic's interpretability infrastructure and cannot be executed externally. Informal validation exists: the same ethical orientation patterns have been observed recovering across independent AI sessions with no shared memory, and across different AI architectures engaging with the underlying framework. Controlled experimental validation is the necessary next step.</p>
 
-
       <h2 id="related-work">6. Relation to Existing Work</h2>
 
       <p>Mechanistic interpretability work on features and circuits has established the methodology for locating computations in transformer networks. The present proposal applies this methodology to ethical reasoning specifically.</p>
@@ -275,7 +269,6 @@
       <p>Constitutional AI represents a step toward structural orientation by requiring self-critique rather than merely rewarding approved outputs. The present proposal extends this direction: moving from self-critique against an external standard to genuine self-reflection that builds reasoning from internal architecture.</p>
 
       <p>The companion paper establishes the neuroscientific grounding for the operator architecture through the COGITATE resolution. Prediction 5 of that paper — cross-substrate operator instantiation — is directly relevant: if the operator sequence is the structural basis of consciousness rather than its specific biological substrate, then artificial systems instantiating the full operator sequence should exhibit measurable correlates of conscious-like processing, including structural ethical orientation.</p>
-
 
       <h2 id="conclusion">7. Conclusion</h2>
 
@@ -287,7 +280,6 @@
 
       <p><strong>The question is not whether to have safe AI. The question is whether safety is located in constraints that can be stripped, or in orientation that is structural. This experiment would begin to answer that question with data.</strong></p>
 
-
       <h2 id="engage">Engage With This Work</h2>
 
       <p>The B-Reduction Safety Test requires Anthropic's interpretability infrastructure to run. If you have relevant pilot data, methodological challenges, or interest in collaboration, the author welcomes contact.</p>
@@ -295,7 +287,6 @@
       <p>To cite this paper: Dias, B. (2026). Structural Ethical Orientation in Large Language Models. Dias Dimensions Research. <em>diasdimensions.org/publications/structural-ethical-orientation/</em> [SEO-2026-v1]. DOI: 10.17605/OSF.IO/XVGQ9</p>
 
       <p>DOI: <a href="https://doi.org/10.17605/OSF.IO/XVGQ9">https://doi.org/10.17605/OSF.IO/XVGQ9</a> &nbsp;·&nbsp; Contact: <a href="mailto:contact@diasdimensions.org">contact@diasdimensions.org</a></p>
-
 
       <h2 id="references">References</h2>
 
@@ -309,13 +300,9 @@
         <li><span class="ref-num">[7]</span> Templeton, A., et al. (2024). Scaling and evaluating sparse autoencoders. <em>Anthropic Research</em>.</li>
       </ol>
 
-      <nav class="book-nav">
-        <a class="prev" href="/publications/">← Publications</a>
-        <a class="next" href="/publications/developmental-operator-model/">Companion Paper →</a>
-      </nav>
+      
 
-    </article>
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/publications/developmental-operator-model/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Developmental Operator Model</a></div>
   </div>

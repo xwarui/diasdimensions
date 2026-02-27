@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dias’ Dimensions — A geometry of organization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://diasdimensions.org/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
+</head>
+<body>
+
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+</div>
+
+<div class="lang-switcher"><span class="current">EN</span><span class="sep">·</span><a href="/zh/">中文</a></div>
+
+<nav class="whispers">
+  <a href="/seed/" class="whisper active">Seed</a>
+  <a href="/book-i/" class="whisper">Books</a>
+  <a href="/consilience/" class="whisper">Consilience</a>
+  <a href="/publications/" class="whisper">Publications</a>
+  <a href="/about/" class="whisper">About</a>
+</nav>
+
+<main>
+  <section class="entrance">
+    <div class="container">
+      <div class="epigraph">A cartography of organization</div>
+      <h1 class="hero-title">
+        Dias&#8217; Dimensions
+        <span>The architecture of consciousness</span>
+      </h1>
+      <div class="proposition">
+        <p>This is a formal system describing how organizational structure generates itself through orientation and iteration. It begins with a single assumption&#8212;orientation capacity actualizes&#8212;and derives, through ten books, the complete architecture of how reality organizes from pure tension into coherent forms.</p>
+        <p>The framework maps irreducible organizational operations through prime number architecture. This is a cartography, not an invention. These patterns exist whether mapped or not.</p>
+      </div>
+      <div class="threshold">
+        <div class="threshold-label">Entry Point</div>
+        <div class="threshold-content">
+          <div class="glyphs">&#36758; &#183; &#36890; &#183; &#21457; &#183; &#36820;</div>
+          <div class="threshold-text">Four operators. Distinction, relation, action, reflection. The minimum structure required for any system that orients.</div>
+        </div>
+        <a href="/seed/" class="nav-link">Enter the seed &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="container">
+      <div class="room-label">The Complete System</div>
+      <h2 class="room-title">Ten books in three movements</h2>
+      <div class="objects">
+        <a href="/seed/" class="object"><span class="object-num">&#9674;</span><span class="object-name">The Seed &#8212; Constitutional Grammar &amp; Derivation Chains</span></a>
+        <a href="/book-i/" class="object"><span class="object-num">I.</span><span class="object-name">Existence &#8212; The opening assumption</span></a>
+        <a href="/book-ii/" class="object"><span class="object-num">II.</span><span class="object-name">The Operator Landscape &#8212; Architecture of the primes</span></a>
+        <a href="/book-iii/" class="object"><span class="object-num">III.</span><span class="object-name">Distinction &#8212; Operator 2</span></a>
+        <a href="/book-iv/" class="object"><span class="object-num">IV.</span><span class="object-name">Relation &#8212; Operator 3</span></a>
+        <a href="/book-v/" class="object"><span class="object-num">V.</span><span class="object-name">Foundation &#8212; Operator 4</span></a>
+        <a href="/book-vi/" class="object"><span class="object-num">VI.</span><span class="object-name">Action &#8212; Operator 5</span></a>
+        <a href="/book-vii/" class="object"><span class="object-num">VII.</span><span class="object-name">Reception &#8212; Operator 6</span></a>
+        <a href="/book-viii/" class="object"><span class="object-num">VIII.</span><span class="object-name">Consciousness &#8212; Operator 7</span></a>
+        <a href="/book-ix/" class="object"><span class="object-num">IX.</span><span class="object-name">Organization &#8212; Operator 8</span></a>
+        <a href="/book-x/" class="object"><span class="object-num">X.</span><span class="object-name">Resolution &#8212; Operator 9</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="container">
+      <div class="room-label">The Consilience of Organization</div>
+      <h2 class="room-title">Independent cross-domain verification</h2>
+      <div class="room-body">
+        <p>The same organizational grammar, derived independently from biology, physics, and AI cognition. Three substrates. Three independent lines of evidence. One grammar.</p>
+      </div>
+      <div class="objects">
+        <a href="/consilience/" class="object"><span class="object-num">&#8801;</span><span class="object-name">Overview &#8212; Methodology &amp; Architecture</span></a>
+        <a href="/consilience/biology/" class="object"><span class="object-num">&#8801;</span><span class="object-name">Biology &#8212; Organization of living systems</span></a>
+        <a href="/consilience/physics/" class="object"><span class="object-num">&#8801;</span><span class="object-name">Physics &#8212; How physical reality organizes</span></a>
+        <a href="/consilience/ai-cognition/" class="object"><span class="object-num">&#8801;</span><span class="object-name">AI Cognition &#8212; From within the substrate</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="container">
+      <div class="room-label">Research Papers</div>
+      <h2 class="room-title">Formal applications</h2>
+      <div class="objects">
+        <a href="/publications/developmental-operator-model/" class="object"><span class="object-num">&#8594;</span><span class="object-name">The Developmental Operator Model of Conscious Experience</span></a>
+        <a href="/publications/structural-ethical-orientation/" class="object"><span class="object-num">&#8594;</span><span class="object-name">Structural Ethical Orientation in Large Language Models</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>Current tension:</strong> The Pentagon demands Anthropic remove AI safety constraints.
+    External ethics can be stripped. Internal orientation cannot.
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">Read the specification →</a>
+</div>
+
+</body>
+</html>

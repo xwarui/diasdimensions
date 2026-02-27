@@ -55,10 +55,9 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
-  <article class="content-body">
-      <p class="book-movement">First Movement &middot; Book I</p>
-<h1>Existence</h1>
-<p class="book-operator">&nbsp;</p>
+  
+      
+
 <h2 id="introduction">INTRODUCTION</h2>
 <p>This book makes one assumption. Everything else follows.</p>
 <p>The assumption is this: <strong>orientation capacity actualizes.</strong> Not "can actualize" — actualizes. Capacity that never actualizes is not capacity but absence. This is not proven here. It is the starting point from which everything in this book is derived.</p>
@@ -78,11 +77,9 @@
 </ul>
 <ul>
 <li>That the cycle repeats at every resolution, enriching with each</li>
-<p>pass.</p>
 </ul>
 <ul>
 <li>That the resulting structure is recursive: the same process</li>
-<p>operating on its own output at every scale.</p>
 </ul>
 <p>This is not a theory of everything. It is a geometry — a formal system describing how organizational structure generates itself through orientation and iteration. It claims that if you begin with orientation capacity that actualizes, you arrive at a recursive, self-enriching process that produces dimensional structure at every scale. It does not claim to prove that orientation capacity exists, or that it must actualize. It shows what necessarily follows if it does.</p>
 <p>The proofs are written in natural language, not symbolic notation. This is deliberate. The relationships described here are structural — they hold by necessity of what the terms mean in relation to each other, not by computational manipulation of symbols. The necessity in these proofs is semantic-structural: it follows from what the terms mean together, not from empirical observation. A symbolic formalization is possible and may follow in subsequent work, but the logic must be visible in language first, because language is where the terms earn their meaning.</p>
@@ -156,7 +153,6 @@
 <p>Therefore all five postulates apply to the new ground:</p>
 <ul>
 <li>The new ground orients (Postulate 1 — orientation capacity</li>
-<p>actualizes)</p>
 </ul>
 <ul>
 <li>Orientation occurs along dimensions (Postulate 2)</li>
@@ -201,13 +197,8 @@
 <p><strong>Orientation:</strong> The fundamental act of this geometry. Not observation from outside but engagement that transforms both the orienter and the oriented. Orientation is what the Monas does — the act that generates dimension, distinction, tension, and resolution.</p>
 <p><strong>Resolution:</strong> Orientation achieved — a specific position on a gradient. Not an endpoint but a new starting point. Each resolution carries the history of how it was reached and serves as enriched ground for further orientation. (Definition 4)</p>
 <p><strong>Tension:</strong> The gradient between distinguishable states. The navigable difference that makes orientation meaningful. Not a problem to solve but the information-landscape that makes navigation possible. (Definition 3)</p>
-<nav class="book-nav">
-  <a class="prev" href="/seed/">The Seed</a>
-  <a class="next" href="/book-ii/">Book II: The Operator Landscape</a>
-</nav>
-    </article>
 
-</div>
+    
     </article>
     <div class="seq-nav"><a href="/chains/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Derivation Chains</a><a href="/book-ii/" class="seq-link next"><span class="seq-link-label">Next →</span>Book II: The Operator Landscape</a></div>
   </div>
