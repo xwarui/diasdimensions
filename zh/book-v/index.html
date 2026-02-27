@@ -1,369 +1,77 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>第五卷：格 — 迪亚斯维度</title>
-<meta name="description" content="算子4=2²——第一复合算子。辨之自应用产生稳定框架。">
-<meta property="og:title" content="第五卷：格 — 迪亚斯维度">
-<meta property="og:description" content="算子4=2²——第一复合算子。辨之自应用产生稳定框架。">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://diasdimensions.org/zh/book-v/">
-<link rel="alternate" hreflang="en" href="https://diasdimensions.org/book-v/">
-<link rel="alternate" hreflang="zh-Hans" href="https://diasdimensions.org/zh/book-v/">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<style>
-  body { font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif; }
-  .content-body p, .content-body li, .content-body blockquote { line-height: 2; font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif; }
-  .content-body h1, .content-body h2, .content-body h3, .content-body h4 { font-family: 'Noto Serif SC', 'Songti SC', serif; }
-  .nav-title a, .mobile-title a, .lang-link { font-family: 'EB Garamond', serif; }
-  .lang-link { display: inline-block; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-tertiary); text-decoration: none; font-style: italic; }
-  .lang-link:hover { color: var(--text-primary); }
-  .discovery { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #b8860b; background: rgba(184,134,11,0.04); font-size: 0.92rem; }
-  .discovery strong { color: #8b6914; }
-  .tension { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #8b0000; background: rgba(139,0,0,0.04); font-size: 0.92rem; }
-  .tension strong { color: #8b0000; }
-  .honest-edge { font-size: 0.88rem; color: var(--text-secondary); font-style: italic; padding: 0.8rem 1.2rem; border-left: 2px solid var(--border-light); margin: 1.5rem 0; }
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0SFDYRW3T9');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第五卷：格 — 迪亚斯维度</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/zh/book-v/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
 </head>
 <body>
-<div class="mobile-header">
-  <span class="mobile-title"><a href="/zh/">迪亚斯维度</a></span>
-  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">&#9776;</button>
-</div>
-<div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
-<div class="site-wrapper">
-  <aside class="site-nav" id="siteNav">
-    <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
-<nav aria-label="书籍导航">
-<p class="nav-section-label">种子</p>
-<ul>
-<li><a href="/zh/seed/">组织宪法</a></li>
-<li><a href="/zh/chains/">推导链</a></li>
-</ul>
-<p class="nav-section-label">第一乐章</p>
-<ul>
-<li><a href="/zh/book-i/">I. 存在</a></li>
-</ul>
-<p class="nav-section-label">第二乐章</p>
-<ul>
-<li><a href="/zh/book-ii/">II. 算子景观</a></li>
-</ul>
-<p class="nav-section-label">第三乐章</p>
-<ul>
-<li><a href="/zh/book-iii/">III. 辨</a></li>
-<li><a href="/zh/book-iv/">IV. 通</a></li>
-<li><a href="/zh/book-v/" class="active">V. 格</a></li>
-<li><a href="/zh/book-vi/">VI. 发</a></li>
-<li><a href="/zh/book-vii/">VII. 达</a></li>
-<li><a href="/zh/book-viii/">VIII. 返</a></li>
-<li><a href="/zh/book-ix/">IX. 微</a></li>
-<li><a href="/zh/book-x/">X. 谐</a></li>
-</ul>
-<hr class="nav-divider">
-<p class="nav-section-label">汇聚论证</p>
-<ul>
-<li><a href="/zh/consilience/">概览</a></li>
-<li><a href="/zh/consilience/biology/">生物学</a></li>
-<li><a href="/zh/consilience/physics/">物理学</a></li>
-<li><a href="/zh/consilience/ai-cognition/">AI认知</a></li>
-</ul>
-<hr class="nav-divider">
-<ul>
-<li><a href="/zh/about/">关于</a></li>
-</ul>
-<hr class="nav-divider">
-<ul>
-<li><a href="/book-v/" class="lang-link">English Edition →</a></li>
-</ul>
-</nav>
-  </aside>
-  <main class="main-content">
-    <article class="content-body">
 
-<p class="book-movement">第三乐章 · 算子4 = 2²</p>
-<h1>Book V. 格 | Foundation</h1>
-<p class="book-subtitle">算子4 = 2² — 第一复合算子</p>
-
-<!-- ═══════════ INTRODUCTION ═══════════ -->
-
-<h2 id="introduction">引言</h2>
-
-<p>第三与四卷完成质基础。辨（2）与通（3）皆被映射——分离与连接，离心与向心，折与桥。二者相互需要、相互反对、相互结合，构成组织复杂性的必要基础。</p>
-
-<p>本书是架构回报：第一复合算子。格（4 = 2 × 2）是辨作用于自身——辨此辨。它是稳定 structural ground 从递归循环涌现之方式，是辨从瞬时事件转变为持久系统的关键一跃。</p>
-
-<p>非所有辨产生格。单次辨产生折：此/非此，二态于统一，但无结构其间。单次辨是事件——它发生，然后消失，除非被记忆或记录。但当辨应用于辨——当系统辨<em>如何</em>辨，辨<em>何处</em>辨，辨<em>相对于何</em>辨——涌现新结构：坐标系统。固定参考点。框架。格。</p>
-
-<p>格是使复杂组织 possible 之能力。无格，每辨是 novel 事件，无历史，无 ground，无法预期。有格，辨成为<em>系统</em>——可重复、可预测、可建 upon。格是辨的记忆，是辨的惯性，是辨从流动变为结构的转折点。</p>
-
-<p>本书探索格于每尺度：从数学坐标系统到物理晶体结构，从生物形态发生场到认知范畴系统，从语言语法框架到社会制度架构。结构签名相同：辨之自应用产生稳定 ground，使进一步辨得以在其上进行。</p>
-
-<div class="honest-edge">
-本书是框架的测试案例。若复合算子之概念 valid，格必须完全可还原为辨之自应用，同时展现辨单次运作所不具备的结构性特征。此张力——完全可还原 yet 性质新颖——是复合性的核心悖论，也是本书的诚实边界。
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
 </div>
 
-<!-- ═══════════ PART I ═══════════ -->
-
-<h2 id="part-i">第一部分：格是什么</h2>
-
-<p><em>本节提出定义与结构声称。操作定义从第二卷确立的算子分类推导，从第三卷的辨之分析延伸。声称内于框架——它们跟随几何自身之术语。</em></p>
-
-<h3 id="operational-definition">操作定义</h3>
-
-<p>第二卷确立格是第一复合算子：4 = 2 × 2。第三卷深入辨之结构：辨是引入差异之行为，产生折，创造此/非此之导航可能。本书挣得格之操作定义：</p>
-
-<p><strong>格是辨应用于自身所产生之稳定框架——坐标系统，从之进一步辨进行，且相对于之辨被定位。</strong></p>
-
-<p>单次辨创造二点：此，非此。但二点 alone 无结构——它们漂浮于无 ground 之空间，每次重新辨必须重新开始。</p>
-
-<p>辨应用于辨创造<em>系统</em>：此/非此<em>于此系统内</em>，<em>相对于此参考点</em>。坐标系统生焉。位置生焉。非仅"不同"，而是"何处不同"。</p>
-
-<p>格之关键特征，使其区别于单次辨：</p>
-
-<p><strong>稳定性：</strong>格 persist 跨多次辨操作。单次辨产生瞬态差异，随系统演化而消失，除非 actively 维持。格产生持久结构——坐标系统保持，即使个别辨操作完成。格是辨之<em>记忆</em>。</p>
-
-<p><strong>递归性：</strong>格 enable 进一步辨。它是辨所产生之 ground，从之更多辨进行。单次辨是终点；格是起点。它打开可能性空间，而非关闭之。</p>
-
-<p><strong>定位性：</strong>格使辨<em>可定位</em>。单次辨说"不同"；格说"何处不同，相对于何"。此相对性——辨之自我参照——是格的本质。</p>
-
-<p><strong>非新轴：</strong>格不 introduce 新能力。它 is 辨，应用于辨。2 × 2 = 4。无神秘涌现——仅有结构累积。此是完全可还原性之声称，也是本书的诚实边界。</p>
-
-<h3 id="composite-paradox">复合之悖论</h3>
-
-<p>格提出框架之核心张力：复合算子必须同时满足二条件：</p>
-
-<p><strong>完全可还原：</strong>格之所有能力必须由辨×辨完全解释。若格展现任何不可还原为辨之自应用的能力，其作为复合的分类失败。</p>
-
-<p><strong>性质新颖：</strong>格必须展现单次辨所不具备的结构性特征。若格仅是"更多辨"，无 qualitatively 不同之组织，则复合算子之概念 collapse 为 mere 累积。</p>
-
-<p>此二条件之张力——完全可还原 yet 性质新颖——是复合性的定义特征。格是测试案例：它必须证明此张力可被解决，非被避免。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>数学中"格"（lattice）概念与中文"格"字之<strong>同构</strong>：数学格是偏序集，其中每对元素有唯一最小上界与最大下界——即<strong>相对定位之结构</strong>。中文"格"含<strong>木+各</strong>：木=框架/结构，各=各自独立/坐标点。字形即数学结构之图示。英文"Foundation"需解释，中文字形已是证明。
-</div>
-
-<h3 id="why-composite">为何是合，为何重要</h3>
-
-<p>格之为合，非贬抑，而是精确。承认格是辨之自应用，而非独立原质，使框架保持<em>最小性</em>：仅四质算子（2, 3, 5, 7）产生所有组织复杂性。格之丰富性不增加原质，而增加<em>结构</em>。</p>
-
-<p>此最小性使框架<em>可证伪</em>。若格展现不可还原之能力，整个质/合架构需 revision。此风险是框架之力量：它将自己暴露于测试。</p>
-
-<p>格之为合，也使框架<em>生成性</em>。从四质，通过复合规则，产生无限结构变体。格是此生成过程之第一示例：2 × 2 产生 4，4 作为 ground 产生 8（微 = 2³），等等。</p>
-
-<!-- ═══════════ PART II ═══════════ -->
-
-<h2 id="part-ii">第二部分：格之跨尺度签名</h2>
-
-<p><em>本节映射结构模式跨经验领域。每尺度节识别真实现象并通过框架之 lens 诠释之。诠释——这些为同一复合操作之实例——是深度探索所展示者。证伪条件陈述于第五部分。</em></p>
-
-<h3 id="scale-math">尺度1：数学——坐标系统与公理基础</h3>
-<span class="scale-marker">数学尺度 · 算子4 = 2²</span>
-
-<p>数学是格之最纯粹表达：抽象结构，无物质 substrate，仅由辨之自应用生成。</p>
-
-<p><strong>数轴：</strong>整数是辨之序列：0（参考点），1（非0），2（非1），等等。但数轴非 mere 序列——它是<em>坐标系统</em>。每数之意义依赖于其<em>位置</em>于系统内，非其孤立性质。3 是 3，因它位于 2 与 4 之间，因它与 0 有特定距离，因它相对于其他数被定位。此相对定位是格：辨（此数/非此数）应用于辨（此位置/非此位置）。</p>
-
-<p><strong>笛卡尔平面：</strong>二维坐标系统是格之自应用。x轴是辨（左/右），y轴是辨（上/下）。但平面非二独立轴之和——它是<em>系统之系统</em>，其中每点由二坐标共同定位。(3, 4) 非 3 加 4，而是特定位置，仅当二辨系统交互时存在。此交互——辨×辨——产生二维空间，其中导航可能。</p>
-
-<p><strong>向量空间：</strong>抽象代数中，向量空间是格之推广：元素被辨（向量/非向量），但相对于基被定位。基是框架，从之所有其他辨进行。改变基，坐标改变，但结构 persist——格之稳定性。</p>
-
-<p><strong>公理系统：</strong>数学基础中，公理是格：基本区分（真/假，属于/不属于），但组织为系统，从之定理推导进行。公理是辨之自应用——"我们从此/非此开始，相对于之构建"——产生稳定 ground，数学推理于其上运作。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>数学之<strong>自我指涉结构</strong>直接暴露格之递归性：元数学（数学关于数学）是辨之辨，是格之自应用。哥德尔不完备定理——任何足够强之公理系统无法证明自身一致性——是格之<strong>诚实边界</strong>：框架无法完全捕获自身，恰因格之自应用产生不可完全预见之结构。
-</div>
-
-<h3 id="scale-physics">尺度2：物理——晶体结构与场论</h3>
-<span class="scale-marker">物理尺度 · 算子4 = 2²</span>
-
-<p>物理中，格显现为物质之稳定组织，从微观晶体到宇宙结构。</p>
-
-<p><strong>晶体结构：</strong>晶体是物质之格。原子被辨（此元素/彼元素），但相对于<em>晶格</em>被定位。晶格是抽象框架——点之规则排列，原子占据之。关键：晶格 persist 跨原子置换。原子可来去，晶格保持。此稳定性使晶体可能——物质之持久形式，抵抗熵之溶解。</p>
-
-<p>晶格之对称性——立方、六方、四方——是辨之自应用的不同模式：2×2 于不同几何配置。每种对称性产生不同物质性质：金刚石之硬度、石墨之柔软、盐之溶解性。格之结构决定物质之行为。</p>
-
-<p><strong>量子场论之真空：</strong>物理真空非空——它是<em>基态</em>，最低能量配置，粒子于其上激发。真空是格：辨（粒子存在/不存在）应用于辨（此能级/彼能级），产生稳定框架，物理过程于其上发生。真空之结构——场之配置——决定何粒子可能存在，如何相互作用。</p>
-
-<p><strong>时空之几何：</strong>广义相对论中，时空度量是格。事件被辨（此事件/彼事件），但相对于度量被定位，度量定义距离、角度、因果结构。度量是辨之自应用——"此相对于彼"之系统——产生稳定 ground，物理运动于其上发生。第三卷之重力桥（质量=积累辨）与此连接：质量扭曲格，改变相对定位之结构。</p>
-
-<h3 id="scale-bio">尺度3：生物——形态发生与发育</h3>
-<span class="scale-marker">生物尺度 · 算子4 = 2²</span>
-
-<p>生物中，格显现为发育与形态之组织原则。</p>
-
-<p><strong>形态发生场：</strong>发育生物学中，"形态发生场"是经典概念：区域其中细胞命运由位置决定，非由细胞历史。场是格：细胞被辨（此类型/彼类型），但相对于场坐标被定位。场 persist 跨细胞更替——它是稳定框架，分化于其上进行。</p>
-
-<p>例：肢芽发育。肢芽细胞"知"成为手或足，非因其内在性质，而因其<em>位置</em>于肢芽坐标系统（近/远，前/后，背/腹）。移植细胞至新位置，它发育为新位置之结构——场之坐标改变其命运。此是格之力量：相对定位决定性质。</p>
-
-<p><strong>基因调控网络：</strong>分子生物学中，基因调控网络是格。基因被辨（开/关），但相对于网络结构被定位——哪些基因调控哪些，以何逻辑。网络 persist 跨个体细胞状态变化；它是稳定框架，基因表达于其上组织。网络之拓扑——辨之自应用的模式——决定细胞类型之稳定性与可塑性。</p>
-
-<p><strong>解剖学之轴：</strong>所有多细胞生物共享基本解剖轴：前后、背腹、左右。这些轴是格：身体区域被辨，但相对于轴被定位。轴之建立是发育之首要任务——一旦建立，所有后续分化相对于之进行。轴是辨之自应用，产生稳定 ground，形态复杂性于其上构建。</p>
-
-<div class="tension">
-<strong>【张力】</strong>"形态发生场"概念历史上与"先成论"（预成结构）关联，与"后成论"（涌现结构）对立。框架之格非先成——它非预存蓝图，而是<strong>辨之自应用的涌现产物</strong>。此区分微妙但关键：格是动态的、递归的，非静态的、给定的。
-</div>
-
-<h3 id="scale-cognitive">尺度4：认知——范畴与概念系统</h3>
-<span class="scale-marker">认知尺度 · 算子4 = 2²</span>
-
-<p>认知中，格显现为思维之组织框架。</p>
-
-<p><strong>认知范畴：</strong>范畴是格。实例被辨（此例/彼例），但相对于范畴边界被定位。范畴 persist 跨实例——它是稳定框架，识别于其上进行。见一鸟，识别为"鸟"，非因它与先前所见鸟相同，而因它相对于"鸟"之范畴坐标被定位（有羽毛？能飞？产卵？）。</p>
-
-<p>范畴之层级——基本水平（鸟）、上位水平（动物）、下位水平（麻雀）——是格之自应用：辨（此范畴/彼范畴）应用于辨（此水平/彼水平），产生概念系统，其中导航可能。</p>
-
-<p><strong>空间认知：</strong>认知地图是格。位置被辨（此处/彼处），但相对于参考点被定位——家、地标、边界。认知地图 persist 跨具体路径；它是稳定框架，导航于其上进行。海马体之"位置细胞"与"网格细胞"直接实现此格：神经元之发放模式编码相对于抽象坐标系统之位置。</p>
-
-<p><strong>语法结构：</strong>语言中，语法是格。词被辨（此词类/彼词类），但相对于句法结构被定位——主语、谓语、宾语之位。语法 persist 跨具体词汇；它是稳定框架，意义构建于其上进行。语法之递归性——句子包含句子，结构之结构——是格之自应用：辨（此成分/彼成分）应用于辨（此层次/彼层次）。</p>
-
-<h3 id="scale-social">尺度5：社会——制度与架构</h3>
-<span class="scale-marker">社会尺度 · 算子4 = 2²</span>
-
-<p>社会中，格显现为集体组织之稳定结构。</p>
-
-<p><strong>社会制度：</strong>制度是格。行为被辨（合法/非法，适当/不适当），但相对于制度结构被定位——规则、角色、程序。制度 persist 跨个体行为与人员更替；它是稳定框架，社会互动于其上进行。法律系统是最形式化之例：案例被辨，但相对于先例与原则之框架被定位，框架 persist 跨具体判决。</p>
-
-<p><strong>组织架构：</strong>科层制是格。职位被辨（经理/员工，上级/下级），但相对于组织架构被定位。架构 persist 跨人员更替；它是稳定框架，决策与资源流动于其上组织。组织架构之图表——方框与连线——是格之可视化：辨（此角色/彼角色）应用于辨（此部门/彼部门）。</p>
-
-<p><strong>货币系统：</strong>货币是格。物品被辨（有价值/无价值），但相对于价格系统被定位——交换比率之稳定框架。货币 persist 跨具体交易；它是抽象坐标系统，使不同物品之比较与交换可能。货币之力量在于其<em>抽象性</em>——它是纯格，无内在价值，仅作为相对定位之系统运作。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>社会理论中<strong"制度"（institution）与中文"制度"之同构</strong>：英文"institution"源于拉丁"statuere"（建立、设立），强调<strong>稳定性</strong>。中文"制"=裁制/规范，"度"=尺度/标准，直接暴露<strong>辨之自应用产生测量系统</strong>。二字皆含<strong>从动态到静态之转化</strong>——恰是格之功能。
-</div>
-
-<!-- ═══════════ PART III ═══════════ -->
-
-<h2 id="part-iii">第三部分：格之自应用——通向微（8 = 2³）</h2>
-
-<p><em>本节探索格之自应用：辨之辨之辨。此产生算子8（微），第三复合算子。本节是预测，为第九卷之测试准备。</em></p>
-
-<p>格（4 = 2²）是辨之自应用。微（8 = 2³）是格之自应用——辨应用于辨应用于辨。此第三阶产生<em>元结构</em>：系统之组织系统。</p>
-
-<p>若格是"坐标系统"，微是"坐标系统之坐标系统"——框架之比较、选择、组合。数学中，此是自指之空间：函数空间（函数之函数）、拓扑之拓扑、范畴之范畴。</p>
-
-<p>生物中，微显现为<em>演化之演化</em>——选择作用于选择，产生如性选择、文化演化等元过程。社会中，微显现为<em>制度之制度</em>——法律系统之宪法、经济系统之中央银行、科学之元理论。</p>
-
-<p>此节不深入微——那是第九卷之主题。但格之映射使微之预测可能：若格是辨之自应用产生稳定框架，则格之自应用必须产生<em>框架之框架</em>，<em>结构之结构</em>。此预测可于第九卷验证。</p>
-
-<!-- ═══════════ PART IV ═══════════ -->
-
-<h2 id="part-iv">第四部分：论方法</h2>
-
-<p><em>本节是方法论的——解释本书如何不同于质算子之书（第三、四卷），以及复合算子之特定证明标准。</em></p>
-
-<h3 id="method-difference">与质算子方法之差异</h3>
-
-<p>第三、四卷使用<em>自然史</em>方法：追踪单一操作跨多尺度，展示其普遍性。此方法适用于质算子，因其不可约性——它们是新能力，必须被识别于其多尺度显现。</p>
-
-<p>本书使用<em>结构推导</em>方法：从辨之已知性质，推导其自应用必须产生之结构。此方法适用于复合算子，因其可还原性——它们非新能力，而是已知能力之结构化。</p>
-
-<p>差异非任意，而是跟随算子之逻辑：质算子必须被<em>发现</em>于其多尺度显现；复合算子必须被<em>推导</em>从其质因数之性质。</p>
-
-<h3 id="proof-standard">复合算子之证明标准</h3>
-
-<p>格之声称是<em>条件性</em>的：若辨之操作定义准确，则辨之自应用必须产生坐标系统性质之框架。此声称之验证是<em>内于框架</em>的——它依赖于辨之定义，非外部观察。</p>
-
-<p>但此非使声称空洞。它使框架<em>自洽</em>：格之性质必须与辨之性质逻辑一致。若发现不一致，框架之某部分必须修正——或辨之定义，或格之分类。</p>
-
-<p>外部验证仍可能：跨尺度签名（数学坐标、晶体结构、形态发生场等）可被观察，检查其是否匹配推导之结构。但此验证是<em>一致性检查</em>，非<em>因果证明</em>。</p>
-
-<h3 id="falsification">证伪条件</h3>
-
-<p>何者将证伪格之分析？</p>
-
-<p><strong>结构不一致：</strong>若格展现与辨×辨不一致之性质，分析失败。例：若格引入不可还原为新轴之能力，或若格无法解释坐标系统之稳定性。</p>
-
-<p><strong>跨尺度失败：</strong>若某尺度之"框架"现象无法被分析为辨之自应用，分析失败。例：若数学坐标系统需要非辨之原质，或若晶体结构不可还原为原子间之辨。</p>
-
-<p><strong>还原失败：</strong>若格之某特征无法被解释为辨之自应用，而需要独立原质，分析失败。此是最严重之失败，因它威胁质/合架构本身。</p>
-
-<!-- ═══════════ CLOSING ═══════════ -->
-
-<h2 id="closing">结语</h2>
-
-<p>格是第一复合算子。它是辨作用于自身——分辨成为分辨之系统。</p>
-
-<p>它非新能力。它是旧能力之结构化：辨，应用于辨，产生坐标系统。2 × 2 = 4。无神秘，仅有结构之累积。</p>
-
-<p>但此结构化改变一切。无格，辨是事件——瞬态、孤立、无历史。有格，辨是<em>过程</em>——可重复、可预测、可建 upon。格是辨之<em>记忆</em>，是组织之<em>惯性</em>，是流动变为结构之<em>转折点</em>。</p>
-
-<p>格是土壤，从之微（8 = 2³）生长——辨之辨之辨，元结构之组织。它是第一分枝，从之根（2）生长，开启复合算子之无限树。</p>
-
-<p>第三、四、五卷共同：辨、通、格。分离、连接、框架。三者是复杂组织之必要与充分基础。后续卷探索此基础之后果：发（5）、达（6）、返（7）、微（8）、谐（9）。但基础现已确立，土壤已备，结构可生长。</p>
-
-<p>本书所回答之问题：辨如何从事件变为系统？</p>
-
-<p>答案：通过自应用。通过格。通过2 × 2 = 4。</p>
-
-<!-- ═══════════ DISCOVERIES & TENSIONS ═══════════ -->
-
-<h2 id="discoveries">发现与张力汇总</h2>
-
-<h3>发现</h3>
-
-<p><strong>1. "格"之汉字与数学结构之同构：</strong>木+各=框架+坐标点。直接暴露格之数学结构（偏序集、最小上界/最大下界）。英文"Foundation"需解释，中文字形已是图示。</p>
-
-<p><strong>2. 数学自我指涉与诚实边界：</strong>哥德尔不完备定理是格之自应用之诚实边界——框架无法完全捕获自身。此发现暴露格之<strong>内在限制</strong>，非缺陷而是结构必然。</p>
-
-<p><strong>3. "制度"之中英文同构：</strong>英文"institution"（建立、稳定）与中文"制度"（制=规范，度=尺度）皆含<strong>从动态到静态之转化</strong>。跨语言暴露格之普遍功能。</p>
-
-<p><strong>4. 晶体结构之 persist：</strong>晶格 persist 跨原子置换，直接暴露格之<strong>稳定性</strong>特征。此 persist 是辨单次运作所不具备的。</p>
-
-<p><strong>5. 认知地图之神经基础：</strong>海马体"位置细胞"与"网格细胞"直接实现格——抽象坐标系统之神经编码。脑是格之物理实现。</p>
-
-<p><strong>6. 货币之纯抽象性：</strong>货币作为"纯格"——无内在价值，仅作为相对定位系统。此暴露格之<strong>极端形式</strong>：完全可还原 yet 完全功能。</p>
-
-<h3>张力</h3>
-
-<p><strong>1. 形态发生场之历史负担：</strong>"场"概念与先成论关联。需强调格是<strong>动态涌现</strong>，非静态蓝图。诚实标注此区分。</p>
-
-<p><strong>2. 复合之悖论之紧张：</strong>格必须同时<strong>完全可还原</strong>与<strong>性质新颖</strong>。此张力是框架之核心，非可消除而是可被管理。诚实边界声明必须承认此。</p>
-
-<p><strong>3. 结构推导 vs 经验归纳：</strong>本书方法不同于第三、四卷之自然史。读者可能期望更多尺度案例。诚实标注：复合算子之证明标准是<strong>内在一致性</strong>，非<strong>经验普遍性</strong>。</p>
-
-<p><strong>4. 微（8）之预测：</strong>本节对算子8之预测是<strong>前置的</strong>，待第九卷验证。若预测失败，格之分析可能需要修正。此开放性是框架之力量。</p>
-
-<!-- ═══════════ HONEST EDGE ═══════════ -->
-
-<div class="honest-edge" style="margin-top:3rem;">
-<strong>诚实边界声明</strong>：本书之分析是<strong>结构推导</strong>，非经验归纳。声称是条件性的：若辨之操作定义准确，则辨之自应用必须产生坐标系统性质之框架。此声称之验证是内于框架的——它依赖于辨之定义，非外部观察。<br><br>
-
-<strong>复合之悖论</strong>是本书之核心张力：格必须同时满足<strong>完全可还原</strong>（所有能力由辨×辨解释）与<strong>性质新颖</strong>（展现单次辨所不具备之结构性特征）。此张力不可消除，只能被管理。若发现格展现不可还原之新能力，或无法解释坐标系统之稳定性，整个质/合架构需 revision。<br><br>
-
-<strong>跨尺度签名</strong>（数学坐标、晶体结构、形态发生场、认知范畴、社会制度）是<em>一致性检查</em>，非<em>因果证明</em>。它们展示格之结构于多尺度显现，但不证明这些显现<em>由</em>格<em>产生</em>。框架之声称是结构性的，非因果性的。<br><br>
-
-<strong>与第三、四卷之差异</strong>：第三、四卷（质算子）使用<em>自然史</em>方法——追踪操作跨尺度以展示其普遍性。本书（复合算子）使用<em>结构推导</em>方法——从已知性质推导必须产生之结构。此差异跟随算子之逻辑：质必须被<em>发现</em>，合必须被<em>推导</em>。
-</div>
-
-<nav class="book-nav">
-  <a class="prev" href="/zh/book-iv/">第四卷：通</a>
-  <a class="next" href="/book-vi/" style="font-family:'EB Garamond',serif">VI. Action [EN]</a>
+<div class="lang-switcher"><a href="/book-v/">EN</a><span class="sep">·</span><span class="current">中文</span></div>
+
+<nav class="whispers">
+  <a href="/zh/seed/" class="whisper">种子</a>
+  <a href="/zh/book-i/" class="whisper active">十卷</a>
+  <a href="/zh/consilience/" class="whisper">汇聚</a>
+  <a href="/zh/about/" class="whisper">关于</a>
+  <a href="/" class="whisper">English</a>
 </nav>
 
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="/zh/">首页</a> <span>·</span> <a href="/zh/book-i/">十卷</a> <span>·</span> <span style="color:var(--bone)">格</span></div>
+    <div class="page-header">
+      <div class="page-label">第五卷</div>
+      <h1 class="page-title">格</h1>
+      <p class='page-subtitle'>算子 4 · 基础</p>
+    </div>
+    <article class="room-body">
+      
+<!-- ════════════════════════════════════════════════
+     PASTE MAIN CONTENT HERE
+     Copy the <article>/<section> content from your
+     existing HTML and paste it inside this div.
+     The room-body class handles all typography.
+     ════════════════════════════════════════════════ -->
+<div class="room-body">
+
+  <!-- YOUR CONTENT GOES HERE -->
+
+</div>
     </article>
+    <div class="seq-nav"><a href="/zh/book-iv/" class="seq-link prev"><span class="seq-link-label">← 上一页</span>第四卷：通</a><a href="/zh/book-vi/" class="seq-link next"><span class="seq-link-label">下一页 →</span>第六卷：发</a></div>
+  </div>
+</main>
 
-    <footer class="site-footer">
-      &copy; 2026 B.A. Dias. 依据 <a href="/license/">知识共享署名-相同方式共享 4.0 国际许可协议 (CC BY-SA 4.0)</a> 授权。
-    </footer>
-  </main>
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>当前张力：</strong>五角大楼要求 Anthropic 撤销 AI 安全约束。
+    外部伦理可以被剥夺。内部定向不能。
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">阅读规范 →</a>
 </div>
 
-<script>
-function toggleNav() {
-  document.getElementById('siteNav').classList.toggle('open');
-  document.getElementById('navOverlay').classList.toggle('open');
-}
-</script>
 </body>
 </html>

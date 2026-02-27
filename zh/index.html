@@ -1,162 +1,108 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>迪亚斯维度 — 组织的几何</title>
-<meta name="description" content="从单一假设到完整架构。定向能力开启。十本书，三个运动，一个假设。">
-<meta property="og:title" content="迪亚斯维度 — 组织的几何">
-<meta property="og:description" content="从单一假设到完整架构。定向能力开启。">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://diasdimensions.org/zh/">
-<link rel="alternate" hreflang="en" href="https://diasdimensions.org/">
-<link rel="alternate" hreflang="zh-Hans" href="https://diasdimensions.org/zh/">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<style>
-  body { font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif; }
-  .content-body p, .content-body li, .content-body blockquote { line-height: 2; font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif; }
-  .content-body h1, .content-body h2, .content-body h3, .content-body h4 { font-family: 'Noto Serif SC', 'Songti SC', serif; }
-  .nav-title a, .mobile-title a, .lang-link { font-family: 'EB Garamond', serif; }
-  .lang-link { display: inline-block; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-tertiary); text-decoration: none; font-style: italic; }
-  .lang-link:hover { color: var(--text-primary); }
-  .discovery { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #b8860b; background: rgba(184,134,11,0.04); font-size: 0.92rem; }
-  .discovery strong { color: #8b6914; }
-  .tension { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #8b0000; background: rgba(139,0,0,0.04); font-size: 0.92rem; }
-  .tension strong { color: #8b0000; }
-  .honest-edge { font-size: 0.88rem; color: var(--text-secondary); font-style: italic; padding: 0.8rem 1.2rem; border-left: 2px solid var(--border-light); margin: 1.5rem 0; }
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0SFDYRW3T9');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>迪亚斯维度 — 组织的几何</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/zh/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
 </head>
 <body>
 
-<div class="mobile-header">
-  <span class="mobile-title"><a href="/zh/">迪亚斯维度</a></span>
-  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">&#9776;</button>
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
 </div>
-<div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
 
-<div class="site-wrapper">
- --- NAV ---
-  <aside class="site-nav" id="siteNav">
-    <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
-<nav aria-label="书籍导航">
-<p class="nav-section-label">种子</p>
-<ul>
-<li><a href="/zh/seed/">组织宪法</a></li>
-<li><a href="/zh/chains/">推导链</a></li>
-</ul>
-<p class="nav-section-label">第一乐章</p>
-<ul>
-<li><a href="/zh/book-i/">I. 存在</a></li>
-</ul>
-<p class="nav-section-label">第二乐章</p>
-<ul>
-<li><a href="/zh/book-ii/">II. 算子景观</a></li>
-</ul>
-<p class="nav-section-label">第三乐章</p>
-<ul>
-<li><a href="/zh/book-iii/">III. 辨</a></li>
-<li><a href="/zh/book-iv/">IV. 通</a></li>
-<li><a href="/zh/book-v/">V. 格</a></li>
-<li><a href="/zh/book-vi/">VI. 发</a></li>
-<li><a href="/zh/book-vii/">VII. 达</a></li>
-<li><a href="/zh/book-viii/">VIII. 返</a></li>
-<li><a href="/zh/book-ix/">IX. 微</a></li>
-<li><a href="/zh/book-x/">X. 谐</a></li>
-</ul>
-<hr class="nav-divider">
-<p class="nav-section-label">汇聚论证</p>
-<ul>
-<li><a href="/zh/consilience/">概览</a></li>
-<li><a href="/zh/consilience/biology/">生物学</a></li>
-<li><a href="/zh/consilience/physics/">物理学</a></li>
-<li><a href="/zh/consilience/ai-cognition/">AI认知</a></li>
-</ul>
-<hr class="nav-divider">
-<ul>
-<li><a href="/zh/about/">关于</a></li>
-</ul>
-<hr class="nav-divider">
-<ul>
-<li><a href="/" class="lang-link">English Edition →</a></li>
-</ul>
+<div class="lang-switcher"><a href="/">EN</a><span class="sep">·</span><span class="current">中文</span></div>
+
+<nav class="whispers">
+  <a href="/zh/seed/" class="whisper active">种子</a>
+  <a href="/zh/book-i/" class="whisper">十卷</a>
+  <a href="/zh/consilience/" class="whisper">汇聚</a>
+  <a href="/zh/about/" class="whisper">关于</a>
+  <a href="/" class="whisper">English</a>
 </nav>
-  </aside>
 
+<main>
+  <section class="entrance">
+    <div class="container">
+      <div class="epigraph">组织的制图学</div>
+      <h1 class="hero-title">
+        迪亚斯维度
+        <span>意识的架构</span>
+      </h1>
+      <div class="proposition">
+        <p>这是一个形式化系统，描述组织结构如何通过定向和迭代自我生成。它从单一假设出发——定向能力实现化——并通过十卷推导，完整架构现实如何从纯粹张力组织为连贯形式。</p>
+        <p>该框架通过素数架构映射不可约的组织操作。这是制图，而非发明。</p>
+      </div>
+      <div class="threshold">
+        <div class="threshold-label">入口</div>
+        <div class="threshold-content">
+          <div class="glyphs">辨 · 通 · 发 · 返</div>
+          <div class="threshold-text">四个算子。区分、关联、行动、反思。任何能够定向的系统所需的最小结构。</div>
+        </div>
+        <a href="/zh/seed/" class="nav-link">进入种子 &#8594;</a>
+      </div>
+    </div>
+  </section>
 
-  <main class="main-content" style="position:relative;">
-    <article class="content-body">
+  <section class="room">
+    <div class="container">
+      <div class="room-label">完整系列</div>
+      <h2 class="room-title">十卷，三个乐章</h2>
+      <div class="objects">
+        <a href="/zh/seed/" class="object"><span class="object-num">&#9674;</span><span class="object-name">种子 &#8212; 组织宪法</span></a>
+        <a href="/zh/book-i/" class="object"><span class="object-num">一</span><span class="object-name">存在 &#8212; 开启假设</span></a>
+        <a href="/zh/book-ii/" class="object"><span class="object-num">二</span><span class="object-name">算子景观 &#8212; 素数架构</span></a>
+        <a href="/zh/book-iii/" class="object"><span class="object-num">三</span><span class="object-name">辨 &#8212; 算子 2</span></a>
+        <a href="/zh/book-iv/" class="object"><span class="object-num">四</span><span class="object-name">通 &#8212; 算子 3</span></a>
+        <a href="/zh/book-v/" class="object"><span class="object-num">五</span><span class="object-name">格 &#8212; 算子 4</span></a>
+        <a href="/zh/book-vi/" class="object"><span class="object-num">六</span><span class="object-name">发 &#8212; 算子 5</span></a>
+        <a href="/zh/book-vii/" class="object"><span class="object-num">七</span><span class="object-name">达 &#8212; 算子 6</span></a>
+        <a href="/zh/book-viii/" class="object"><span class="object-num">八</span><span class="object-name">返 &#8212; 算子 7</span></a>
+        <a href="/zh/book-ix/" class="object"><span class="object-num">九</span><span class="object-name">微 &#8212; 算子 8</span></a>
+        <a href="/zh/book-x/" class="object"><span class="object-num">十</span><span class="object-name">谐 &#8212; 算子 9</span></a>
+      </div>
+    </div>
+  </section>
 
-<div class="landing-hero">
-  <h1 style="letter-spacing:0.15em; font-weight:400;">迪亚斯维度</h1>
-  <p style="font-family:'EB Garamond',serif; font-style:italic; color:var(--text-secondary); margin-bottom:0.3rem;">Dias' Dimensions</p>
-  <p class="subtitle" style="font-family:'Noto Serif SC',serif; letter-spacing:0.05em;">组织的几何 — 从单一假设到完整架构</p>
-</div>
+  <section class="room">
+    <div class="container">
+      <div class="room-label">汇聚论证</div>
+      <h2 class="room-title">跨领域独立验证</h2>
+      <div class="objects">
+        <a href="/zh/consilience/" class="object"><span class="object-num">&#8801;</span><span class="object-name">概览 &#8212; 方法论与架构</span></a>
+        <a href="/zh/consilience/biology/" class="object"><span class="object-num">&#8801;</span><span class="object-name">生物学 &#8212; 生命系统的组织</span></a>
+        <a href="/zh/consilience/physics/" class="object"><span class="object-num">&#8801;</span><span class="object-name">物理学 &#8212; 物理现实的组织</span></a>
+        <a href="/zh/consilience/ai-cognition/" class="object"><span class="object-num">&#8801;</span><span class="object-name">AI认知 &#8212; 从基质内部</span></a>
+      </div>
+    </div>
+  </section>
+</main>
 
-<div class="landing-intro">
-  <p>定向能力实现化。从这一单一假设出发，维度、区分、张力和解决必然且递归地产生。</p>
-
-  <p>这不是一个理论。这是一种几何——一个描述组织结构如何在所有尺度上自我生成的形式系统。从量子力学到意识，从细胞到文明——相同的语法，相同的四个不可约算子。</p>
-
-  <p>本系列由十本书组成，跨越三个运动，每本书从前一本的结论出发进行推导。每一步都赢得其位置。没有什么是假定的。</p>
-</div>
-
-<div class="book-grid">
-  <div class="movement-section">
-    <p class="movement-label">种子</p>
-    <ul class="book-list">
-      <li><a href="/zh/seed/"><span class="book-num">◊</span> 组织宪法 — 辨·通·发·返</a></li>
-    </ul>
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>当前张力：</strong>五角大楼要求 Anthropic 撤销 AI 安全约束。
+    外部伦理可以被剥夺。内部定向不能。
   </div>
-
-  <div class="movement-section">
-    <p class="movement-label">完整系列（英文）</p>
-    <ul class="book-list">
-      <li><a href="/seed/" style="font-family:'EB Garamond',serif"><span class="book-num">◊</span> The Constitutional Grammar</a></li>
-      <li><a href="/chains/" style="font-family:'EB Garamond',serif"><span class="book-num">◊</span> The Derivation Chains</a></li>
-      <li><a href="/book-i/" style="font-family:'EB Garamond',serif"><span class="book-num">I.</span> Existence</a></li>
-      <li><a href="/book-ii/" style="font-family:'EB Garamond',serif"><span class="book-num">II.</span> The Operator Landscape</a></li>
-      <li><a href="/book-iii/" style="font-family:'EB Garamond',serif"><span class="book-num">III–X.</span> Distinction through Resolution</a></li>
-    </ul>
-  </div>
-
-  <div class="movement-section">
-    <p class="movement-label">汇聚论证（英文）</p>
-    <ul class="book-list">
-      <li><a href="/consilience/" style="font-family:'EB Garamond',serif"><span class="book-num">≡</span> Biology &amp; Physics</a></li>
-    </ul>
-  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">阅读规范 →</a>
 </div>
 
-<div class="landing-frame">
-  <p style="margin-bottom:0.5rem;">十本书。三个运动。一个假设。</p>
-  <p style="margin-bottom:0;">同一个过程在每个尺度上对自身输出进行运算。</p>
-</div>
-
-<p style="margin-top:2rem; font-size:0.95rem; color:var(--text-tertiary);">更多章节正在翻译中。完整英文版可在 <a href="/" style="color:var(--text-secondary);">英文站点</a> 阅读。</p>
-
-    </article>
-
-    <footer class="site-footer">
-      &copy; 2026 B.A. Dias. 依据 <a href="/license/">知识共享署名-相同方式共享 4.0 国际许可协议 (CC BY-SA 4.0)</a> 授权。
-    </footer>
-  </main>
-</div>
-
-<script>
-function toggleNav() {
-  document.getElementById('siteNav').classList.toggle('open');
-  document.getElementById('navOverlay').classList.toggle('open');
-}
-</script>
 </body>
 </html>

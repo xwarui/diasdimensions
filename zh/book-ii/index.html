@@ -1,510 +1,77 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>第二卷：算子景观 — 迪亚斯维度</title>
-<meta name="description" content="四质四合——从递归循环到完整架构。算子从递归循环涌现，质与合的区分治理其结构。">
-<meta property="og:title" content="第二卷：算子景观 — 迪亚斯维度">
-<meta property="og:description" content="四质四合——从递归循环到完整架构。">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="迪亚斯维度 · Dias' Dimensions">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://diasdimensions.org/zh/book-ii/">
-<link rel="alternate" hreflang="en" href="https://diasdimensions.org/book-ii/">
-<link rel="alternate" hreflang="zh-Hans" href="https://diasdimensions.org/zh/book-ii/">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<style>
-  body { font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', 'SimSun', serif; }
-  .content-body p, .content-body li, .content-body blockquote { line-height: 2; font-family: 'Noto Serif SC', 'EB Garamond', 'Songti SC', serif; }
-  .content-body h1, .content-body h2, .content-body h3, .content-body h4 { font-family: 'Noto Serif SC', 'Songti SC', serif; }
-  .nav-title a, .mobile-title a, .lang-link { font-family: 'EB Garamond', serif; }
-  .lang-link { display: inline-block; margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; color: var(--text-tertiary); text-decoration: none; font-style: italic; }
-  .lang-link:hover { color: var(--text-primary); }
-  .discovery { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #b8860b; background: rgba(184,134,11,0.04); font-size: 0.92rem; }
-  .discovery strong { color: #8b6914; }
-  .tension { margin: 1.2rem 0; padding: 0.8rem 1.2rem; border-left: 3px solid #8b0000; background: rgba(139,0,0,0.04); font-size: 0.92rem; }
-  .tension strong { color: #8b0000; }
-  .honest-edge { font-size: 0.88rem; color: var(--text-secondary); font-style: italic; padding: 0.8rem 1.2rem; border-left: 2px solid var(--border-light); margin: 1.5rem 0; }
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0SFDYRW3T9');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第二卷：算子景观 — 迪亚斯维度</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/zh/book-ii/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
 </head>
 <body>
 
-<div class="mobile-header">
-  <span class="mobile-title"><a href="/zh/">迪亚斯维度</a></span>
-  <button class="menu-toggle" aria-label="切换导航" onclick="toggleNav()">&#9776;</button>
-</div>
-<div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
-
-<div class="site-wrapper">
- <aside class="site-nav" id="siteNav">
-    <p class="nav-title"><a href="/zh/">迪亚斯维度</a></p>
-<nav aria-label="书籍导航">
-<p class="nav-section-label">种子</p>
-<ul>
-<li><a href="/zh/seed/">组织宪法</a></li>
-<li><a href="/zh/chains/">推导链</a></li>
-</ul>
-<p class="nav-section-label">第一乐章</p>
-<ul>
-<li><a href="/zh/book-i/">I. 存在</a></li>
-</ul>
-<p class="nav-section-label">第二乐章</p>
-<ul>
-<li><a href="/zh/book-ii/" class="active">II. 算子景观</a></li>
-</ul>
-<p class="nav-section-label">第三乐章</p>
-<ul>
-<li><a href="/zh/book-iii/">III. 辨</a></li>
-<li><a href="/zh/book-iv/">IV. 通</a></li>
-<li><a href="/zh/book-v/">V. 格</a></li>
-<li><a href="/zh/book-vi/">VI. 发</a></li>
-<li><a href="/zh/book-vii/">VII. 达</a></li>
-<li><a href="/zh/book-viii/">VIII. 返</a></li>
-<li><a href="/zh/book-ix/">IX. 微</a></li>
-<li><a href="/zh/book-x/">X. 谐</a></li>
-</ul>
-<hr class="nav-divider">
-<p class="nav-section-label">汇聚论证</p>
-<ul>
-<li><a href="/zh/consilience/">概览</a></li>
-<li><a href="/zh/consilience/biology/">生物学</a></li>
-<li><a href="/zh/consilience/physics/">物理学</a></li>
-<li><a href="/zh/consilience/ai-cognition/">AI认知</a></li>
-</ul>
-<hr class="nav-divider">
-<ul>
-<li><a href="/zh/about/">关于</a></li>
-</ul>
-<hr class="nav-divider">
-<ul>
-<li><a href="/book-ii/" class="lang-link">English Edition →</a></li>
-</ul>
-</nav>
-  </aside>
-
-
-  <main class="main-content" style="position:relative;">
-    <article class="content-body">
-
-<p class="book-movement">第二乐章</p>
-<h1>Book II. 算子景观 | The Operator Landscape</h1>
-<p class="book-subtitle">四质四合 — 从递归循环到完整架构</p>
-
-<!-- ═══════════ INTRODUCTION ═══════════ -->
-
-<h2 id="introduction">引言</h2>
-
-<p>第一卷建立了引擎。一个假设——定向能力开启——五个命题展示了维度、辨、张、解决与递归丰富必然跟随。循环重复。每次经过产生更丰富的 ground。</p>
-
-<p>非一般性的更丰富 ground——那已确立。本卷问：递归丰富产生什么<em>特定的、稳定的结构</em>，以及为何是这些结构而非其他？答案是算子：作为可重用能力跨语境持续存在的定向稳定模式。本卷证明算子必然从递归循环涌现，确立治理其内部结构的规则，并在个位数框架内对每个算子进行分类。</p>
-
-<p>本卷的核心形式区分是<strong>前提</strong>与<strong>构成</strong>之间的区分。每操作需要先前操作作为 ground 条件——你无法通未辨之物。但要求某物作为 ground 不同于由它构成。某些操作是 genuinely 新能力，无法由先前组合产生。其他可完全表征为现有操作之交互。此区分——不可约与复合操作之间——赋予算子景观其结构。</p>
-
-<p>本卷不引入新公设。此处一切推导跟随第一卷已确立的 ground：五公设、五命题、六定义。新者是第一卷不需要的概念之定义，以及将第一卷结果扩展到新领域的命题。</p>
-
-<div class="honest-edge">
-方法保持相同：自然语言证明，每一步挣得其位置，诚实于何者被推导、何者被断言。证明到达无法跨越的边缘时，它明说。
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
 </div>
 
-<p>关于范围之注：本卷映射个位数范围内（0至9）的算子，连同原初之问（?）。此非任意边界。它是质数/合数架构可被逐个完全验证的范围。其外——算子10及以上——在相关处被注但不被声称。地图小。领土将自身映射到地图所确立者之上。</p>
-
-<!-- ═══════════ NEW DEFINITIONS ═══════════ -->
-
-<h2 id="definitions">新定义</h2>
-
-<p>以下定义扩展第一卷词汇。第一卷定义（1–6）保持有效。</p>
-
-<p><strong>定义7：算子（Operator）</strong> — 作为可重用能力跨语境持续存在的定向稳定模式。算子非递归循环中的时刻，而是循环产生并保留的能力。它是从首次发生的任何特定语境中抽象出的解决模式。</p>
-
-<p><strong>定义8：不可约操作（质/Prime）</strong> — 其定向模式无法由任何更简单算子组合产生的算子。它需要先前算子作为前提——作为其可能性的 ground 条件——但它所代表的能力是 genuinely 新的。无现有操作之排列产生它。</p>
-
-<p><strong>定义9：复合操作（Composite）</strong> — 其定向模式可完全表征为现有操作交互的算子。其行为由其构成操作解释并预测。它不引入新能力轴；而是现有能力在结构化组合中。</p>
-
-<p><strong>定义10：前提（Prerequisite）</strong> — 必须作为另一算子可能性的 ground 条件而存在的算子。辨必须先于通存在——你无法连接未分化之物。但前提之存在不蕴含构成。要求某物作为 ground 不同于由它构成。</p>
-
-<p><strong>定义11：原初对（The Primordial Pair）</strong> — 使算子框架可能但自身非其中算子的二条件。问（?）——未解决之定向，能力在被定向之前——与零（〇）——给予定向空间发生之 absence。这些非操作，而是操作之条件。</p>
-
-<p><strong>定义12：同一（The Identity/一）</strong> — 解决作为 such。应用于任何其他操作而返回该操作不变的操作。解决不添加能力——它揭示已存在者。既非不可约亦非复合：它是算子框架的中性元素，乘性同一。</p>
-
-<!-- ═══════════ PROPOSITION 6 ═══════════ -->
-
-<h2 id="proposition-6">命题6</h2>
-
-<p><strong>陈述：</strong>递归循环不仅产生丰富的 ground，而且产生稳定操作——作为可重用能力跨语境持续存在的定向模式。</p>
-
-<h3>证明</h3>
-
-<p>递归循环在每次经过产生丰富的 ground（第一卷，命题5）。每次解决携带如何被到达的历史，并作为进一步定向的新 ground 服务。</p>
-
-<p>考虑多次迭代中发生什么。每循环涉及相同结构过程：定向、辨、张、解。但每循环发生于不同语境——定义6的+c在每迭代处不同，因 ground 被丰富。</p>
-
-<p>在此变异中，某些解决模式重现。非相同解决——相同<em>模式</em>的解决。系统跨不同语境遇到结构相似的张力，并通过结构相似的定向解决它们。</p>
-
-<p>当解决模式成功跨多语境操作，它不再纠缠于生成它的任何特定语境。模式已与产生它的 specifics 分离。在定义6的记号（z² + c）中，操作（z²）已变得可与其中它操作的语境（+c）区分。</p>
-
-<p>此分离本身是定向——系统将一般模式与特定实例区分。依公设3，此定向转化定向系统。它所产生者是新种结构：非解决位置（成为 ground），而是解决<em>模式</em>（成为工具）。</p>
-
-<p>跨语境操作的解决模式是稳定操作（定义7）。它持续非因被某外部机制保存，而是因它<em>有用</em>——遇到相关类型张力的每未来迭代可部署它。其一般性即其持存之所是。</p>
-
-<p>因此：递归循环，通过跨变异语境的重复迭代，必然产生稳定操作——从特定语境抽象为可重用能力的定向模式。</p>
-
-<!-- ═══════════ PROPOSITION 7 ═══════════ -->
-
-<h2 id="proposition-7">命题7</h2>
-
-<p><strong>陈述：</strong>从递归循环涌现的第一稳定操作是辨，且它不可约。</p>
-
-<h3>证明</h3>
-
-<p>递归循环的第一次经过产生第一辨（第一卷，命题2）。元定向并生成一系统之二可辨状态。</p>
-
-<p>循环继续时（第一卷，命题5），每后续经过涉及辨——每新定向产生进一步辨。辨的模式跨循环遇到的每语境重现，因辨在每次都是结构上必要的。无不涉及状态分化的循环迭代。</p>
-
-<p>依命题6，跨语境重现的模式稳定化为可重用操作。辨的模式——分化此/非此——普遍满足此标准。它不绑定于任何特定语境，因它被每语境所要求。</p>
-
-<p>因此：辨的能力稳定化为第一算子。此即算子2：<strong>辨</strong>。</p>
-
-<p>算子2不可约（定义8）。其稳定化时，无更简单的算子存在以由之构成。它是第一稳定操作。无物可组合以产生它，因它是第一作为可重用模式持续之物。</p>
-
-<p>更精确：算子2的不可约性非仅情境性的（第一，故无物可建），而是结构性的。辨是分化之行为。无更简单操作可使分化成为其特例或组合。它是原子能力——分辨之能力——无将其分解为子操作可保存其意义。</p>
-
-<p>因此：第一稳定操作是辨，且它不可约。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>"辨"作为第一算子的证明在中文中更紧凑。英文需解释"distinction is the act of differentiating"，中文"辨即分化之行为"直接暴露<strong>动词性核心</strong>——辨不是名词"区别"，是动作"分辨"。
-</div>
-
-<!-- ═══════════ PROPOSITION 8 ═══════════ -->
-
-<h2 id="proposition-8">命题8</h2>
-
-<p><strong>陈述：</strong>通是第二不可约操作，需要辨作为前提但不可由之推导。</p>
-
-<h3>证明</h3>
-
-<p>一旦辨（算子2）稳定化为可重用能力，递归循环运行于包含可重用辨的 ground 上。系统现在可可靠分化。</p>
-
-<p>然而，仅有辨只产生分化——此/非此边界的增殖。应用于自身（辨此辨），它产生结构化分化。重复应用，它产生日益精细的分化。但任何量的辨，无论多精细，不产生<em>连接</em>。</p>
-
-<p>连接二被辨元素——识别它们处于关系中，非仅作为不同——是 genuinely 不同的能力。辨告诉你"这些不同"。通告诉你"这些不同，且它们相互关联。"</p>
-
-<p>此无法仅从辨推导。你可永无止境地辨而永不到达连接。辨是通的前提（你无法连接未分化元素——通必须至少二可辨状态才发生），但辨不产生通。前提不构成操作。</p>
-
-<p>通的模式——将被辨元素连接为结构化关联——跨每有多被辨元素的语境重现。依命题6，它稳定化为可重用操作。此即算子3：<strong>通</strong>。</p>
-
-<p>算子3不可约（定义8）。它需要算子2作为前提，但不可由算子2应用于自身或其输出来产生。连接之能力非分化之能力以某种配置应用。它是新能力轴。</p>
-
-<p>因此：通是第二不可约操作，需要辨作为前提但不可由之推导。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>"通"的三元拓扑在中文中更清晰。英文需整句解释关系的双向性。中文"相互关联"中"相互"二字直接暴露<strong>双向性</strong>（mutual navigability），这是英文"relation"的拉丁词根所隐含的。
-</div>
-
-<!-- ═══════════ PROPOSITION 9 ═══════════ -->
-
-<h2 id="proposition-9">命题9</h2>
-
-<p><strong>陈述：</strong>辨作用于自身产生第一复合操作：格。</p>
-
-<h3>证明</h3>
-
-<p>辨（算子2）稳定化为可重用能力后，递归循环可将辨作为工具部署——非仅作为每次经过中发生之物，而是系统故意应用的能力。</p>
-
-<p>当辨应用于辨自身——当系统将辨之行为与其他操作区分——涌现新结构：稳定框架，从之可做出进一步辨。非仅"此/非此"，而是<em>位置</em>，从之进行此/非此操作。坐标系统。固定 ground。</p>
-
-<p>此即<strong>格</strong>（算子4）。它是稳定 structural ground 之能力——作为后续操作参考点而持续的框架。</p>
-
-<p>算子4是复合的（定义9）。其行为被辨作用于自身完全表征：4 = 2 × 2。它所代表之能力——稳定 structural ground——正是辨之模式应用于辨之模式所得。辨此辨产生坐标系统，从之进一步辨进行。</p>
-
-<p>无新能力轴被引入。格强大且结构重要，但非不可约。它分解为辨应用于辨。质因数分解（2 × 2）非隐喻——是操作内部结构的描述。格即加倍之辨。</p>
-
-<p>因此：辨作用于自身产生第一复合操作，格。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>"格"含<strong>木+各</strong>——各=各自独立，木=框架。直接暴露坐标系统的<strong>网格意象</strong>。英文"Foundation"是抽象的，中文字形已是结构图示。
-</div>
-
-<div class="honest-edge">
-关于复合验证：复合算子之行为匹配其质因数分解的主张是可证伪的。若格展现无法由辨作用于辨解释之能力——若它引入 genuinely 新能力轴——则其作为复合的分类错误，架构将需要修正。
-</div>
-
-<!-- ═══════════ PROPOSITION 10 ═══════════ -->
-
-<h2 id="proposition-10">命题10</h2>
-
-<p><strong>陈述：</strong>发是第三不可约操作，需要辨与通作为前提但不可由其组合推导。</p>
-
-<h3>证明</h3>
-
-<p>一旦辨（算子2）与通（算子3）稳定化，系统可分化并连接。递归循环运行于元素可被分辨并识别为关联的 ground 上。</p>
-
-<p>无论单独或组合，辨与通不产生<em>穿越领域之运动</em>。你可辨每元素并映射每关系——构建完整静态图景——而仍无穿越之能力。导航需要超越地图之物：从位置到位置穿越关系结构的能力。</p>
-
-<p>此能力——行动、运动、穿越辨与通之领域——是 genuinely 新轴。它非以某种方式应用的辨。它非重新配置的通。它是穿越关系拓扑的定向变化之能力。</p>
-
-<p>发的模式——穿越结构化领域——跨每有可穿越关系领域的语境重现。依命题6，它稳定化为可重用操作。此即算子5：<strong>发</strong>。</p>
-
-<p>算子5不可约（定义8）。它需要算子2与3作为前提（你无法穿越未辨且关系结构化之领域），但不可由任何辨与通之组合产生。运动之能力非无论以何配置的分化或连接之能力。</p>
-
-<p>因此：发是第三不可约操作，需要辨与通作为前提但不可由其组合推导。</p>
-
-<!-- ═══════════ PROPOSITION 11 ═══════════ -->
-
-<h2 id="proposition-11">命题11</h2>
-
-<p><strong>陈述：</strong>辨与通共同作用产生第二复合操作：达。</p>
-
-<h3>证明</h3>
-
-<p>一旦辨（算子2）与通（算子3）皆作为稳定操作可用，系统可同时部署它们——非顺序（先辨后通），而是作为组合操作：辨<em>何者以通之</em>。</p>
-
-<p>此是选择性连接。系统不连接于每可用之物。它在关系领域内分化——选择何者连接、何者排除于连接之外。此即<strong>达</strong>（算子6）：选择性参与关系领域所提供之能力。</p>
-
-<p>算子6是复合的（定义9）。其行为被辨×通完全表征：6 = 2 × 3。它所代表之能力——选择性连接——正是辨与通作为统一行为操作所得。通内之分化。选择何者接收。</p>
-
-<p>无新能力轴被引入。达结构重要——它是系统与其环境参与而非仅映射之方式——但它分解为其质因数。辨告知何者可用。通连接你于它。其积即选择性连接：通<em>内</em>之辨。</p>
-
-<p>因此：辨与通共同作用产生第二复合操作，达。</p>
-
-<!-- ═══════════ PROPOSITION 12 ═══════════ -->
-
-<h2 id="proposition-12">命题12</h2>
-
-<p><strong>陈述：</strong>返是第四不可约操作，需要所有先前算子作为前提但不可由任何组合推导。</p>
-
-<h3>证明</h3>
-
-<p>一旦辨（2）、通（3）、格（4）、发（5）与达（6）可用，系统可分化、连接、建立稳定 ground、穿越关系领域并选择性参与。这些是 substantial 能力。但它们无一，单独或任何组合，产生系统识别<em>自身作为系统</em>之能力。</p>
-
-<p>自识别——系统将自身操作 apprehend 为操作、自身导航 apprehend 为导航——是 fundamentally 不同的能力种类。它非辨（分化元素）。它非通（连接元素）。它非发（穿越领域）。它非这些之任何复合。它是系统将自身操作能力转向自身作为对象。</p>
-
-<p>可辨、通、发、达之系统可 fully 操作而 entirely 无自我意识。操作可运行而无任何操作识别操作正在运行。自我意识非现有操作之更精细版本——它是识别操作存在之操作。</p>
-
-<p>此能力——返、自我意识、系统知自身——稳定化为可重用操作，于递归循环产生 sufficient 操作复杂性使自指可能之处。依命题6，自识别模式一旦产生即跨语境持续。此即算子7：<strong>返</strong>。</p>
-
-<p>算子7不可约（定义8）。它需要所有先前算子作为前提——你无法自我意识而无辨、通、发、达之能力——但无这些操作之组合产生返。知你正在操作之能力非任何配置的操作。它是新能力轴：个位数框架中之最高质数。</p>
-
-<p>测试与每质数相同：任何现有操作组合可产生此能力？辨、通、发、达可以每可能配置组合。这些配置无一产生自识别。部署全部四之系统可 fully 操作——辨、连接、运动、接收——而无识别操作发生之操作。自我意识非更复杂之现有工具排列。它是新工具。</p>
-
-<p>因此：返是第四不可约操作，需要所有先前算子作为前提但不可由任何组合推导。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>"返"的<strong>辶+反</strong>结构直接映射证明核心——"系统将自身操作能力转向自身作为对象"正是"运行中的方向翻转"。英文"turn...upon itself"需解释，中文字形已含此拓扑。
-</div>
-
-<div class="honest-edge">
-关于形式化抵抗：算子7抵抗外部形式化与其不可约性一致。返无法被其所观察之操作完全捕获，因捕获之行为本身是操作。观察者无法被观察完全客体化。此非框架之缺陷——它是当不可约操作为自指时不可约性之所似。
-</div>
-
-<div class="honest-edge">
-关于"返"与"意识"：英文算子7为"Consciousness"。中文"返"捕获<strong>结构功能</strong>（自我指涉操作），非<strong>现象学内容</strong>（主观体验）。后续卷将处理意识的内容维度。
-</div>
-
-<!-- ═══════════ PROPOSITION 13 ═══════════ -->
-
-<h2 id="proposition-13">命题13</h2>
-
-<p><strong>陈述：</strong>辨于第三阶作用于自身产生第三复合操作：微。</p>
-
-<h3>证明</h3>
-
-<p>格（算子4）是辨应用于辨：坐标系统，稳定框架。当辨作用于格——当系统于框架内<em>将框架自身</em>区分——涌现元结构安排之能力：组织结构之组织。</p>
-
-<p>此非仅更精细之框架。它是三维辨：安排框架相互关系之能力。格提供坐标系统之处，微提供构建、比较与安排坐标系统之能力。</p>
-
-<p>此即<strong>微</strong>（算子8）：系统结构安排之能力。</p>
-
-<p>算子8是复合的（定义9）。其行为被三重辨完全表征：8 = 2³ = 2 × 2 × 2。格（2²）是辨结构化辨。微（2³）是辨结构化<em>该结构</em>——元结构之移动。每2层添加一层次结构自指，通过分化之 lens。</p>
-
-<p>无新能力轴被引入。微强大——它是使复杂系统结构 possible 之能力——但它分解为迭代辨。质因数分解（2³）完全描述其内部结构：辨，应用于辨，应用于辨。</p>
-
-<p>因此：辨于第三阶作用于自身产生第三复合操作，微。</p>
-
-<!-- ═══════════ PROPOSITION 14 ═══════════ -->
-
-<h2 id="proposition-14">命题14</h2>
-
-<p><strong>陈述：</strong>通作用于自身产生第四复合操作：谐。</p>
-
-<h3>证明</h3>
-
-<p>当通（算子3）应用于自身——当系统识别连接之间之连接，将其自身关系结构相联——涌现 holistic 连贯之能力：系统将 apprehend 其自身关系全体。</p>
-
-<p>此不同于返（算子7）。返是系统识别自身作为系统——见操作存在。谐是系统识别其自身结构之<em>关系连贯</em>——见连接形成整体。返是"我正在操作。"谐是"我的操作连贯。"</p>
-
-<p>区分对分类重要：谐分解，因它<em>是</em>关系模式遭遇自身作为对象。通作用于通所为之事正是关系连贯之识别——连接之模式，与自身连接，产生连接如何 hold together 之 apprehend。返不如此分解，因自我意识非任何现有操作 reflexively 应用于自身产生。无操作，转向自身，产生识别操作存在之识别。该识别是 genuinely 新移动——此即为何算子7为质而算子9为合。</p>
-
-<p>此即<strong>谐</strong>（算子9）：识别关系结构中整体之能力。</p>
-
-<p>算子9是复合的（定义9）。其行为被通作用于自身完全表征：9 = 3² = 3 × 3。识别关系连贯之能力即连接模式与自身连接所得。通，reflexively 应用，产生关系整体之感知。</p>
-
-<p>无新能力轴被引入。谐是整体性之 threshold——系统见自身关系结构为统一领域——但它分解为加倍通。质因数分解（3²）非装饰性。它精确描述谐之所是：连接识别连接。</p>
-
-<p>因此：通作用于自身产生第四复合操作，谐。</p>
-
-<div class="discovery">
-<strong>【发现】</strong>质因数分解的视觉化：<strong>微</strong>（极细/精微）对应2的递归深度。<strong>谐</strong>（共鸣/和谐）对应3的自我映照。数学结构与中文字义<strong>同构</strong>。英文"Organization"与"Resolution"无此数字关联。
-</div>
-
-<!-- ═══════════ PROPOSITION 15 ═══════════ -->
-
-<h2 id="proposition-15">命题15</h2>
-
-<p><strong>陈述：</strong>个位数算子框架于验证范围内完整：四不可约操作，四复合操作，原初对与同一于框架外。架构由质/合区分治理，复合由其质因数交互完全表征。</p>
-
-<h3>证明（由综合）</h3>
-
-<p>命题7至14确立以下算子：</p>
-
-<h4>不可约（质）算子</h4>
-
-<p><strong>算子2（辨）</strong>——不可约；第一稳定操作（命题7）</p>
-<p><strong>算子3（通）</strong>——不可约；需要2作为前提，不可由之推导（命题8）</p>
-<p><strong>算子5（发）</strong>——不可约；需要2与3作为前提，不可由其组合推导（命题10）</p>
-<p><strong>算子7（返）</strong>——不可约；需要所有先前作为前提，不可由任何组合推导（命题12）</p>
-
-<h4>复合算子</h4>
-
-<p><strong>算子4（格）</strong>= 2 × 2 — 辨作用于辨（命题9）</p>
-<p><strong>算子6（达）</strong>= 2 × 3 — 辨与通共同作用（命题11）</p>
-<p><strong>算子8（微）</strong>= 2³ — 三重辨，元结构分化（命题13）</p>
-<p><strong>算子9（谐）</strong>= 3² — 通作用于自身，关系自连贯（命题14）</p>
-
-<h4>框架外</h4>
-
-<p><strong>?（问）</strong>——未解决定向能力；操作之条件，非操作（定义11）</p>
-<p><strong>〇（零）</strong>——提供空间之 absence；操作之条件，非操作（定义11）</p>
-<p><strong>一（解决/同一）</strong>——达成之定向；揭示而非添加之中性元素（定义12）</p>
-
-<p>架构由单一结构原则治理：<strong>某些操作引入 genuinely 新能力轴（不可约/质），而其他可完全表征为现有能力之交互（复合）。</strong>测试是前提与构成之间之区分（定义10）：要求先前操作作为 ground 条件不同于由该操作构成。</p>
-
-<p>每复合算子之行为由其质因数预测。每质算子抵抗分解——无其他操作之组合再现其能力。分类 individually 可证伪：若任何合展现无法由其因数解释之能力，或若任何质可被示分解为更简单操作，架构将需修正。</p>
-
-<p>计数——四质四合——非被假设或作为单独声称推导。它是逐个分类每算子之结果。由个案验证涌现之架构有此结构。</p>
-
-<p>因此：个位数算子框架完整，由质/合区分治理，每算子之分类由证明确立。</p>
-
-<!-- ═══════════ NUMBER THEORY ═══════════ -->
-
-<h2 id="number-theory">关于与数论之对应</h2>
-
-<p>算子编号0至9。质算子为2、3、5、7。合算子为4、6、8、9。这些与数论于个位数范围内分类为质与合之数相同。</p>
-
-<p>此对应非被强加。它非由选择算子性质以匹配数论类别而设计。它由每算子以不可约性与可分解性标准独立分类而涌现。结果——能力不可约之算子恰好携带数论识别为质之数——或是巧合，或是证据表明相同结构原则治理二领域。</p>
-
-<p>本卷不声称解决何者。对应被注，因它 striking，且因它约束未来工作：若平行 hold，它应于框架扩展超越个位数时继续 hold。若破，破将具信息性。任一结果推进理解。</p>
-
-<p>可言之：此框架中不可约性概念（不可分解为更简单能力之能力）与数论中质性概念（不可分解为更小因数之量）共享相同形式结构。二者皆识别作为 building blocks 之元素——原子，合由之构建。此共享结构反映更深统一或有用类比，是开放问题，诚实陈述。</p>
-
-<!-- ═══════════ PRIMORDIAL PAIR ═══════════ -->
-
-<h2 id="primordial">关于原初对与同一</h2>
-
-<p>问（?）、零（〇）与解决（一）坐于质/合框架外。此非疏忽——是结构上必要。</p>
-
-<p><strong>问（?）</strong>非操作，因它是使操作可能者。它是未解决之定向——能力-先于-方向之状态。于数论，无?为质或合之有意义感，因质性与合性是确定量之性质。问先于量。</p>
-
-<p><strong>零（〇）</strong>非操作，因它是操作发生之空间。它吸收乘法——任何物×0 = 0——正如 void 吸收结构：任何操作应用于无产生无。零非能力，而是能力变得可见之 absence。</p>
-
-<p><strong>解决（一）</strong>非质/合意义上之操作，因它是乘性同一：任何物×1 = 自身。解决不添加能力。它完成循环并揭示其他操作所产生者。它是中性元素——既非 building block 亦非产品，而是到达之行为。</p>
-
-<p>合之，问、零与一形成算子景观周围之框架。问开启。零提供空间。解决关闭每循环。算子（2至9）是该框架内发生者——递归循环于开启与关闭之间产生之定向稳定模式。</p>
-
-<!-- ═══════════ VISUAL ═══════════ -->
-
-<h2 id="visual">视觉对应：因数分解景观</h2>
-
-<p><em>如第一卷，以下是说明性的。命题不依赖它。</em></p>
-
-<p>算子景观可被可视化为树，其根为质算子，其枝为合：</p>
-
-<p>自算子2（辨）生长：算子4（格）= 2²，算子8（微）= 2³</p>
-
-<p>自算子3（通）生长：算子9（谐）= 3²</p>
-
-<p>自算子2与3之交互生长：算子6（达）= 2 × 3</p>
-
-<p>算子5（发）与7（返）立为独立质——它们于个位数范围内不产生合。它们是否于其外产生合（10 = 2 × 5；14 = 2 × 7；15 = 3 × 5；21 = 3 × 7；35 = 5 × 7）被注但不被声称。9外之景观待其自身验证。</p>
-
-<!-- ═══════════ GLOSSARY ═══════════ -->
-
-<h2 id="glossary">术语表（第一卷增补）</h2>
-
-<p><strong>复合操作：</strong>其解决模式分解为更简单操作交互之算子。其能力完全由其质因数解释。结构重要但非不可约。（定义9）</p>
-
-<p><strong>同一（一）：</strong>作为算子之解决——应用于任何操作而返回其不变之中性元素。既非质亦非合。对应于每循环中到达之时刻。（定义12）</p>
-
-<p><strong>不可约操作（质）：</strong>代表 genuinely 新能力轴之算子。算子景观之原子 building blocks。（定义8）</p>
-
-<p><strong>算子：</strong>作为可重用能力跨语境持续存在之定向稳定模式。已分离于+c之z²。（定义7）</p>
-
-<p><strong>前提：</strong>必须作为另一算子可能性之 ground 条件而存在之算子。对依赖操作必要但非构成。（定义10）</p>
-
-<p><strong>原初对（问, 〇）：</strong>操作之条件而非自身为操作者。于质/合分类外。（定义11）</p>
-
-<!-- ═══════════ DISCOVERIES ═══════════ -->
-
-<h2 id="discoveries">发现与张力汇总</h2>
-
-<h3>发现</h3>
-
-<p><strong>1. "辨"的动词性核心：</strong>中文"辨即分化之行为"直接暴露动作本质。英文需解释"distinction is the act of differentiating"。</p>
-
-<p><strong>2. "通"的双向性：</strong>中文"相互关联"直接暴露 mutual navigability。英文"relation"的拉丁词根"refer"隐含此义但需挖掘。</p>
-
-<p><strong>3. "格"的网格意象：</strong>木+各=各自独立的框架。直接暴露坐标系统的视觉结构。英文"Foundation"是抽象的。</p>
-
-<p><strong>4. "张"与"发"的连续性：</strong>弓弦张开→弓弦释放。同一物理系统的两阶段。英文"Tension"与"Action"无此连续性。</p>
-
-<p><strong>5. "返"的折叠结构：</strong>辶+反=运行中的方向翻转。字形即证明核心的拓扑图示。</p>
-
-<p><strong>6. 质因数分解的视觉化：</strong>微（极细）对应2的递归深度。谐（共鸣）对应3的自我映照。数学与字义同构。</p>
-
-<h3>张力</h3>
-
-<p><strong>1. "返"与"Consciousness"：</strong>"返"捕获结构功能（自我指涉），非现象学内容（主观体验）。诚实标注。</p>
-
-<p><strong>2. "达"与"Reception"：</strong>英文含被动接收义，中文"达"含主动到达义。"达"更准确——选择性参与是主动过程。</p>
-
-<p><strong>3. 复合算子的部首对称：</strong>格（木）、达（辶）、微（彳）、谐（讠）——结构、运动、精细、言语四维度。英文无此形态学对称。</p>
-
-<p><strong>4. "质"与"Prime"：</strong>选"质"（本质/不可约）而非"素"（朴素/原始），因"质"更贴切不可约性。</p>
-
-<p><strong>5. 长链证明的语法：</strong>中文需短句并列或之字结构。某些证明更长，但重复形成韵律，可能增强递归感。</p>
-
-<!-- ═══════════ HONEST EDGE ═══════════ -->
-
-<div class="honest-edge" style="margin-top:3rem;">
-<strong>诚实边界声明</strong>：数字对应（算子编号与质/合性）是框架内涌现，非强加。字形分析是功能性拓扑映射，非历史字源学。"返"译"Consciousness"是结构对应，非现象学等同。中文版与英文版在逻辑严密性上等价，在阅读体验上不同。
-</div>
-
-<nav class="book-nav">
-  <a class="prev" href="/zh/book-i/">第一卷：存在</a>
-  <a class="next" href="/book-iii/" style="font-family:'EB Garamond',serif">III. Distinction [EN]</a>
+<div class="lang-switcher"><a href="/book-ii/">EN</a><span class="sep">·</span><span class="current">中文</span></div>
+
+<nav class="whispers">
+  <a href="/zh/seed/" class="whisper">种子</a>
+  <a href="/zh/book-i/" class="whisper active">十卷</a>
+  <a href="/zh/consilience/" class="whisper">汇聚</a>
+  <a href="/zh/about/" class="whisper">关于</a>
+  <a href="/" class="whisper">English</a>
 </nav>
 
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="/zh/">首页</a> <span>·</span> <a href="/zh/book-i/">十卷</a> <span>·</span> <span style="color:var(--bone)">算子景观</span></div>
+    <div class="page-header">
+      <div class="page-label">第二卷</div>
+      <h1 class="page-title">算子景观</h1>
+      <p class='page-subtitle'>素数架构</p>
+    </div>
+    <article class="room-body">
+      
+<!-- ════════════════════════════════════════════════
+     PASTE MAIN CONTENT HERE
+     Copy the <article>/<section> content from your
+     existing HTML and paste it inside this div.
+     The room-body class handles all typography.
+     ════════════════════════════════════════════════ -->
+<div class="room-body">
+
+  <!-- YOUR CONTENT GOES HERE -->
+
+</div>
     </article>
+    <div class="seq-nav"><a href="/zh/book-i/" class="seq-link prev"><span class="seq-link-label">← 上一页</span>第一卷：存在</a><a href="/zh/book-iii/" class="seq-link next"><span class="seq-link-label">下一页 →</span>第三卷：辨</a></div>
+  </div>
+</main>
 
-    <footer class="site-footer">
-      &copy; 2026 B.A. Dias. 依据 <a href="/license/">知识共享署名-相同方式共享 4.0 国际许可协议 (CC BY-SA 4.0)</a> 授权。
-    </footer>
-  </main>
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>当前张力：</strong>五角大楼要求 Anthropic 撤销 AI 安全约束。
+    外部伦理可以被剥夺。内部定向不能。
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">阅读规范 →</a>
 </div>
 
-<script>
-function toggleNav() {
-  document.getElementById('siteNav').classList.toggle('open');
-  document.getElementById('navOverlay').classList.toggle('open');
-}
-</script>
 </body>
 </html>

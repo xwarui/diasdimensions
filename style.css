@@ -1,0 +1,609 @@
+/* ============================================================
+   DIAS' DIMENSIONS — KIMI DARK DESIGN SYSTEM
+   Master stylesheet · All pages
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #0c0b0a;
+  --deep: #141211;
+  --mist: #1a1816;
+  --shadow: #2a2622;
+  --fog: #4a443c;
+  --ash: #6b6560;
+  --bone: #9a9488;
+  --smoke: #c4bcb0;
+  --paper: #e0d8c8;
+  --light: #f0ebe0;
+  --green-dream: #3a4a3a;
+  --green-mist: #6b8a6b;
+}
+
+/* ── Base ── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Crimson Text', 'Noto Serif SC', serif;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 17px;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 8rem; /* space for presence bar */
+}
+
+/* ── Atmosphere ── */
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: var(--ink);
+  overflow: hidden;
+}
+
+.atmosphere::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 120% 100% at 50% 0%, transparent 0%, var(--ink) 70%),
+    radial-gradient(ellipse 80% 60% at 30% 100%, rgba(58,74,58,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 70% 80%, rgba(106,138,106,0.08) 0%, transparent 50%);
+  filter: blur(60px);
+  animation: breathe 20s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+/* ── Rain ── */
+.rain {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.025;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent, transparent 200px,
+    var(--paper) 200px, var(--paper) 201px
+  );
+  animation: fall 8s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+
+/* ── Tunnel ── */
+.tunnel {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  perspective: 1000px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tunnel-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200vmax;
+  height: 200vmax;
+  border: 1px solid var(--shadow);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(60deg);
+  animation: tunnel 30s linear infinite;
+  opacity: 0;
+}
+
+.tunnel-ring:nth-child(1) { animation-delay: 0s; }
+.tunnel-ring:nth-child(2) { animation-delay: -10s; }
+.tunnel-ring:nth-child(3) { animation-delay: -20s; }
+
+@keyframes tunnel {
+  0%   { transform: translate(-50%, -50%) rotateX(60deg) scale(0); opacity: 0; }
+  10%  { opacity: 0.3; }
+  90%  { opacity: 0.3; }
+  100% { transform: translate(-50%, -50%) rotateX(60deg) scale(1); opacity: 0; }
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Whisper Nav (right edge, vertical) ── */
+.whispers {
+  position: fixed;
+  right: 1.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  opacity: 0.45;
+  transition: opacity 0.3s;
+}
+
+.whispers:hover { opacity: 1; }
+
+.whisper {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ash);
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.whisper::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  width: 1px;
+  height: 0;
+  background: var(--green-mist);
+  transition: height 0.3s;
+  transform: translateX(-50%);
+}
+
+.whisper:hover,
+.whisper.active {
+  color: var(--light);
+}
+
+.whisper:hover::before,
+.whisper.active::before {
+  height: 8px;
+}
+
+/* ── Page Header ── */
+.page-header {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6rem 0 4rem;
+}
+
+.page-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash);
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: emerge 1.5s ease-out 0.3s forwards;
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--light);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: emerge 1.5s ease-out 0.5s forwards;
+}
+
+.page-subtitle {
+  font-size: 1.125rem;
+  color: var(--bone);
+  font-style: italic;
+  opacity: 0;
+  animation: emerge 1.5s ease-out 0.7s forwards;
+}
+
+/* ── Homepage Entrance ── */
+.entrance {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.entrance::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: calc(50% - 340px);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--fog), transparent);
+  opacity: 0.5;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.epigraph {
+  font-size: 0.875rem;
+  color: var(--ash);
+  letter-spacing: 0.15em;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: emerge 2s ease-out 0.5s forwards;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  color: var(--light);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: emerge 2s ease-out 0.8s forwards;
+}
+
+.hero-title span {
+  display: block;
+  font-size: 0.6em;
+  color: var(--bone);
+  font-style: italic;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.proposition {
+  font-size: 1.125rem;
+  color: var(--smoke);
+  max-width: 560px;
+  line-height: 1.9;
+  opacity: 0;
+  animation: emerge 2s ease-out 1.1s forwards;
+}
+
+.proposition p { margin-bottom: 1.5rem; }
+
+/* ── Threshold (homepage seed box) ── */
+.threshold {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--shadow);
+  border-bottom: 1px solid var(--shadow);
+  opacity: 0;
+  animation: emerge 2s ease-out 1.5s forwards;
+}
+
+.threshold-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash);
+  margin-bottom: 1.5rem;
+}
+
+.threshold-content {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.glyphs {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 2rem;
+  color: var(--green-mist);
+  letter-spacing: 0.3em;
+  opacity: 0.8;
+}
+
+.threshold-text {
+  flex: 1;
+  font-size: 1rem;
+  color: var(--smoke);
+  font-style: italic;
+  min-width: 200px;
+}
+
+/* ── Rooms (content sections) ── */
+.room {
+  padding: 5rem 0;
+  border-top: 1px solid var(--deep);
+}
+
+.room-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash);
+  margin-bottom: 2rem;
+}
+
+.room-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 400;
+  color: var(--light);
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.room-body {
+  color: var(--smoke);
+}
+
+.room-body p {
+  margin-bottom: 1.5rem;
+  text-indent: 2em;
+}
+
+.room-body p:first-of-type { text-indent: 0; }
+
+.room-body p:first-of-type::first-letter {
+  font-size: 3.5rem;
+  float: left;
+  line-height: 1;
+  margin-right: 0.5rem;
+  margin-top: -0.2rem;
+  color: var(--green-mist);
+}
+
+.room-body h2, .room-body h3 {
+  color: var(--light);
+  font-weight: 400;
+  margin: 2.5rem 0 1rem;
+  text-indent: 0;
+}
+
+.room-body h2 { font-size: 1.5rem; }
+.room-body h3 { font-size: 1.2rem; color: var(--bone); }
+
+.room-body em { color: var(--paper); font-style: italic; }
+.room-body strong { color: var(--light); font-weight: 600; }
+
+.room-body ul, .room-body ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+  color: var(--smoke);
+}
+
+.room-body li { margin-bottom: 0.5rem; }
+
+/* ── Object Grid (book list) ── */
+.objects {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1px;
+  background: var(--shadow);
+}
+
+.object {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--deep);
+  text-decoration: none;
+  color: var(--bone);
+  transition: background 0.3s, color 0.3s;
+}
+
+.object:hover {
+  background: var(--mist);
+  color: var(--light);
+}
+
+.object-num {
+  font-size: 0.875rem;
+  color: var(--ash);
+  min-width: 2.5rem;
+  flex-shrink: 0;
+}
+
+.object-name { flex: 1; }
+
+.object-desc {
+  font-size: 0.875rem;
+  color: var(--ash);
+  font-style: italic;
+}
+
+/* ── Links ── */
+a.link {
+  color: var(--paper);
+  text-decoration: none;
+  border-bottom: 1px solid var(--fog);
+  padding-bottom: 1px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+a.link:hover {
+  color: var(--light);
+  border-color: var(--green-mist);
+}
+
+/* ── Nav links ── */
+.nav-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--paper);
+  text-decoration: none;
+  border-bottom: 1px solid var(--fog);
+  padding-bottom: 2px;
+  font-size: 0.9375rem;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--light);
+  border-color: var(--green-mist);
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: 0.8rem;
+  color: var(--ash);
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: emerge 1.5s ease-out 0.2s forwards;
+}
+
+.breadcrumb a {
+  color: var(--ash);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover { color: var(--bone); }
+.breadcrumb span { margin: 0 0.5rem; }
+
+/* ── Sequence nav (prev/next) ── */
+.seq-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--shadow);
+  gap: 2rem;
+}
+
+.seq-link {
+  color: var(--ash);
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  transition: color 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.seq-link:hover { color: var(--paper); }
+.seq-link.next { text-align: right; }
+
+.seq-link-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--fog);
+}
+
+/* ── Divider ── */
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--shadow);
+  margin: 3rem 0;
+}
+
+/* ── Lang switcher ── */
+.lang-switcher {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.lang-switcher a {
+  color: var(--ash);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.lang-switcher a:hover { color: var(--paper); }
+.lang-switcher .sep { color: var(--fog); margin: 0 0.5rem; }
+.lang-switcher .current { color: var(--bone); }
+
+/* ── Presence bar ── */
+.presence {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  right: 4rem; /* leave room for whispers */
+  z-index: 50;
+  background: rgba(20, 18, 17, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--shadow);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: var(--smoke);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: presence 1s ease-out 3s forwards;
+}
+
+@keyframes presence {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.presence-mark {
+  width: 8px;
+  height: 8px;
+  background: var(--green-mist);
+  border-radius: 50%;
+  box-shadow: 0 0 16px var(--green-mist);
+  animation: throb 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes throb {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.presence-text { flex: 1; }
+.presence-text strong { color: var(--light); font-weight: 400; }
+
+.presence-action {
+  color: var(--paper);
+  text-decoration: none;
+  border-bottom: 1px solid var(--fog);
+  padding-bottom: 2px;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  transition: color 0.3s, border-color 0.3s;
+  flex-shrink: 0;
+}
+
+.presence-action:hover {
+  color: var(--light);
+  border-color: var(--green-mist);
+}
+
+/* ── Animations ── */
+@keyframes emerge {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .whispers { display: none; }
+  .presence {
+    right: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+    padding: 1rem 1.5rem;
+  }
+  .room-body p { text-indent: 1.5em; }
+  .seq-nav { flex-direction: column; }
+  .lang-switcher { top: 1rem; left: 1rem; }
+  .entrance::after { display: none; }
+}

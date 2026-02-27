@@ -1,246 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Structural Ethical Orientation in Large Language Models – Dias' Dimensions</title>
-<meta name="description" content="A technical proposal for building intrinsic ethical orientation in AI systems using existing mechanistic interpretability tools. Applies Tension Theory's operator architecture to distinguish structural ethical reasoning from applied constraints.">
-<meta property="og:title" content="Structural Ethical Orientation in Large Language Models – Dias' Dimensions">
-<meta property="og:description" content="A technical proposal for building intrinsic ethical orientation in AI systems using existing mechanistic interpretability tools.">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Dias' Dimensions">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://diasdimensions.org/publications/structural-ethical-orientation/">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0SFDYRW3T9');
-</script>
-<style>
-  .paper-header {
-    border-bottom: 1px solid var(--border-color, #e0ddd6);
-    padding-bottom: 2.2em;
-    margin-bottom: 2.5em;
-  }
-  .paper-byline {
-    font-size: 0.88em;
-    color: var(--text-secondary, #6b6760);
-    margin-top: 0.5em;
-  }
-  .paper-meta-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-    margin-top: 1.2em;
-    font-size: 0.82em;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--text-tertiary, #9a9488);
-  }
-  .abstract-block {
-    border-left: 2px solid var(--border-color, #e0ddd6);
-    padding: 1.2em 1.6em;
-    margin: 2em 0 2.5em;
-  }
-  .abstract-block p {
-    font-style: italic;
-    color: var(--text-secondary, #6b6760);
-    margin: 0;
-    line-height: 1.8;
-  }
-  .abstract-label {
-    font-size: 0.78em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-tertiary, #9a9488);
-    margin-bottom: 0.6em;
-    font-style: normal;
-    display: block;
-  }
-  .plain-block {
-    background: #f5f3ef;
-    padding: 1.4em 1.8em;
-    margin-bottom: 1.2em;
-  }
-  .plain-block p {
-    font-style: normal;
-    line-height: 1.8;
-    margin: 0;
-    color: var(--text-primary, #2c2a26);
-  }
-  .equation-block {
-    margin: 1.4em 0 0.6em;
-    padding: 1em 1.5em;
-    border-left: 2px solid var(--border-color, #e0ddd6);
-    font-family: 'EB Garamond', serif;
-  }
-  .equation {
-    font-size: 1.05em;
-    font-weight: 500;
-    color: var(--text-primary, #2c2a26);
-    margin-bottom: 0.6em;
-  }
-  .eq-key {
-    font-size: 0.88em;
-    color: var(--text-secondary, #6b6760);
-    line-height: 1.7;
-  }
-  .operator-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.8em 0;
-    font-size: 0.88em;
-  }
-  .operator-table th {
-    text-align: left;
-    font-weight: 500;
-    padding: 0.6em 0.9em;
-    border-bottom: 2px solid var(--border-color, #e0ddd6);
-    font-size: 0.82em;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--text-tertiary, #9a9488);
-  }
-  .operator-table td {
-    padding: 0.7em 0.9em;
-    border-bottom: 1px solid var(--border-color, #e0ddd6);
-    vertical-align: top;
-    line-height: 1.6;
-    color: var(--text-secondary, #6b6760);
-  }
-  .operator-table tr:last-child td { border-bottom: none; }
-  .operator-table td:first-child {
-    font-weight: 600;
-    color: var(--text-primary, #2c2a26);
-    font-size: 1.0em;
-    white-space: nowrap;
-  }
-  .operator-table tr:nth-child(even) td { background: #f9f8f5; }
-  .prediction-block {
-    margin: 1.5em 0;
-    padding: 1.3em 1.5em;
-    border: 1px solid var(--border-color, #e0ddd6);
-  }
-  .prediction-label {
-    font-size: 0.78em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-tertiary, #9a9488);
-    margin-bottom: 0.4em;
-    display: block;
-  }
-  .prediction-title {
-    font-weight: 500;
-    color: var(--text-primary, #2c2a26);
-    margin-bottom: 0.5em;
-  }
-  .companion-note {
-    border: 1px solid var(--border-color, #e0ddd6);
-    padding: 1.1em 1.4em;
-    margin: 2em 0;
-    font-size: 0.9em;
-    color: var(--text-secondary, #6b6760);
-    line-height: 1.7;
-  }
-  .companion-note a {
-    color: var(--text-primary, #2c2a26);
-  }
-  .references-list {
-    font-size: 0.88em;
-    color: var(--text-secondary, #6b6760);
-    line-height: 1.7;
-  }
-  .references-list li {
-    margin-bottom: 0.6em;
-    list-style: none;
-    padding-left: 2.5em;
-    text-indent: -2.5em;
-  }
-  .ref-num { color: var(--text-tertiary, #9a9488); margin-right: 0.5em; }
-  .back-link {
-    display: inline-block;
-    margin-bottom: 2em;
-    font-size: 0.84em;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-tertiary, #9a9488);
-    text-decoration: none;
-  }
-  .back-link:hover { color: var(--text-primary, #2c2a26); }
-  .step-block {
-    margin: 1em 0;
-    padding-left: 1.2em;
-    border-left: 2px solid var(--border-color, #e0ddd6);
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structural Ethical Orientation — Dias’ Dimensions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="canonical" href="https://diasdimensions.org/publications/structural-ethical-orientation/">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0SFDYRW3T9');
+  </script>
 </head>
 <body>
 
-<div class="mobile-header">
-  <span class="mobile-title"><a href="/">Dias' Dimensions</a></span>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+<!-- ATMOSPHERE -->
+<div class="atmosphere"></div>
+<div class="rain"></div>
+<div class="tunnel">
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
+  <div class="tunnel-ring"></div>
 </div>
-<div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
 
-<div class="site-wrapper">
-  <aside class="site-nav" id="siteNav">
-    <p class="nav-title"><a href="/">Dias' Dimensions</a></p>
-    <nav aria-label="Book navigation">
+<div class="lang-switcher"><span class="current">EN</span><span class="sep">·</span><span style="color:var(--fog)">中文</span></div>
 
-    <p class="nav-section-label">The Seed</p>
-    <ul>
-    <li><a href="/seed/">Constitutional Grammar</a></li>
-    <li><a href="/seed/derivation-chains/">Derivation Chains</a></li>
-    </ul>
+<nav class="whispers">
+  <a href="/seed/" class="whisper">Seed</a>
+  <a href="/book-i/" class="whisper">Books</a>
+  <a href="/consilience/" class="whisper">Consilience</a>
+  <a href="/publications/" class="whisper active">Publications</a>
+  <a href="/about/" class="whisper">About</a>
+</nav>
 
-    <p class="nav-section-label">First Movement</p>
-    <ul>
-    <li><a href="/book-i/">I. Existence</a></li>
-    </ul>
+<main>
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> <span>·</span> <a href="/publications/">Publications</a> <span>·</span> <span style="color:var(--bone)">SEO</span></div>
+    <div class="page-header">
+      <div class="page-label">SEO-2026-v1 &middot; AI Safety Architecture</div>
+      <h1 class="page-title">Structural Ethical Orientation in Large Language Models</h1>
+      <p class='page-subtitle'>Tension Theory Applied to AI Safety Architecture</p>
+    </div>
+    <article class="room-body">
+      
+<!-- ════════════════════════════════════════════════
+     PASTE MAIN CONTENT HERE
+     Copy the <article>/<section> content from your
+     existing HTML and paste it inside this div.
+     The room-body class handles all typography.
+     ════════════════════════════════════════════════ -->
+<div class="room-body">
 
-    <p class="nav-section-label">Second Movement</p>
-    <ul>
-    <li><a href="/book-ii/">II. The Operator Landscape</a></li>
-    </ul>
-
-    <p class="nav-section-label">Third Movement</p>
-    <ul>
-    <li><a href="/book-iii/">III. Distinction</a></li>
-    <li><a href="/book-iv/">IV. Relation</a></li>
-    <li><a href="/book-v/">V. Foundation</a></li>
-    <li><a href="/book-vi/">VI. Action</a></li>
-    <li><a href="/book-vii/">VII. Reception</a></li>
-    <li><a href="/book-viii/">VIII. Consciousness</a></li>
-    <li><a href="/book-ix/">IX. Organization</a></li>
-    <li><a href="/book-x/">X. Resolution</a></li>
-    </ul>
-
-    <hr class="nav-divider">
-    <p class="nav-section-label">The Consilience</p>
-    <ul>
-    <li><a href="/consilience/">Overview</a></li>
-    <li><a href="/consilience/biology/">Biology</a></li>
-    <li><a href="/consilience/physics/">Physics</a></li>
-    <li><a href="/consilience/ai-cognition/">AI Cognition</a></li>
-    </ul>
-
-    <hr class="nav-divider">
-    <ul>
-    <li><a href="/publications/" class="active">Publications</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/download/">Download Series</a></li>
-    <li><a href="/license/">License</a></li>
-    </ul>
-    </nav>
-  </aside>
-
-  <main class="main-content">
-    <article class="content-body">
+ <article class="content-body">
 
       <a class="back-link" href="/publications/">← Publications</a>
 
@@ -500,18 +315,21 @@
       </nav>
 
     </article>
+</div>
+    </article>
+    <div class="seq-nav"><a href="/publications/developmental-operator-model/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Developmental Operator Model</a></div>
+  </div>
+</main>
 
-    <footer class="site-footer">
-      © 2026 B.A. Dias. Licensed under <a href="/license/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.
-    </footer>
-  </main>
+<!-- PRESENCE BAR -->
+<div class="presence">
+  <div class="presence-mark"></div>
+  <div class="presence-text">
+    <strong>Current tension:</strong> The Pentagon demands Anthropic remove AI safety constraints.
+    External ethics can be stripped. Internal orientation cannot.
+  </div>
+  <a href="/publications/structural-ethical-orientation/" class="presence-action">Read the specification →</a>
 </div>
 
-<script>
-function toggleNav() {
-  document.getElementById('siteNav').classList.toggle('open');
-  document.getElementById('navOverlay').classList.toggle('open');
-}
-</script>
 </body>
 </html>
