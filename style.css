@@ -345,11 +345,7 @@ body {
 .room-body p:first-of-type { text-indent: 0; }
 
 .room-body p:first-of-type::first-letter {
-  font-size: 3.5rem;
-  float: left;
-  line-height: 1;
-  margin-right: 0.5rem;
-  margin-top: -0.2rem;
+  font-size: 1.5 rem
   color: var(--green-mist);
 }
 
