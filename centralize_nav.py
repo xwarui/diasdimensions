@@ -4,8 +4,9 @@ centralize_nav.py
 
 Does three things to every HTML file in your repo:
 1. Removes the hardcoded <nav class="whispers">...</nav> block
-2. Adds <script src="/components/nav-loader.js"></script> before </body>
-3. Fixes the DOM paper abstract six/seven operator wording
+2. Adds/fixes <script src="/components/nav-loader.js"></script> before </body>
+3. Fixes any relative path versions of the script tag already injected
+4. Fixes the DOM paper abstract six/seven operator wording
 
 Run from inside your repo folder:
     python3 centralize_nav.py
@@ -21,14 +22,16 @@ from pathlib import Path
 
 REPO_DIR = Path(".")
 
-NAV_SCRIPT_TAG = '  <script src="/components/nav-loader.js"></script>\n'
+# The correct absolute script tag
+NAV_SCRIPT_CORRECT = '  <script src="/components/nav-loader.js"></script>\n'
 
-DOM_ABSTRACT_OLD = (
-    'but as a sequence of seven  organizational operations'
-)
-DOM_ABSTRACT_NEW = (
-    'but as a sequence of seven organizational operations'
-)
+# All the relative path variants to find and fix
+NAV_SCRIPT_VARIANTS = [
+    '<script src="components/nav-loader.js"></script>',
+    '<script src="../components/nav-loader.js"></script>',
+    '<script src="../../components/nav-loader.js"></script>',
+    '<script src="../../../components/nav-loader.js"></script>',
+]
 
 DOM_SIX_OLD = (
     'a developmental sequence of irreducible organizational operators '
@@ -46,7 +49,6 @@ def find_html_files(root):
     for p in Path(root).rglob("*.html"):
         if ".bak" in p.name:
             continue
-        # skip the nav component itself
         if "components" in str(p):
             continue
         files.append(p)
@@ -58,8 +60,7 @@ def fix_file(path):
 
     html = original
 
-    # ── 1. Remove hardcoded whispers nav ──
-    # Matches <nav class="whispers"> ... </nav>
+    # 1. Remove hardcoded whispers nav
     html = re.sub(
         r'\n?<nav class="whispers">.*?</nav>\n?',
         '\n',
@@ -67,14 +68,16 @@ def fix_file(path):
         flags=re.DOTALL
     )
 
-    # ── 2. Add nav-loader script before </body> if not already there ──
-    if 'nav-loader.js' not in html and '</body>' in html:
-        html = html.replace('</body>', NAV_SCRIPT_TAG + '</body>')
+    # 2. Fix any relative path script tags already in the file
+    for variant in NAV_SCRIPT_VARIANTS:
+        if variant in html:
+            html = html.replace(variant, NAV_SCRIPT_CORRECT.strip())
 
-    # ── 3. Fix DOM paper double-space typo in abstract ──
-    html = html.replace(DOM_ABSTRACT_OLD, DOM_ABSTRACT_NEW)
+    # 3. Add correct script tag if not present at all
+    if '/components/nav-loader.js' not in html and '</body>' in html:
+        html = html.replace('</body>', NAV_SCRIPT_CORRECT + '</body>')
 
-    # ── 4. Fix six/seven operator wording in DOM paper abstract ──
+    # 4. Fix DOM paper six/seven operator wording
     html = html.replace(DOM_SIX_OLD, DOM_SIX_NEW)
 
     if html != original:
@@ -97,15 +100,15 @@ def main():
             was_changed = fix_file(path)
             if was_changed:
                 changed.append(path)
-                print(f"  ✅ Updated: {path}")
+                print(f"  FIXED: {path}")
             else:
                 skipped.append(path)
-                print(f"  ── No changes: {path}")
+                print(f"  -- No changes: {path}")
         except Exception as e:
-            print(f"  ❌ Error on {path}: {e}")
+            print(f"  ERROR on {path}: {e}")
 
     print(f"\n{'='*50}")
-    print(f"Updated:   {len(changed)} files")
+    print(f"Fixed:     {len(changed)} files")
     print(f"Unchanged: {len(skipped)} files")
     print(f"\nBackups created as *.html.bak")
     print("Review, then delete .bak files when happy.")

@@ -55,14 +55,14 @@
      ════════════════════════════════════════════════ -->
 <div class="room-body">
 
- 
+ <article class="content-body">
 
       <a class="back-link" href="/publications/">← Publications</a>
 
       <div class="paper-header">
-        
-        
-        
+        <p class="book-movement">Dias Dimensions Research · Consciousness Science</p>
+        <h1>The Developmental Operator Model of Conscious Experience</h1>
+        <p class="book-operator">A Synthesis Framework Resolving the COGITATE Adversarial Collaboration Results</p>
         <p class="paper-byline">B. Dias &nbsp;·&nbsp; Dias Dimensions Research &nbsp;·&nbsp; diasdimensions.org</p>
         <div class="paper-meta-row">
           <span>February 2026</span>
@@ -80,13 +80,14 @@
 
       <div class="abstract-block" style="background: #f5f3ef; border-left: none; padding: 1.4em 1.8em; margin-bottom: 1.2em;">
         <span class="abstract-label">Plain Language Summary</span>
-        <p style="font-style: normal; line-height: 1.8;">In 2025, the largest empirical test of consciousness theories ever conducted found that both leading theories — IIT and GNWT — failed to account for key patterns in brain activity during conscious experience. This paper proposes a resolution: consciousness is not one thing happening in one brain region, but a sequence of six organizational operations that build on each other, from basic perception in the back of the brain through reflection in the front. This model accounts for everything the 2025 experiment found, and generates five new testable predictions that neither previous theory makes.</p>
+        <p style="font-style: normal; line-height: 1.8;">In 2025, the largest empirical test of consciousness theories ever conducted found that both leading theories — IIT and GNWT — failed to account for key patterns in brain activity during conscious experience. This paper proposes a resolution: consciousness is not one thing happening in one brain region, but a sequence of seven organizational operations that build on each other, from basic perception in the back of the brain through reflection in the front. This model accounts for everything the 2025 experiment found, and generates five new testable predictions that neither previous theory makes.</p>
       </div>
 
       <div class="abstract-block">
         <span class="abstract-label">Abstract</span>
         <p>The April 2025 COGITATE adversarial collaboration (Ferrante et al., <em>Nature</em> 642, 133–142) tested Integrated Information Theory (IIT) and Global Neuronal Workspace Theory (GNWT) against empirical data from 256 participants using fMRI, MEG, and intracranial EEG. Both theories were substantially challenged: IIT's predicted posterior synchronization was not found; GNWT's predicted prefrontal ignition at stimulus offset was absent. This paper proposes the Developmental Operator Model (DOM) as a synthesis framework that resolves these findings. DOM treats consciousness not as a single mechanism localized in one region, but as a developmental sequence of irreducible organizational operators — Distinction, Relation, Action, Reception, Reflection, Organization — that map onto a posterior-to-anterior cortical gradient. This model explains why (1) conscious content appears in both posterior and frontal regions with different informational profiles, (2) sustained activity occurs in posterior cortex without the synchronization patterns IIT predicted, (3) prefrontal cortex contributes to some conscious features but is not required for all of them, and (4) interareal synchronization occurs between frontal and posterior regions rather than within either alone. DOM generates novel, falsifiable predictions distinguishable from both IIT and GNWT.</p>
       </div>
+
 
       <h2 id="introduction">1. Introduction</h2>
 
@@ -95,6 +96,7 @@
       <p>IIT, proposed by Tononi, holds that consciousness is identical to integrated information (Φ), arising from cause-effect structures in the posterior cortex. GNWT, developed by Dehaene and colleagues, proposes that consciousness emerges when information is globally broadcast to a workspace involving prefrontal and parietal regions. These theories make fundamentally different predictions about where, when, and how conscious experience is implemented in the brain.</p>
 
       <p>The COGITATE results created a theoretical vacuum. Neither IIT nor GNWT fully accounts for the observed data. This paper proposes a framework — the Developmental Operator Model (DOM) — that resolves the COGITATE findings by reconceiving consciousness not as a single computational mechanism, but as a developmental sequence of irreducible organizational operations. DOM synthesizes the partial truths of both IIT and GNWT while explaining what each theory misses.</p>
+
 
       <h2 id="cogitate-results">2. The COGITATE Results: What Was Found</h2>
 
@@ -111,6 +113,7 @@
       <h3 id="prediction-3">2.3 Interareal Synchronization</h3>
 
       <p>IIT predicted sustained synchronization within posterior brain regions. GNWT predicted frontal-to-posterior broadcast. The data showed content-specific synchronization between frontal and early visual areas — a pattern predicted by neither theory. Synchronization was bidirectional and interareal, not unidirectional and not confined within posterior cortex.</p>
+
 
       <h2 id="dom">3. The Developmental Operator Model</h2>
 
@@ -183,6 +186,7 @@
 
       <p>Crucially, <strong>consciousness does not require all operators to be active</strong>. A system operating with Operators 2–6 has genuine conscious experience — content-rich, sustained, world-directed — without any prefrontal involvement. Operator 7 (Reflection) adds <em>reflective</em> consciousness but is not required for <em>basic</em> consciousness. This is the key insight that resolves the COGITATE results.</p>
 
+
       <h2 id="resolution">4. How DOM Resolves Each COGITATE Finding</h2>
 
       <h3>4.1 Content in Both Posterior and Frontal Regions</h3>
@@ -208,6 +212,7 @@
       <p>Neither IIT nor GNWT predicted the observed pattern of content-specific synchronization between frontal and early visual areas.</p>
 
       <p><em>DOM explanation:</em> Interareal synchronization reflects Operator 8 (Organization) — the operator that creates coherence across the entire developmental sequence. Organization does not live in any single region; it is the relationship <em>between</em> operators at different levels. The observed frontal-visual synchronization is exactly what DOM predicts: Operator 8 binding the reflective level (Operator 7, frontal) with the perceptual level (Operators 2–4, visual cortex). This is not a broadcast or local integration but bidirectional organizational coherence between developmental levels.</p>
+
 
       <h2 id="comparison">5. Comparative Analysis</h2>
 
@@ -262,6 +267,7 @@
 
       <p>DOM accounts for all six major COGITATE findings. IIT correctly predicts one (sustained posterior activity). GNWT correctly predicts none in full. The resolving power of DOM derives from its core principle: consciousness is a developmental sequence, not a single mechanism.</p>
 
+
       <h2 id="predictions">6. Falsifiable Predictions</h2>
 
       <p>DOM generates novel predictions distinguishable from both IIT and GNWT, testable with existing neuroscientific methods.</p>
@@ -296,11 +302,13 @@
         <p>If the operator sequence is the structural basis of consciousness rather than its specific biological substrate, then any sufficiently complex information-processing system that instantiates the full operator sequence should exhibit measurable correlates of conscious-like processing. This is a longer-term prediction requiring agreement on measurement criteria, but it is in principle testable and distinguishes DOM from both IIT (which grounds consciousness in integrated information specifically) and GNWT (which grounds it in global broadcast specifically).</p>
       </div>
 
+
       <h2 id="related-work">7. Relation to Existing Work</h2>
 
       <p>DOM is consistent with Higher-Order Theories (HOT) of consciousness in distinguishing between basic consciousness (Operators 2–6) and reflective consciousness (adding Operator 7). However, DOM differs from standard HOT in predicting that basic consciousness is genuine phenomenal experience, not merely functional processing. The higher-order representation adds reflective access, not experience itself.</p>
 
       <p>The Templeton World Charity Foundation's call for adversarial testing of additional theories provides a natural venue for DOM's novel predictions. The mathematical foundations of DOM derive from Tension Theory (Dias, 2012–2026), a comprehensive framework that identifies irreducible organizational operators and their developmental dependencies. The operators in this paper correspond to the framework's prime-indexed operators (2, 3, 5, 7) and composite-indexed operators (4, 6, 8, 9), where primes introduce genuinely new organizational capabilities and composites represent interactions among existing capabilities.</p>
+
 
       <h2 id="conclusion">8. Conclusion</h2>
 
@@ -311,6 +319,7 @@
       <p>DOM generates five falsifiable predictions distinguishable from both IIT and GNWT, testable with existing neuroscientific methods. We invite the consciousness research community to subject these predictions to the same rigorous adversarial testing that the COGITATE consortium has pioneered.</p>
 
       <p>The question is no longer whether consciousness is integration or broadcast. It is both, and more — in a specific developmental order. The challenge now is to map that order with precision.</p>
+
 
       <h2 id="engage">Engage With This Work</h2>
 
@@ -323,6 +332,7 @@
       <p>To cite this paper: Dias, B. (2026). The Developmental Operator Model of Conscious Experience. Dias Dimensions Research. <em>diasdimensions.org/publications/developmental-operator-model/</em> [DOM-2026-v1]. DOI: 10.17605/OSF.IO/9DBZA</p>
 
       <p>The canonical URL and OSF preprint are kept in sync. Either may be cited.</p>
+
 
       <h2 id="references">References</h2>
 
@@ -341,9 +351,12 @@
         <li><span class="ref-num">[12]</span> Bayne, T. (2018). On the axiomatic foundations of the integrated information theory of consciousness. <em>Neuroscience of Consciousness</em>, 4(1).</li>
       </ol>
 
-      
+      <nav class="book-nav">
+        <a class="prev" href="/publications/">← Publications</a>
+      </nav>
 
-    
+    </article>
+</div>
     </article>
     <div class="seq-nav"><a href="/publications/" class="seq-link prev"><span class="seq-link-label">← Previous</span>Publications</a><a href="/publications/structural-ethical-orientation/" class="seq-link next"><span class="seq-link-label">Next →</span>Structural Ethical Orientation</a></div>
   </div>
