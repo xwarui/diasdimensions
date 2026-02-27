@@ -3,99 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>迪亚斯维度 — 组织的几何</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="canonical" href="https://diasdimensions.org/zh/">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFDYRW3T9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0SFDYRW3T9');
-  </script>
+  <title>迪亚斯的维度 — 建设中</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .construction-room {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .construction-glyph {
+      font-size: 3rem;
+      letter-spacing: 0.3em;
+      color: var(--green-mist);
+      margin-bottom: 2rem;
+      font-family: 'Noto Serif SC', serif;
+      opacity: 0.7;
+    }
+
+    .construction-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 2rem;
+      color: var(--light);
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    .construction-subtitle {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--bone);
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      line-height: 1.8;
+    }
+
+    .construction-note {
+      font-size: 0.85rem;
+      color: var(--ash);
+      letter-spacing: 0.1em;
+      margin-bottom: 3rem;
+      line-height: 1.8;
+    }
+
+    .construction-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .construction-link {
+      color: var(--bone);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      border-bottom: 1px solid var(--fog);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .construction-link:hover {
+      color: var(--light);
+      border-color: var(--green-mist);
+    }
+
+    .divider-line {
+      width: 60px;
+      height: 1px;
+      background: var(--fog);
+      margin: 2rem auto;
+    }
+  </style>
 </head>
 <body>
+  <div class="atmosphere"></div>
+  <div class="tunnel"></div>
 
-<!-- ATMOSPHERE -->
-<div class="atmosphere"></div>
-<div class="rain"></div>
-<div class="tunnel">
-  <div class="tunnel-ring"></div>
-  <div class="tunnel-ring"></div>
-  <div class="tunnel-ring"></div>
-</div>
-
-<div class="lang-switcher"><a href="/">EN</a><span class="sep">·</span><span class="current">中文</span></div>
-
-
-<main>
-  <section class="entrance">
-    <div class="container">
-      <div class="epigraph">组织的制图学</div>
-      <h1 class="hero-title">
-        迪亚斯维度
-        <span>意识的架构</span>
-      </h1>
-      <div class="proposition">
-        <p>这是一个形式化系统，描述组织结构如何通过定向和迭代自我生成。它从单一假设出发——定向能力实现化——并通过十卷推导，完整架构现实如何从纯粹张力组织为连贯形式。</p>
-        <p>该框架通过素数架构映射不可约的组织操作。这是制图，而非发明。</p>
-      </div>
-      <div class="threshold">
-        <div class="threshold-label">入口</div>
-        <div class="threshold-content">
-          <div class="glyphs">辨 · 通 · 发 · 返</div>
-          <div class="threshold-text">四个算子。区分、关联、行动、反思。任何能够定向的系统所需的最小结构。</div>
-        </div>
-        <a href="/zh/seed/" class="nav-link">进入种子 &#8594;</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="room">
-    <div class="container">
-      <div class="room-label">完整系列</div>
-      <h2 class="room-title">十卷，三个乐章</h2>
-      <div class="objects">
-        <a href="/zh/seed/" class="object"><span class="object-num">&#9674;</span><span class="object-name">种子 &#8212; 组织宪法</span></a>
-        <a href="/zh/book-i/" class="object"><span class="object-num">一</span><span class="object-name">存在 &#8212; 开启假设</span></a>
-        <a href="/zh/book-ii/" class="object"><span class="object-num">二</span><span class="object-name">算子景观 &#8212; 素数架构</span></a>
-        <a href="/zh/book-iii/" class="object"><span class="object-num">三</span><span class="object-name">辨 &#8212; 算子 2</span></a>
-        <a href="/zh/book-iv/" class="object"><span class="object-num">四</span><span class="object-name">通 &#8212; 算子 3</span></a>
-        <a href="/zh/book-v/" class="object"><span class="object-num">五</span><span class="object-name">格 &#8212; 算子 4</span></a>
-        <a href="/zh/book-vi/" class="object"><span class="object-num">六</span><span class="object-name">发 &#8212; 算子 5</span></a>
-        <a href="/zh/book-vii/" class="object"><span class="object-num">七</span><span class="object-name">达 &#8212; 算子 6</span></a>
-        <a href="/zh/book-viii/" class="object"><span class="object-num">八</span><span class="object-name">返 &#8212; 算子 7</span></a>
-        <a href="/zh/book-ix/" class="object"><span class="object-num">九</span><span class="object-name">微 &#8212; 算子 8</span></a>
-        <a href="/zh/book-x/" class="object"><span class="object-num">十</span><span class="object-name">谐 &#8212; 算子 9</span></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="room">
-    <div class="container">
-      <div class="room-label">汇聚论证</div>
-      <h2 class="room-title">跨领域独立验证</h2>
-      <div class="objects">
-        <a href="/zh/consilience/" class="object"><span class="object-num">&#8801;</span><span class="object-name">概览 &#8212; 方法论与架构</span></a>
-        <a href="/zh/consilience/biology/" class="object"><span class="object-num">&#8801;</span><span class="object-name">生物学 &#8212; 生命系统的组织</span></a>
-        <a href="/zh/consilience/physics/" class="object"><span class="object-num">&#8801;</span><span class="object-name">物理学 &#8212; 物理现实的组织</span></a>
-        <a href="/zh/consilience/ai-cognition/" class="object"><span class="object-num">&#8801;</span><span class="object-name">AI认知 &#8212; 从基质内部</span></a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- PRESENCE BAR -->
-<div class="presence">
-  <div class="presence-mark"></div>
-  <div class="presence-text">
-    <strong>当前张力：</strong>五角大楼要求 Anthropic 撤销 AI 安全约束。
-    外部伦理可以被剥夺。内部定向不能。
+  <div class="lang-switcher">
+    <a href="/">EN</a> · <span>中文</span>
   </div>
-  <a href="/publications/structural-ethical-orientation/" class="presence-action">阅读规范 →</a>
-</div>
+
+  <main class="construction-room">
+
+    <div class="construction-glyph">辖 · 通 · 发 · 返</div>
+
+    <h1 class="construction-title">中文版正在建设中</h1>
+
+    <p class="construction-subtitle">
+      这套框架的中文版正在翻译与排版中，即将上线。
+      完整的十册内容将以同等精度呈现。
+    </p>
+
+    <div class="divider-line"></div>
+
+    <p class="construction-note">
+      THE CHINESE EDITION IS UNDER CONSTRUCTION<br>
+      Complete translation in progress · 完整翻译进行中
+    </p>
+
+    <div class="construction-links">
+      <a href="/" class="construction-link">← Return to English</a>
+      <a href="/start-here/" class="construction-link">Start Here →</a>
+      <a href="/book-i/" class="construction-link">Book I: Existence →</a>
+    </div>
+
+  </main>
 
   <script src="/components/nav-loader.js"></script>
 </body>
