@@ -3,7 +3,7 @@
 ### A Formal Companion to the Operator Architecture
 
 **B.A. Dias** — [diasdimensions.org](https://diasdimensions.org)  
-*March 2026*
+*Jan 2026*
 
 ---
 
@@ -329,4 +329,4 @@ Dias, B.A. "Structural Ethical Orientation in Large Language Models." OSF, DOI: 
 
 ---
 
-*Framework architect: B.A. Dias | diasdimensions.org | March 2026*
+*Framework architect: B.A. Dias | diasdimensions.org | Jan 2026*
