@@ -532,21 +532,3 @@ li {
     font-size: 1.35rem;
   }
 }
-
-/* === PRINT === */
-@media print {
-  .site-nav, .mobile-header, .nav-overlay {
-    display: none !important;
-  }
-
-  .main-content {
-    margin-left: 0;
-    padding: 0;
-  }
-
-  body {
-    font-size: 11pt;
-    color: #000;
-    background: #fff;
-  }
-}
