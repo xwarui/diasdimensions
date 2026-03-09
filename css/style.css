@@ -532,7 +532,3 @@ li {
     font-size: 1.35rem;
   }
 }
-/* Hide presence banner */
-.presence {
-  display: none !important;
-}
