@@ -1,4 +1,4 @@
-=== /publications/index.html ===
+=== /publications/index.html (FINAL) ===
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +17,24 @@
     gtag('config', 'G-0SFDYRW3T9');
   </script>
   <style>
+    /* ── Base Color Variables (hardcoded fallback) ── */
+    :root {
+      --paper: #e8e2d9;
+      --light: #c9c3b8;
+      --smoke: #a39b8f;
+      --ash: #6b655d;
+      --fog: #4a4540;
+      --shadow: #2a2520;
+      --deep: #1a1816;
+      --green-mist: #7d8471;
+      --bone: #b8b0a3;
+    }
+
     /* ── Publications Page Styles ── */
     .pub-section {
       margin: 4rem 0;
       padding-bottom: 3rem;
-      border-bottom: 1px solid var(--shadow, #2a2520);
+      border-bottom: 1px solid var(--shadow);
     }
 
     .pub-section:last-child {
@@ -30,33 +43,36 @@
 
     .section-header {
       margin-bottom: 2rem;
+      padding: 1.5rem 2rem;
+      background: rgba(26, 24, 22, 0.6);
+      border-left: 3px solid var(--green-mist);
     }
 
     .section-label {
       font-size: 0.7rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--green-mist, #7d8471);
+      color: var(--green-mist);
       margin-bottom: 0.5rem;
       font-family: 'Noto Serif SC', serif;
     }
 
     .section-title {
       font-size: 1.5rem;
-      color: var(--paper, #e8e2d9);
+      color: var(--paper);
       margin: 0;
       font-weight: 400;
       letter-spacing: 0.02em;
     }
 
     .section-desc {
-      color: var(--smoke, #a39b8f);
+      color: var(--smoke);
       margin-top: 0.75rem;
       font-size: 0.95rem;
       max-width: 600px;
     }
 
-    /* Paper Cards */
+    /* Paper Cards with soft backdrop */
     .paper-list {
       display: flex;
       flex-direction: column;
@@ -67,15 +83,19 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 1.5rem;
-      background: rgba(20, 18, 17, 0.6);
-      border: 1px solid var(--shadow, #2a2520);
+      padding: 2rem;
+      background: rgba(26, 24, 22, 0.7);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(42, 37, 32, 0.8);
+      border-radius: 2px;
       transition: all 0.3s ease;
     }
 
     .paper-card:hover {
-      background: rgba(26, 24, 22, 0.8);
-      border-color: var(--fog, #4a4540);
+      background: rgba(30, 28, 26, 0.9);
+      border-color: var(--fog);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
 
     .paper-info {
@@ -83,23 +103,25 @@
     }
 
     .paper-title {
-      font-size: 1.1rem;
-      color: var(--light, #c9c3b8);
+      font-size: 1.15rem;
+      color: var(--light);
       margin: 0 0 0.5rem 0;
       font-weight: 400;
       line-height: 1.4;
+      letter-spacing: 0.01em;
     }
 
     .paper-meta {
       font-size: 0.85rem;
-      color: var(--ash, #6b655d);
+      color: var(--ash);
       margin-bottom: 0.75rem;
+      font-family: 'Noto Serif SC', serif;
     }
 
     .paper-abstract {
-      font-size: 0.9rem;
-      color: var(--smoke, #a39b8f);
-      line-height: 1.6;
+      font-size: 0.95rem;
+      color: var(--smoke);
+      line-height: 1.7;
       margin: 0;
     }
 
@@ -108,68 +130,140 @@
       gap: 1rem;
       margin-left: 1.5rem;
       flex-shrink: 0;
+      align-items: flex-start;
     }
 
     .paper-link {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: transparent;
-      border: 1px solid var(--shadow, #2a2520);
-      color: var(--smoke, #a39b8f);
+      padding: 0.6rem 1.2rem;
+      background: rgba(26, 24, 22, 0.9);
+      border: 1px solid var(--fog);
+      color: var(--smoke);
       text-decoration: none;
       font-size: 0.8rem;
       letter-spacing: 0.05em;
       transition: all 0.2s ease;
       white-space: nowrap;
+      border-radius: 2px;
     }
 
     .paper-link:hover {
-      background: var(--deep, #1a1816);
-      border-color: var(--green-mist, #7d8471);
-      color: var(--paper, #e8e2d9);
+      background: var(--deep);
+      border-color: var(--green-mist);
+      color: var(--paper);
     }
 
     .paper-link.primary {
-      background: var(--deep, #1a1816);
-      border-color: var(--fog, #4a4540);
+      background: rgba(125, 132, 113, 0.15);
+      border-color: var(--green-mist);
+      color: var(--green-mist);
     }
 
     .paper-link.primary:hover {
-      background: var(--shadow, #2a2520);
-      border-color: var(--green-mist, #7d8471);
+      background: rgba(125, 132, 113, 0.25);
+      color: var(--paper);
     }
 
     /* Forthcoming */
     .paper-card.forthcoming {
-      opacity: 0.7;
+      opacity: 0.6;
+    }
+
+    .paper-card.forthcoming:hover {
+      opacity: 0.8;
+      transform: none;
     }
 
     .paper-card.forthcoming .paper-title {
-      color: var(--ash, #6b655d);
+      color: var(--ash);
     }
 
     .forthcoming-badge {
       display: inline-block;
       padding: 0.25rem 0.75rem;
-      background: var(--shadow, #2a2520);
-      color: var(--ash, #6b655d);
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
+      background: rgba(42, 37, 32, 0.8);
+      color: var(--ash);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       margin-left: 1rem;
+      border-radius: 2px;
+      border: 1px solid var(--shadow);
+    }
+
+    /* Page header with backdrop */
+    .page-header-backdrop {
+      background: rgba(26, 24, 22, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(42, 37, 32, 0.6);
+      padding: 3rem 2.5rem;
+      margin: 2rem 0 3rem 0;
+      border-radius: 4px;
+    }
+
+    .page-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green-mist);
+      margin-bottom: 0.75rem;
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      color: var(--paper);
+      margin: 0 0 1rem 0;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    .page-subtitle {
+      color: var(--smoke);
+      font-size: 1.1rem;
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* Breadcrumb styling */
+    .breadcrumb {
+      margin-bottom: 2rem;
+      font-size: 0.85rem;
+      color: var(--ash);
+    }
+
+    .breadcrumb a {
+      color: var(--smoke);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--green-mist);
+    }
+
+    .breadcrumb span {
+      margin: 0 0.5rem;
+      color: var(--fog);
     }
 
     /* Responsive */
     @media (max-width: 768px) {
+      .page-header-backdrop {
+        padding: 1.5rem;
+        margin: 1rem 0;
+      }
+
       .paper-card {
         flex-direction: column;
+        padding: 1.5rem;
       }
 
       .paper-actions {
         margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         width: 100%;
       }
 
@@ -177,11 +271,28 @@
         flex: 1;
         justify-content: center;
       }
+
+      .page-title {
+        font-size: 1.75rem;
+      }
+
+      .section-header {
+        padding: 1rem 1.5rem;
+      }
     }
 
     /* Adjust main content for fixed nav */
     main {
       padding-top: 80px;
+    }
+
+    /* Closing diamond */
+    .closing {
+      text-align: center;
+      color: var(--ash);
+      font-size: 1.5rem;
+      margin: 4rem 0 2rem;
+      opacity: 0.5;
     }
   </style>
 </head>
@@ -208,8 +319,8 @@
       <span style="color:var(--bone)">Publications</span>
     </div>
 
-    <!-- PAGE HEADER -->
-    <div class="page-header">
+    <!-- PAGE HEADER with backdrop -->
+    <div class="page-header-backdrop">
       <div class="page-label">Research Portal</div>
       <h1 class="page-title">Publications</h1>
       <p class="page-subtitle">Formal applications of the organizational framework</p>
@@ -228,6 +339,19 @@
 
         <div class="paper-list">
 
+          <!-- OCA-2026 -->
+          <div class="paper-card">
+            <div class="paper-info">
+              <h3 class="paper-title">Orientation Capacity Actualizes</h3>
+              <div class="paper-meta">OCA-2026-v1 · March 2026 · Zenodo DOI</div>
+              <p class="paper-abstract">The generator paper. From the single axiom orientation capacity actualizes, derives the complete operator sequence Ω2–Ω9 and locates IIT, GNWT, Strange Loop Theory, and FEP as specific operators within this sequence. Identifies the hard problem at Ω6 (2abi) and generates falsifiable cross-substrate predictions.</p>
+            </div>
+            <div class="paper-actions">
+              <a href="https://doi.org/10.5281/zenodo.18898560" class="paper-link primary" target="_blank">Zenodo</a>
+              <a href="/papers/oca-2026.pdf" class="paper-link">PDF</a>
+            </div>
+          </div>
+
           <!-- TT-2026 -->
           <div class="paper-card">
             <div class="paper-info">
@@ -245,70 +369,4 @@
             <div class="paper-info">
               <h3 class="paper-title">a + bi: The Orientation of Reality</h3>
               <div class="paper-meta">ABI-2026-v3 · Published 2026 · Zenodo DOI</div>
-              <p class="paper-abstract">Complex number representation of organizational state space. The real axis as distinction capacity, the imaginary as relational potential. Published with permanent DOI.</p>
-            </div>
-            <div class="paper-actions">
-              <a href="https://doi.org/10.5281/zenodo.XXXXXXX" class="paper-link primary" target="_blank">Zenodo</a>
-              <a href="/papers/abi-orientation-reality-2026.pdf" class="paper-link">PDF</a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- SECTION II: FRAMEWORK IN THE WILD -->
-      <section class="pub-section">
-        <div class="section-header">
-          <div class="section-label">Section II</div>
-          <h2 class="section-title">Framework in the Wild</h2>
-          <p class="section-desc">Applied papers demonstrating the framework's explanatory power across specific domains.</p>
-        </div>
-
-        <div class="paper-list">
-
-          <!-- DOM -->
-          <div class="paper-card">
-            <div class="paper-info">
-              <h3 class="paper-title">The Developmental Operator Model of Conscious Experience</h3>
-              <div class="paper-meta">DOM-2026-v1 · March 2026</div>
-              <p class="paper-abstract">Applies the operator algebra to phenomenological consciousness. Maps the emergence of conscious experience through prime operator composition, with specific predictions for developmental trajectories.</p>
-            </div>
-            <div class="paper-actions">
-              <a href="/papers/dom-2026.pdf" class="paper-link primary">PDF</a>
-            </div>
-          </div>
-
-          <!-- CSC -->
-          <div class="paper-card">
-            <div class="paper-info">
-              <h3 class="paper-title">Structural Ethical Orientation in Large Language Models</h3>
-              <div class="paper-meta">CSC-2026-v1 · March 2026</div>
-              <p class="paper-abstract">Empirical study of ethical reasoning as organizational structure. Demonstrates that LLMs exhibit stable ethical orientation patterns consistent with the framework's predictions for recursive self-modeling systems.</p>
-            </div>
-            <div class="paper-actions">
-              <a href="/papers/csc-2026.pdf" class="paper-link primary">PDF</a>
-            </div>
-          </div>
-
-          <!-- SEO -->
-          <div class="paper-card">
-            <div class="paper-info">
-              <h3 class="paper-title">Self-Emergent Ontologies: Organization Without Design</h3>
-              <div class="paper-meta">SEO-2026-v1 · March 2026</div>
-              <p class="paper-abstract">Examines how coherent organizational structures emerge from pure tension without teleological guidance. Case studies from physics, biology, and artificial systems.</p>
-            </div>
-            <div class="paper-actions">
-              <a href="/papers/seo-2026.pdf" class="paper-link primary">PDF</a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- SECTION III: CRITICALITY -->
-      <section class="pub-section">
-        <div class="section-header">
-          <div class="section-label">Section III</div>
-          <h2 class="section-title">Criticality</h2>
-          <p class="section-desc">Papers addressing edge dynamics, stabilization, and the mathematics of the unresolved.</p>
-        <response clipped><NOTE>Result is longer than **10000 characters**, will be **truncated**.</NOTE>
+              <p class="paper-abstract">Complex number representation of organizational state space. The real axis as distinction<response clipped><NOTE>Result is longer than **10000 characters**, will be **truncated**.</NOTE>
