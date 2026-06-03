@@ -10,11 +10,8 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-0SFDYRW3T9');</script>
 </head>
 <body>
-
-<div class="atmosphere"></div>
-<div class="rain"></div>
+<div class="atmosphere"></div><div class="rain"></div>
 <div class="tunnel"><div class="tunnel-ring"></div><div class="tunnel-ring"></div><div class="tunnel-ring"></div></div>
-
 <main>
   <div class="container">
     <div class="breadcrumb"><a href="/">Home</a> <span>&middot;</span> <span style="color:var(--bone)">Part I &middot; The Structure</span></div>
@@ -23,15 +20,15 @@
       <h1 class="page-title">Part I: The Structure</h1>
       <p class="page-subtitle">C&ndash;A interface, address-map, recursive self-similarity, the motion as substrate</p>
     </div>
+    
     <article class="room-body">
-
 <h2 id="8---the-c-a-interfa">&sect;8 &mdash; The C&ndash;A Interface</h2>
 
-<p>CAC and ACA do not touch OOO, so they cannot launch &mdash; launching requires anchoring to the discovery starting point. But they are not passive.</p>
+<p><code class="cfg">CAC</code> and <code class="cfg">ACA</code> do not touch <code class="cfg">OOO</code>, so they cannot launch &mdash; launching requires anchoring to the discovery starting point. But they are not passive.</p>
 
-<p>The OOO-launched cycles traverse the full T₀ boundary, crossing all three edges, and CAC/ACA mediates the C&ndash;A boundary crossing in both: the OCO-launched cycle's COA &rarr; ACO leg crosses the CCC&ndash;AAA edge, and the OAO-launched cycle's AOC &rarr; CAO leg crosses the same edge in the opposite direction. CAC/ACA is what structurally holds the C&ndash;A boundary while the OOO-launched cycles cross it &mdash; not supply, which would suggest upstream provision, but mediation: the element that enables the crossing.</p>
+<p>The <code class="cfg">OOO</code>-launched cycles traverse the full T₀ boundary, crossing all three edges, and <code class="cfg">CAC</code>/<code class="cfg">ACA</code> mediates the C&ndash;A boundary crossing in both: the <code class="cfg">OCO</code>-launched cycle's <code class="cfg">COA</code> &rarr; <code class="cfg">ACO</code> leg crosses the <code class="cfg">CCC</code>&ndash;<code class="cfg">AAA</code> edge, and the <code class="cfg">OAO</code>-launched cycle's <code class="cfg">AOC</code> &rarr; <code class="cfg">CAO</code> leg crosses the same edge in the opposite direction. <code class="cfg">CAC</code>/<code class="cfg">ACA</code> is what structurally holds the C&ndash;A boundary while the <code class="cfg">OOO</code>-launched cycles cross it &mdash; not supply, which would suggest upstream provision, but mediation: the element that enables the crossing.</p>
 
-<p>The asymmetry between the launching edge-doors (OCO, OAO) and the mediating edge-door (CAC/ACA) is what the discovery sequence beginning at OOO produces. The trinity is symmetric; the topology built on it is broken by the framework's choice to begin from orientation.</p>
+<p>The asymmetry between the launching edge-doors (<code class="cfg">OCO</code>, <code class="cfg">OAO</code>) and the mediating edge-door (<code class="cfg">CAC</code>/<code class="cfg">ACA</code>) is what the discovery sequence beginning at <code class="cfg">OOO</code> produces. The trinity is symmetric; the topology built on it is broken by the framework's choice to begin from orientation.</p>
 
 <p class="section-break">&nbsp;</p>
 
@@ -39,35 +36,35 @@
 
 <p>The framework's foundational four-node structure &mdash; the address-map (0/0), (0/1), (1/0), (1/1) &mdash; sits inside the topology as four positions, not four states.</p>
 
-<p><strong>The slash is the position-2 slot.</strong> The slash in each address is the verb-slot; the two digits are the bookend slots (positions 1 and 3). Digit 0 aligns with O and digit 1 aligns with A &mdash; the alignment the perimeter run establishes through its origin-markers (OOC as the forward run's origin-marker from O, OOA as the reverse run's from A). C does not appear at the binary scale because it carries eight modes, and a binary digit cannot hold a multi-mode letter.</p>
+<p><strong>The slash is the position-2 slot.</strong> The slash in each address is the verb-slot; the two digits are the bookend slots (positions 1 and 3). Digit 0 aligns with O and digit 1 aligns with A &mdash; the alignment the perimeter run establishes through its origin-markers (<code class="cfg">OOC</code> as the forward run's origin-marker from O, <code class="cfg">OOA</code> as the reverse run's from A). C does not appear at the binary scale because it carries eight modes, and a binary digit cannot hold a multi-mode letter.</p>
 
 <p><strong>Binary address-map</strong> &mdash; six doors at four positions:</p>
 
 <table>
 <tr><th>Address</th><th>Bookends</th><th>Doors at this position</th></tr>
-<tr><td>(0/0)</td><td>O, O</td><td>OCO (C-verb), OAO (A-verb)</td></tr>
-<tr><td>(0/1)</td><td>O, A</td><td>OCA</td></tr>
-<tr><td>(1/0)</td><td>A, O</td><td>ACO</td></tr>
-<tr><td>(1/1)</td><td>A, A</td><td>ACA (C-verb), AOA (O-verb)</td></tr>
+<tr><td>(0/0)</td><td>O, O</td><td><code class="cfg">OCO</code> (C-verb), <code class="cfg">OAO</code> (A-verb)</td></tr>
+<tr><td>(0/1)</td><td>O, A</td><td><code class="cfg">OCA</code></td></tr>
+<tr><td>(1/0)</td><td>A, O</td><td><code class="cfg">ACO</code></td></tr>
+<tr><td>(1/1)</td><td>A, A</td><td><code class="cfg">ACA</code> (C-verb), <code class="cfg">AOA</code> (O-verb)</td></tr>
 </table>
 
 <p>Matching-bookend positions (0/0 and 1/1) leave two letters available for the verb-slot, giving two doors each; mixed-bookend positions (0/1 and 1/0) leave only C, giving one each. Total: 2 + 1 + 1 + 2 = 6 doors at 4 positions.</p>
 
-<p><strong>Fine address-map.</strong> The remaining six doors have C in at least one bookend. Each C-bookended door anchors eight fine-address positions &mdash; one per &Omega;-mode &mdash; because C carries eight operator modes: COA spans (2/1)&ndash;(9/1); CAO spans (2/0)&ndash;(9/0); OAC spans (0/2)&ndash;(0/9); AOC spans (1/2)&ndash;(1/9).</p>
+<p><strong>Fine address-map.</strong> The remaining six doors have C in at least one bookend. Each C-bookended door anchors eight fine-address positions &mdash; one per &Omega;-mode &mdash; because C carries eight operator modes: <code class="cfg">COA</code> spans (2/1)&ndash;(9/1); <code class="cfg">CAO</code> spans (2/0)&ndash;(9/0); <code class="cfg">OAC</code> spans (0/2)&ndash;(0/9); <code class="cfg">AOC</code> spans (1/2)&ndash;(1/9).</p>
 
-<p>One question is left open at this scale. For the C-edge edge-doors COC and CAC &mdash; which carry C at <em>both</em> bookends &mdash; whether the two bookend C-modes are constrained equal (giving 8 fine positions) or independent (giving 64) depends on whether operators propagate through the door, preserving mode, or transform across it, allowing mode change. That is operator-content rather than topology, and it is left here for resolution against the framework's operator-mode propagation rules elsewhere in the stack.</p>
+<p>One question is left open at this scale. For the C-edge edge-doors <code class="cfg">COC</code> and <code class="cfg">CAC</code> &mdash; which carry C at <em>both</em> bookends &mdash; whether the two bookend C-modes are constrained equal (giving 8 fine positions) or independent (giving 64) depends on whether operators propagate through the door, preserving mode, or transform across it, allowing mode change. That is operator-content rather than topology, and it is left here for resolution against the framework's operator-mode propagation rules elsewhere in the stack.</p>
 
 <p><strong>The framework's four functions</strong> are the C-verb slice of the binary map:</p>
 
 <table>
 <tr><th>Address</th><th>C-verb door</th><th>Function</th></tr>
-<tr><td>(0/0)</td><td>OCO</td><td>Container</td></tr>
-<tr><td>(0/1)</td><td>OCA</td><td>Build</td></tr>
-<tr><td>(1/0)</td><td>ACO</td><td>Read</td></tr>
-<tr><td>(1/1)</td><td>ACA</td><td>Constrain</td></tr>
+<tr><td>(0/0)</td><td><code class="cfg">OCO</code></td><td>Container</td></tr>
+<tr><td>(0/1)</td><td><code class="cfg">OCA</code></td><td>Build</td></tr>
+<tr><td>(1/0)</td><td><code class="cfg">ACO</code></td><td>Read</td></tr>
+<tr><td>(1/1)</td><td><code class="cfg">ACA</code></td><td>Constrain</td></tr>
 </table>
 
-<p>Constraint lives at ACA, not COA. ACA is the C-edge edge-door read backward (from AAA toward CCC), reading constraint back through the topology &mdash; the same structural fact as &sect;8's mediation: CAC/ACA holds the C&ndash;A boundary, and ACA is the constraint. The address-map function and the topological mediation are the same fact at two registers. COA still performs the operation of constraint formation &mdash; capacity, oriented, becoming actualization &mdash; but it anchors the fine address-map at (C/A) across the eight &Omega;-modes rather than the binary (1/1).</p>
+<p>Constraint lives at <code class="cfg">ACA</code>, not <code class="cfg">COA</code>. <code class="cfg">ACA</code> is the C-edge edge-door read backward (from <code class="cfg">AAA</code> toward <code class="cfg">CCC</code>), reading constraint back through the topology &mdash; the same structural fact as &sect;8's mediation: <code class="cfg">CAC</code>/<code class="cfg">ACA</code> holds the C&ndash;A boundary, and <code class="cfg">ACA</code> is the constraint. The address-map function and the topological mediation are the same fact at two registers. <code class="cfg">COA</code> still performs the operation of constraint formation &mdash; capacity, oriented, becoming actualization &mdash; but it anchors the fine address-map at (C/A) across the eight &Omega;-modes rather than the binary (1/1).</p>
 
 <p class="section-break">&nbsp;</p>
 
@@ -75,11 +72,11 @@
 
 <p>The structure produces itself at every scale, and three readings document the recursion.</p>
 
-<p><strong>The inner-door system spells OCA at the meta-level.</strong> The six inner doors organize into three corner pairs, one per corner of the material trinity. Reading the corner letters gives O, C, A &mdash; the inner-door system as a whole is OCA.</p>
+<p><strong>The inner-door system spells <code class="cfg">OCA</code> at the meta-level.</strong> The six inner doors organize into three corner pairs, one per corner of the material trinity. Reading the corner letters gives O, C, A &mdash; the inner-door system as a whole is <code class="cfg">OCA</code>.</p>
 
-<p><strong>The first runs spell OCA at the subject-trace.</strong> T₂<em>first (OCA &rarr; COA &rarr; ACO) has subject-trace O, C, A. T₃</em>F (OCA &rarr; CAO &rarr; AOC) likewise has subject-trace O, C, A. Both the launched generative motion and the closed integrative motion produce OCA in their subject-trace.</p>
+<p><strong>The first runs spell <code class="cfg">OCA</code> at the subject-trace.</strong> T₂<em>first (<code class="cfg">OCA</code> &rarr; <code class="cfg">COA</code> &rarr; <code class="cfg">ACO</code>) has subject-trace O, C, A. T₃</em>F (<code class="cfg">OCA</code> &rarr; <code class="cfg">CAO</code> &rarr; <code class="cfg">AOC</code>) likewise has subject-trace O, C, A. Both the launched generative motion and the closed integrative motion produce <code class="cfg">OCA</code> in their subject-trace.</p>
 
-<p><strong>The axiom reproduces at every layer.</strong> The axiom OCA generates the 27-state space; within that space, the inner-door system is organized as OCA at the meta-level; within the inner-door system, the first triangles to run produce OCA in their subject-trace. This is recursive self-similarity in the strict sense: the axiom reproduced in the structure's organization, in the specific configurations within it, and in the operations those configurations perform. The structure does not describe self-similarity from outside; it enacts it from within. Every layer is OCA running through itself at a different register.</p>
+<p><strong>The axiom reproduces at every layer.</strong> The axiom <code class="cfg">OCA</code> generates the 27-state space; within that space, the inner-door system is organized as <code class="cfg">OCA</code> at the meta-level; within the inner-door system, the first triangles to run produce <code class="cfg">OCA</code> in their subject-trace. This is recursive self-similarity in the strict sense: the axiom reproduced in the structure's organization, in the specific configurations within it, and in the operations those configurations perform. The structure does not describe self-similarity from outside; it enacts it from within. Every layer is <code class="cfg">OCA</code> running through itself at a different register.</p>
 
 <p class="section-break">&nbsp;</p>
 
@@ -89,7 +86,7 @@
 
 <p>What produced all of this is one motion: orientation orienting orientation. This section has read that motion as the first algorithm &mdash; the generative event that lays the topology. But the motion does not end when the topology is laid. It continues. What the framework runs <em>on</em> is the same motion that produced what it runs <em>within</em>.</p>
 
-<p>This is the structural identity to carry forward. The motion-as-generative-event and the motion-as-ongoing-substrate are not two motions but one, read at two registers. Read as event, it produces the topology. Read as condition, it is the substrate the framework operates from. The topology is what is visible when the motion is read as event; origin is what is visible when it is read as condition. The bidirectional walk through the perimeter &mdash; forward pass OOO &rarr; CCC &rarr; AAA &rarr; OOO and reverse pass OOO &rarr; AAA &rarr; CCC &rarr; OOO &mdash; <em>is</em> origin. Not what origin produces. Identity.</p>
+<p>This is the structural identity to carry forward. The motion-as-generative-event and the motion-as-ongoing-substrate are not two motions but one, read at two registers. Read as event, it produces the topology. Read as condition, it is the substrate the framework operates from. The topology is what is visible when the motion is read as event; origin is what is visible when it is read as condition. The bidirectional walk through the perimeter &mdash; forward pass <code class="cfg">OOO</code> &rarr; <code class="cfg">CCC</code> &rarr; <code class="cfg">AAA</code> &rarr; <code class="cfg">OOO</code> and reverse pass <code class="cfg">OOO</code> &rarr; <code class="cfg">AAA</code> &rarr; <code class="cfg">CCC</code> &rarr; <code class="cfg">OOO</code> &mdash; <em>is</em> origin. Not what origin produces. Identity.</p>
 
 <p>Part II picks up here. Part I has laid the topology by reading the motion as event; Part II reads it as condition &mdash; what orientation does, ongoingly, across each register the topology supports: depth, position, math, parameter. The two parts are not two stages of operation. They are two readings of the same motion.</p>
 
@@ -98,12 +95,10 @@
 <p class="section-break">&nbsp;</p>
 
 <p><em>End of Part I &mdash; Foundational Topology.</em></p>
-
     </article>
     <div class="seq-nav"><a href="/topology-i/" class="seq-link prev"><span class="seq-link-label">&larr; Previous</span>Part I: Foundational Topology</a><a href="/chapter-0/" class="seq-link next"><span class="seq-link-label">Next &rarr;</span>0: The Orientation of Origin</a></div>
   </div>
 </main>
-
 <script src="/components/nav-loader.js"></script>
 </body>
 </html>
