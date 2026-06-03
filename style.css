@@ -1042,9 +1042,9 @@ a.link:hover {
 .room-body code.cfg {
   font-family: 'Courier New', 'Courier', monospace;
   font-size: 0.88em;
-  color: var(--green-mist);
-  background: rgba(58, 74, 58, 0.18);
-  border: 1px solid rgba(107, 138, 107, 0.2);
+  color: #8ab88a;
+  background: rgba(80, 140, 80, 0.14);
+  border: 1px solid rgba(138, 184, 138, 0.28);
   border-radius: 2px;
   padding: 0.05em 0.32em;
   letter-spacing: 0.08em;
